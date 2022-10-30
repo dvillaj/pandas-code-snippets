@@ -1,0 +1,14 @@
+{
+  "display_name": "One Snippet",
+  "metadata": {
+    "tags": [
+      "pandas"
+    ],
+    "display_name": "One Snippet",
+    "code": [
+      "# Esto es un comentario"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}
