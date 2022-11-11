@@ -1,5 +1,5 @@
 {
-   "display_name": "Formating a dataframe: Number of decimals and thousands separatator",
+   "display_name": "Formatting a dataframe: Number of decimals and thousands separatator",
    "metadata": {
       "tags": [
          "Pandas",
@@ -7,7 +7,7 @@
          "Exploring Data",
          "Styling"
       ],
-      "display_name": "Formating a dataframe: Number of decimals and thousands separatator",
+      "display_name": "Formatting a dataframe: Number of decimals and thousands separatator",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
