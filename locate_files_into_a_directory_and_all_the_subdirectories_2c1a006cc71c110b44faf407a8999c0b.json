@@ -1,0 +1,14 @@
+{
+   "display_name": "Locate files into a directory (and all the subdirectories)",
+   "metadata": {
+      "tags": [
+         "Exploring Data"
+      ],
+      "display_name": "Locate files into a directory (and all the subdirectories)",
+      "code": [
+         "! find . -name mnist*"
+      ],
+      "language": "Shell"
+   },
+   "schema_name": "code-snippet"
+}

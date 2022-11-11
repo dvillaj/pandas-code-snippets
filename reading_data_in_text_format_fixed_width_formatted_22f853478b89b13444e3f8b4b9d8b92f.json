@@ -1,0 +1,28 @@
+{
+   "display_name": "Reading data in text format (Fixed-width Formatted)",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write"
+      ],
+      "display_name": "Reading data in text format (Fixed-width Formatted)",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"input_data.txt\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "a  b  c   d   message",
+         "1  2  3   4   hello",
+         "5  6  5   8   world",
+         "9  10 11  12  foo",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "df = pd.read_fwf(\"input_data.txt\")",
+         "df"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

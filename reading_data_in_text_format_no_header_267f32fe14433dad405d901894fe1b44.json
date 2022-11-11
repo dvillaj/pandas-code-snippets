@@ -1,0 +1,28 @@
+{
+   "display_name": "Reading data in text format (No Header)",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write"
+      ],
+      "display_name": "Reading data in text format (No Header)",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"input_data.txt\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "1|2|3|4|hello",
+         "5|6|7|8|world",
+         "9|10|11|12|foo",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "",
+         "df = pd.read_csv(\"input_data.txt\", sep = \"|\", header = None)",
+         "df"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

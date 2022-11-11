@@ -1,0 +1,20 @@
+{
+   "display_name": "Reading data from Excel",
+   "metadata": {
+      "tags": [
+         "Excel",
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Reading data from Excel",
+      "code": [
+         "import pandas as pd",
+         "",
+         "df = pd.read_excel(\"https://github.com/dvillaj/files-repository/blob/master/pandas/Orders-With%20Nulls.xlsx?raw=true\", ",
+         "                   sheet_name = 'Orders')",
+         "df"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

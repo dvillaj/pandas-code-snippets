@@ -1,0 +1,14 @@
+{
+   "display_name": "Search for a text inside a file",
+   "metadata": {
+      "tags": [
+         "Exploring Data"
+      ],
+      "display_name": "Search for a text inside a file",
+      "code": [
+         "! grep \"92.253.223\" ./sample_data/mnist_test.csv"
+      ],
+      "language": "Shell"
+   },
+   "schema_name": "code-snippet"
+}

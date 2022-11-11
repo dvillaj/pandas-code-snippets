@@ -1,0 +1,22 @@
+{
+   "display_name": "Operations with two Series",
+   "metadata": {
+      "tags": [
+         "Series",
+         "Base"
+      ],
+      "display_name": "Operations with two Series",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "serie1 = pd.Series([1, 4, 5, 8])",
+         "serie2 = pd.Series([.5, np.nan, 3, -4])",
+         "",
+         "serie1 + serie2",
+         "serie1 * 3"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

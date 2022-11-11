@@ -1,0 +1,18 @@
+{
+   "display_name": "Filtering Rows - String values",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Filtering Rows - String values",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "dataframe.query(\"Country.str.contains('^C')\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

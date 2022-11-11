@@ -1,0 +1,29 @@
+{
+   "display_name": "Reading data in text format (Tab Separator)",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Reading data in text format (Tab Separator)",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"input_data.txt\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "a\tb\tc\td\tmessage",
+         "1\t2\t3\t4\thello",
+         "5\t6\t7\t8\tworld",
+         "9\t10\t11\t12\tfoo",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "",
+         "df = pd.read_csv(\"input_data.txt\", sep = \"\\t\")",
+         "df"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
