@@ -1,0 +1,40 @@
+{
+  "display_name": "Reading data as JSON in Pandas (Only a part of it)",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Read & Write",
+      "JSON"
+    ],
+    "display_name": "Reading data as JSON in Pandas (Only a part of it)",
+    "code": [
+      "import pandas as pd",
+      "import json",
+      "",
+      "text_file = open(\"input_data.json\", \"w\")",
+      "text_file.write(",
+      "\"\"\"",
+      "{",
+      "   \"name\": \"Wes\",",
+      "   \"placed_lived\": [\"United States\", \"Spain\", \"Germany\"],",
+      "    \"sibilings\": [",
+      "        {\"age\": 30, \"name\": \"Scott\", \"pets\": [\"Zeus\"]},",
+      "        {\"age\": 38, \"name\": \"Katie\"}",
+      "    ]",
+      "}",
+      "\"\"\")",
+      "text_file.close()",
+      "",
+      "df = pd.read_json(\"input_data.txt\")",
+      "df",
+      "",
+      "with open('input_data.json') as file:",
+      "    json_dictionary = json.load(file)",
+      "    ",
+      "df = pd.json_normalize(json_dictionary['sibilings'])",
+      "df"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

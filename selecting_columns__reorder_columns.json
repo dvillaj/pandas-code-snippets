@@ -1,0 +1,18 @@
+{
+  "display_name": "Selecting columns | Reorder columns",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Data Analysis"
+    ],
+    "display_name": "Selecting columns | Reorder columns",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+      "",
+      "dataframe.filter([\"Cases\", \"Population\", \"Country\", \"Year\"])"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

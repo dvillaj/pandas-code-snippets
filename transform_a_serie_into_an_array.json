@@ -1,0 +1,18 @@
+{
+  "display_name": "Transform a Serie into a regular List",
+  "metadata": {
+    "tags": [
+      "Series",
+      "Base"
+    ],
+    "display_name": "Transform a Serie into a regular List",
+    "code": [
+      "import pandas as pd",
+      "",
+      "serie = pd.Series([1, 2, 3, 4, 5])",
+      "serie.tolist()"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

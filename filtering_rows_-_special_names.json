@@ -1,0 +1,19 @@
+{
+  "display_name": "Filtering Rows - Special Names",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Data Analysis"
+    ],
+    "display_name": "Filtering Rows - Special Names",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\").rename(columns = {",
+      "    'Country' : 'Country Name'})",
+      "",
+      "dataframe.query(\"`Country Name` == 'Brazil'\")"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

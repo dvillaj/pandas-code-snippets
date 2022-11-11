@@ -1,0 +1,22 @@
+{
+  "display_name": "Compute pairwise correlation of a Dataframe",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Data Analysis",
+      "Exploring Data"
+    ],
+    "display_name": "Compute pairwise correlation of a Dataframe",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+      "",
+      "dataframe.corr()",
+      "",
+      "# Displays the correlation in a more understandable format",
+      "dataframe.corr().style.background_gradient(cmap = 'coolwarm')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

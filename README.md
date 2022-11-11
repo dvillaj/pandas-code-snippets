@@ -1,1 +1,1 @@
-# pandas-code-snippets
+# code-snippets

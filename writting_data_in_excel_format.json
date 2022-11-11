@@ -1,0 +1,21 @@
+{
+  "display_name": "Writting data in Excel format",
+  "metadata": {
+    "tags": [
+      "Read & Write",
+      "Pandas",
+      "Excel"
+    ],
+    "display_name": "Writting data in Excel format",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+      "",
+      "xlsx = pd.ExcelWriter(\"file.xlsx\")",
+      "dataframe.to_excel(xlsx, \"SheetName\", index = False)",
+      "xlsx.save()"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,18 @@
+{
+  "display_name": "Selecting columns by a Regex Expression",
+  "metadata": {
+    "tags": [
+      "Data Analysis",
+      "Pandas"
+    ],
+    "display_name": "Selecting columns by a Regex Expression",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+      "",
+      "dataframe.filter(regex= \"^C\")"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,0 +1,22 @@
+{
+  "display_name": "Profiling Report",
+  "metadata": {
+    "tags": [
+      "Tools",
+      "Pandas",
+      "Data Analysis",
+      "Exploring Data"
+    ],
+    "display_name": "Profiling Report",
+    "code": [
+      "import pandas as pd",
+      "import pandas_profiling",
+      "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+      "",
+      "profile = dataframe.profile_report(title=\"Pandas Profiling Report\")",
+      "profile.to_file(output_file=\"profiling-report.html\")"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}
