@@ -26,7 +26,6 @@
          "dataframe.assign (",
          "   NameAge = lambda x: x.apply(lambda dataset: f\"{dataset.Name}-{dataset.Age:03}\", ",
          "                              axis = 'columns')",
-         ")",
          ")"
       ],
       "language": "Python"
