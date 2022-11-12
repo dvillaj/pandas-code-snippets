@@ -1,0 +1,27 @@
+{
+   "display_name": "Adding new columns - Date columns",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Date columns",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\").assign(",
+         "        date = lambda dataset: pd.to_datetime(dataset.Year)",
+         "    )",
+         "",
+         "dataframe.assign(",
+         "    year = lambda dataset: dataset.date.dt.year,",
+         "    month = lambda dataset: dataset.date.dt.month,",
+         "    day = lambda dataset: dataset.date.dt.day,",
+         "    week = lambda dataset: dataset.date.dt.isocalendar().week,",
+         "    dayofweek = lambda dataset: dataset.date.dt.dayofweek,",
+         "    is_leap_year = lambda dataset: dataset.date.dt.is_leap_year",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

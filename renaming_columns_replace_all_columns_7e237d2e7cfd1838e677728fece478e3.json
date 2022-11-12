@@ -1,0 +1,19 @@
+{
+   "display_name": "Renaming columns - Replace all Columns",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Renaming columns - Replace all Columns",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.set_axis(['country', 'year', 'cases', 'population'],",
+         "                   axis = 'columns')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

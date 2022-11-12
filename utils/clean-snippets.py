@@ -1,6 +1,5 @@
 import logging
 import glob
-
 from elyra_utils import *
 
 conf_logging()

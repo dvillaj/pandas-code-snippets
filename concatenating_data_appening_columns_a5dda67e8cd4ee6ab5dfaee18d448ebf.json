@@ -1,0 +1,21 @@
+{
+   "display_name": "Concatenating data - Appening Columns",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Concatenating data - Appening Columns",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataset_year = dataframe.filter([\"Country\", \"Year\"])",
+         "dataset_population = dataframe.filter([\"Cases\", \"Population\"])",
+         "",
+         "pd.concat((dataset_year, dataset_population), axis = 'columns')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

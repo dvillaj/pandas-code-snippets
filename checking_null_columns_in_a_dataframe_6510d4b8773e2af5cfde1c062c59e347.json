@@ -1,0 +1,22 @@
+{
+   "display_name": "Checking Null columns in a Dataframe",
+   "metadata": {
+      "tags": [
+         "Base",
+         "Pandas"
+      ],
+      "display_name": "Checking Null columns in a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Null Columns",
+         "dataframe.Country.isnull()",
+         "",
+         "# Not Null Columns",
+         "dataframe.Country.notnull()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

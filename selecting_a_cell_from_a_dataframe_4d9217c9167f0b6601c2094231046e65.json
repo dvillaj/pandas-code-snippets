@@ -1,0 +1,18 @@
+{
+   "display_name": "Selecting a cell from a Dataframe",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Base"
+      ],
+      "display_name": "Selecting a cell from a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.iat[0, 0]"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

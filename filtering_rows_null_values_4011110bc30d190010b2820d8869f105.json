@@ -1,0 +1,18 @@
+{
+   "display_name": "Filtering Rows - Null values",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Pandas"
+      ],
+      "display_name": "Filtering Rows - Null values",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.query(\"Year.notnull()\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

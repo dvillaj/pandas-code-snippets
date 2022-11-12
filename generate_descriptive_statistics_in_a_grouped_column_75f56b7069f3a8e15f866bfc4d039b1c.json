@@ -1,0 +1,20 @@
+{
+   "display_name": "Generate descriptive statistics in a grouped column",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Exploring Data",
+         "Pandas",
+         "Stadistical"
+      ],
+      "display_name": "Generate descriptive statistics in a grouped column",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.groupby(\"Country\").Year.describe()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
