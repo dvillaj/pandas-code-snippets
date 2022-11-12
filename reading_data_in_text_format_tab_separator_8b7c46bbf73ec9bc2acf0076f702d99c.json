@@ -9,7 +9,7 @@
       "code": [
          "import pandas as pd",
          "",
-         "text_file = open(\"input_data.txt\", \"w\")",
+         "text_file = open(\"data.txt\", \"w\")",
          "text_file.write(",
          "\"\"\"",
          "a\tb\tc\td\tmessage",
@@ -20,7 +20,7 @@
          "text_file.close()",
          "",
          "",
-         "df = pd.read_csv(\"input_data.txt\", sep = \"\\t\")",
+         "df = pd.read_csv(\"data.txt\", sep = \"\\t\")",
          "df"
       ],
       "language": "Python"

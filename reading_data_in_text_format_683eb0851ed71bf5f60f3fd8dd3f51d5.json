@@ -9,7 +9,7 @@
       "code": [
          "import pandas as pd",
          "",
-         "text_file = open(\"input_data.txt\", \"w\")",
+         "text_file = open(\"data.txt\", \"w\")",
          "text_file.write(",
          "\"\"\"",
          "color,quantity",
@@ -20,7 +20,7 @@
          "text_file.close()",
          "",
          "",
-         "df = pd.read_csv(\"input_data.txt\")",
+         "df = pd.read_csv(\"data.txt\")",
          "df"
       ],
       "language": "Python"

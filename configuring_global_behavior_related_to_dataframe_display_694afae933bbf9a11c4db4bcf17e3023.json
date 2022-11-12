@@ -15,7 +15,6 @@
          "pd.set_option(\"display.max.columns\", 3)",
          "pd.set_option(\"display.max.rows\", 3)",
          "pd.set_option(\"display.max_colwidth\", None)",
-         "pd.set_option(\"precision\", 5)",
          "pd.set_option('display.float_format',  '{:,.3f}'.format)",
          "",
          "dataframe",

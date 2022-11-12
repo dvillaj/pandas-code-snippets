@@ -1,9 +1,8 @@
 import logging
 import json
-import glob
 import os
 import shutil
-
+import glob
 
 def check_file_exists(file: str) -> bool:
     from os.path import exists
@@ -11,15 +10,18 @@ def check_file_exists(file: str) -> bool:
     return exists(file)
 
 
-def conf_logging(config_file: str = 'logging.ini'):
+def conf_logging(config_file: str = 'utils/logging.ini'):
     from logging.config import fileConfig
 
     if check_file_exists(config_file):
         fileConfig(config_file)
+    else:
+        print("Do no exists!")
 
 def read_file(file: str):
+    logger = logging.getLogger("utils")
     try:
-        logger.info(f"Processing '{file}' ...")
+        logger.info(f"Reading '{file}' ...")
         with open(file, 'r') as json_data:
             json_data = json.load(json_data)
             return json_data
@@ -38,6 +40,7 @@ def get_hash(dictionary: dict):
     return hash_object.hexdigest()
 
 def save_file(filename: str, dictionary: dict):
+    logger = logging.getLogger("utils")
     file_name = get_file_name(dictionary["display_name"], get_hash(dictionary))
     logger.info(f"Writting '{file_name}' ...")
 
@@ -52,23 +55,36 @@ def delete_file(file_name: str):
 def backup_file(file_name: str):
     shutil.copyfile(file_name, file_name + ".bak")   
 
-def get_file_name(display_name: str, hash:str):
+def get_file_name(display_name: str, hash:str, extension: str = 'json'):
     import re
     return re.sub('[\W_]+', ' ', display_name) \
             .strip() \
             .lower() \
             .replace('  ', ' ') \
             .replace(' ','_') \
-                + f"_{hash}.json"
+                + f"_{hash}.{extension}"
 
-conf_logging()
-logger = logging.getLogger("app")
+def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
+    logger = logging.getLogger("utils")
+    
+    snippet = dictionary['display_name']
+    lines = dictionary['metadata']['code']
+    language = dictionary['metadata']['language']
 
-logger.info("Beginning ...")
-for file in glob.glob("*.json"):
-    #backup_file(file)
-    dictionary = read_file(file)
-    delete_file(file)
-    save_file(file, dictionary)
+    if language == "Python":
+        logger.info(f"Executing '{snippet}' ...")
 
-logger.info("All good :-)")
+        with open(file_name, 'w') as fp:
+            for item in lines:
+                fp.write("%s\n" % item)
+
+        return_value = os.system(f'python {file_name}')
+        delete_file(file_name)
+
+        for data_file in glob.glob("data.*"):
+            delete_file(data_file)
+
+        if return_value:
+            logger.error(f"Sorry, There is an issue executing the snippet: {snippet}")
+    else:
+        logger.info(f"No Python Snippet. Can't be executed ...")
