@@ -1,0 +1,39 @@
+{
+   "display_name": "Separating columns - Separator - Variable Fields",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning"
+      ],
+      "display_name": "Separating columns - Separator - Variable Fields",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,Data",
+         "Sharon,F,Austin-30-81",
+         "Kevin,M,New York-34",
+         "Michael,M,New York-44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "",
+         "display(dataframe)",
+         "",
+         "pd.concat(",
+         "    (",
+         "     dataframe,",
+         "     dataframe.Data.str.split('-', expand = True) \\",
+         "        .set_axis(['City', 'Age', 'Weight'], axis = 'columns')",
+         "    ),",
+         "    axis = 'columns'",
+         ") \\",
+         ".drop(columns = \"Data\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

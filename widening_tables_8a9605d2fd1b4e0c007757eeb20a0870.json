@@ -1,0 +1,25 @@
+{
+   "display_name": "Widening tables",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning"
+      ],
+      "display_name": "Widening tables",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\", \"table2\")",
+         "",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.pivot_table(index = [\"Country\", \"Year\"],",
+         "               columns = \"Type\", ",
+         "               values=\"Count\") \\",
+         "    .reset_index() \\",
+         "    .rename_axis(None, axis = 'columns')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

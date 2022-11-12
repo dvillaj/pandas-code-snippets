@@ -1,0 +1,35 @@
+{
+   "display_name": "Separating columns - Separator",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning"
+      ],
+      "display_name": "Separating columns - Separator",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,City-Age",
+         "Sharon,F,Austin-30",
+         "Kevin,M,New York-34",
+         "Michael,M,New York-44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign (",
+         "        City = lambda dataset : dataset[\"City-Age\"].str.split('-').str.get(0),",
+         "        Age = lambda dataset : dataset[\"City-Age\"].str.split('-').str.get(1)",
+         "    )  \\",
+         "   .drop(columns = \"City-Age\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
