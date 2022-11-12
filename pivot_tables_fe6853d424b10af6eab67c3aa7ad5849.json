@@ -1,0 +1,22 @@
+{
+   "display_name": "Pivot Tables",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Pivot Tables",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "dataframe.pivot_table(",
+         "    index = \"Country\",",
+         "    values = \"Cases\",",
+         "    aggfunc = \"sum\"",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

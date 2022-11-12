@@ -1,0 +1,24 @@
+{
+   "display_name": "Joining data - Left Join",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Joining data - Left Join",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "df_capitals = pd.DataFrame(",
+         "    {\"Country\" : [\"Afghanistan\", \"Brazil\", \"Spain\"],",
+         "     \"Capital\" : [\"Kabul\", \"Brasilia\", \"Madrid\"]},",
+         "     columns = [\"Country\", \"Capital\"]",
+         ")",
+         "",
+         "pd.merge(dataframe, df_capitals, on = \"Country\", how = \"left\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

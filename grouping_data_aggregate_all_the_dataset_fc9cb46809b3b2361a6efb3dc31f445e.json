@@ -1,0 +1,24 @@
+{
+   "display_name": "Grouping data -  Aggregate all the dataset",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Grouping data -  Aggregate all the dataset",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "dataframe.groupby(\"Country\").agg( ",
+         "    Total = ( \"Country\", \"size\"),",
+         "    Sum_Cases = (\"Cases\", \"sum\"),",
+         "    Mean_Population = (\"Population\", \"mean\")",
+         ")",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

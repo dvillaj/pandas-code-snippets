@@ -1,0 +1,20 @@
+{
+   "display_name": "Adding new columns - Rankings",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Rankings",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "dataframe.assign(",
+         "    RankPopulation = lambda dataset: dataset.Population.rank()",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

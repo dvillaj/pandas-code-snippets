@@ -1,0 +1,28 @@
+{
+   "display_name": "Adding new columns - Using non vectorized functions",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Using non vectorized functions",
+      "code": [
+         "import pandas as pd",
+         "import math",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "# When only one column is involved we can use 'map' over the Serie ",
+         "dataframe.assign(",
+         "    IncidenceType = lambda dataset: dataset.Cases.map(",
+         "                            lambda value: \"Low\" if value < 60000 else \"High\"",
+         "                    )",
+         ")",
+         "",
+         "# When more than one column are involved we must use 'apply' over the Dataframe",
+         "dataframe \\",
+         "    .assign(IncidenceByPopulationSqrt = lambda dataset: dataset.apply(lambda row: math.sqrt(row.Cases / row.Population), axis = 'columns'))"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

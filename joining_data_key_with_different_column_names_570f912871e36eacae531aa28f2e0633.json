@@ -1,0 +1,27 @@
+{
+   "display_name": "Joining data -  Key with different column names",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Joining data -  Key with different column names",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "df_capitals = pd.DataFrame(",
+         "    {\"CountryName\" : [\"Afghanistan\", \"Brazil\", \"Spain\"],",
+         "     \"Capital\" : [\"Kabul\", \"Brasilia\", \"Madrid\"]},",
+         "     columns = [\"CountryName\", \"Capital\"]",
+         ")",
+         "",
+         "pd.merge(dataframe, df_capitals, ",
+         "         left_on = \"Country\",",
+         "         right_on = \"CountryName\", ",
+         "         how = \"inner\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

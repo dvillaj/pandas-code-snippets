@@ -1,0 +1,31 @@
+{
+   "display_name": "Pivot Tables Visualization",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis",
+         "Tools"
+      ],
+      "display_name": "Pivot Tables Visualization",
+      "code": [
+         "import pandas as pd",
+         "from pivottablejs import pivot_ui",
+         "dataframe = pd.read_json(\"https://bit.ly/simple-dataframe\")",
+         "",
+         "def pivot_ui(df, htmlFile):",
+         "    import pivottablejs",
+         "    class _DataFrame(pd.DataFrame):",
+         "        def to_csv(self, **kwargs):",
+         "            return super().to_csv(**kwargs).replace(\"\\r\\n\", \"\\n\")",
+         "    return pivottablejs.pivot_ui(_DataFrame(df), htmlFile)",
+         "",
+         "# To write to a html file",
+         "pivot_ui(df, \"Sales_PivotTable.html\")",
+         "",
+         "# To view in the notebook itself",
+         "pivot_ui(dataframe)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

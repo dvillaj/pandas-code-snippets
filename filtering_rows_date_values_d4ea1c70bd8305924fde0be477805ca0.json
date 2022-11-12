@@ -12,6 +12,7 @@
          "        Year = lambda dataset: pd.to_datetime(dataset.Year)",
          "    )",
          "",
+         "# Important: The column must be a Date",
          "dataframe.query(\"Year >= '1999-06-01 04:33:22' \\",
          "    and Year == '2000-01-01' \\",
          "    and Year.dt.month == 1  \\",
