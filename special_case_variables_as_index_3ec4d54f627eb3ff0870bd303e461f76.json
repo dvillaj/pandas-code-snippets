@@ -1,0 +1,31 @@
+{
+   "display_name": "Special Case - Variables as Index",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning"
+      ],
+      "display_name": "Special Case - Variables as Index",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,City,Age",
+         "Sharon,F,Austin,30",
+         "Kevin,M,New York,34",
+         "MichaelM,New York,44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\").set_index('Name').rename_axis(None)",
+         "",
+         "dataframe \\",
+         "    .reset_index() \\",
+         "    .rename( columns = { 'index' : 'Name' })"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
