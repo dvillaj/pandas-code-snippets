@@ -1,28 +1,31 @@
 {
-   "display_name": "Special Case \u2013 A List as Value",
-   "metadata": {
-      "tags": [
-         "Pandas",
-         "Data Cleaning"
-      ],
-      "display_name": "Special Case \u2013 A List as Value",
-      "code": [
-         "import pandas as pd",
-         "import json",
-         "",
-         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\") ",
-         "            .assign(    ",
-         "                cases_population = lambda dataset: dataset.apply(lambda row: f'{{\"Year\" : {row.Year}, \"Cases\" : {row.Cases} , \"Population\" : {row.Population} }}' , axis = 'columns')",
-         "            )",
-         "            .filter([\"Country\", \"cases_population\"])",
-         "            .groupby(\"Country\").agg( { \"cases_population\" : lambda value : json.loads(\"[\" + \",\".join(value) + \"]\") } ) ",
-         "            .reset_index() ",
-         "            .rename(columns = { \"cases_population\" : \"Data\" })",
-         "        )",
-         "",
-         "dataframe.explode('Data')"
-      ],
-      "language": "Python"
-   },
-   "schema_name": "code-snippet"
+  "display_name": "Special Case \u2013 A List as Value",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Data Cleaning"
+    ],
+    "display_name": "Special Case \u2013 A List as Value",
+    "code": [
+      "import pandas as pd",
+      "import json",
+      "",
+      "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\") ",
+      "            .assign(    ",
+      "                cases_population = lambda dataset: dataset.apply(lambda row: f'{{\"Year\" : {row.Year}, \"Cases\" : {row.Cases} , \"Population\" : {row.Population} }}' , axis = 'columns')",
+      "            )",
+      "            .filter([\"Country\", \"cases_population\"])",
+      "            .groupby(\"Country\").agg( { \"cases_population\" : lambda value : json.loads(\"[\" + \",\".join(value) + \"]\") } ) ",
+      "            .reset_index() ",
+      "            .rename(columns = { \"cases_population\" : \"Data\" })",
+      "        )",
+      "",
+      "",
+      "display(dataframe)",
+      "",
+      "dataframe.explode('Data')"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
 }
