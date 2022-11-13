@@ -1,0 +1,18 @@
+{
+   "display_name": "Set a Column as Index",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning"
+      ],
+      "display_name": "Set a Column as Index",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.set_index(\"Country\").rename_axis(None)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
