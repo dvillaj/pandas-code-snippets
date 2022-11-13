@@ -1,0 +1,28 @@
+{
+   "display_name": "Adding new columns - Truncate a Date",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis",
+         "Time Series"
+      ],
+      "display_name": "Adding new columns - Truncate a Date",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame(",
+         "    {",
+         "        'Date' : pd.date_range(start = '2020-01-01', end = '2020-01-05', freq = 'D'),",
+         "        'Value' : np.random.randint(100, size = 5)",
+         "    }",
+         ")",
+         "",
+         "dataframe.assign(",
+         "    Month = lambda dataset: dataset.Date.map(lambda value: value.replace(day = 1))",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

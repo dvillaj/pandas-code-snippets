@@ -3,7 +3,8 @@
    "metadata": {
       "tags": [
          "Pandas",
-         "Data Analysis"
+         "Data Analysis",
+         "Time Series"
       ],
       "display_name": "Adding new columns - Calculating Trends",
       "code": [
