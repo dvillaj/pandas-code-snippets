@@ -9,5 +9,3 @@ logger.info("Beginning ...")
 for file in glob.glob("*.json"):
     dictionary = read_file(file)
     execute_code(dictionary)
-
-logger.info("All good :-)")

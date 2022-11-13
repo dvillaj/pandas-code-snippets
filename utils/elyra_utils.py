@@ -71,6 +71,8 @@ def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
     lines = dictionary['metadata']['code']
     language = dictionary['metadata']['language']
 
+    lines.insert(0, "from IPython.display import display")
+
     if language == "Python":
         logger.info(f"Executing '{snippet}' ...")
 
