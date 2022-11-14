@@ -1,11 +1,11 @@
 {
-   "display_name": "Identifying Missing Data",
+   "display_name": "FIlling Missing Values - Statistical Function",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "Identifying Missing Data",
+      "display_name": "FIlling Missing Values - Statistical Function",
       "code": [
          "import pandas as pd",
          "",
@@ -14,18 +14,20 @@
          "\"\"\"",
          "Name,Sex,City,Age",
          "Sharon,F,Austin",
-         "Eva,F,Texas,23",
+         "Eva,F,Texax, 23",
          "Kevin,M,New York,34",
-         "Michael,M,New York,44",
-         "Barbara,,New York,21",
+         "Joe,M,Boston,14",
+         ",,New York,44",
+         "Barbara,,,21",
          "\"\"\")",
          "text_file.close()",
          "",
          "dataframe = pd.read_csv(\"data.csv\")",
+         "display(dataframe)",
          "",
-         "dataframe.info()",
-         "",
-         "dataframe.isnull().sum()"
+         "dataframe.assign(",
+         "    Age = lambda dataset : dataset.Age.fillna(dataset.Age.mean())",
+         ")"
       ],
       "language": "Python"
    },

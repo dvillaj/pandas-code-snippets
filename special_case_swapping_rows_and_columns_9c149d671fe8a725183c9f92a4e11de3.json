@@ -1,11 +1,11 @@
 {
-   "display_name": "Special Case - Rows as Column",
+   "display_name": "Special Case - Swapping Rows and Columns",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "Special Case - Rows as Column",
+      "display_name": "Special Case - Swapping Rows and Columns",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -25,6 +25,7 @@
          "",
          "dataframe = pd.read_csv(\"data.csv\")",
          "",
+         "display(dataframe)",
          "",
          "dataframe \\",
          "    .set_index(\"Attrib\").rename_axis(None) \\",
