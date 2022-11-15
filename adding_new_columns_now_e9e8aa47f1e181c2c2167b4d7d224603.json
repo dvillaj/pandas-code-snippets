@@ -1,12 +1,12 @@
 {
-   "display_name": "Adding new columns - Operations with Date columns",
+   "display_name": "Adding new columns - Now",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis",
          "Time Series"
       ],
-      "display_name": "Adding new columns - Operations with Date columns",
+      "display_name": "Adding new columns - Now",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -17,7 +17,7 @@
          "    .assign(Value = lambda dataset: np.random.randint(100, size = dataset.shape[0]))",
          "",
          "dataframe.assign(",
-         "    DateMinus1Day = lambda dataset: dataset.Date - pd.DateOffset(days=1)",
+         "    Now = pd.to_datetime('now')",
          ")"
       ],
       "language": "Python"

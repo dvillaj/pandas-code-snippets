@@ -1,12 +1,12 @@
 {
-   "display_name": "Adding new columns - Truncate a Date",
+   "display_name": "Adding new columns - Operations with Date columns",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis",
          "Time Series"
       ],
-      "display_name": "Adding new columns - Truncate a Date",
+      "display_name": "Adding new columns - Operations with Date columns",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -16,8 +16,10 @@
          "    }) \\",
          "    .assign(Value = lambda dataset: np.random.randint(100, size = dataset.shape[0]))",
          "",
+         "# Observe that days argument is in plural",
+         "# https://stackoverflow.com/questions/36764487/pandas-dateoffset-step-back-one-day",
          "dataframe.assign(",
-         "    Month = lambda dataset: dataset.Date + pd.offsets.MonthBegin()",
+         "    DateMinus1Day = lambda dataset: dataset.Date - pd.DateOffset(days=1)",
          ")"
       ],
       "language": "Python"
