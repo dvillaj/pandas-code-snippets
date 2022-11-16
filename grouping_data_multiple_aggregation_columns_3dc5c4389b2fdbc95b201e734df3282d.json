@@ -16,7 +16,7 @@
          "# - A Serie Statistical function",
          "# - A numpy Statistical function",
          "dataframe.groupby(\"Country\").agg(",
-         "    total_recouds  = (\"Year\" , \"count\"),",
+         "    total_records  = (\"Year\" , \"count\"),",
          "    sum_cases = (\"Cases\",  lambda serie: serie.sum()),",
          "    mean_population = (\"Population\", lambda serie: np.mean(serie))",
          ")",

@@ -16,7 +16,7 @@
          "    }) \\",
          "    .assign(Value = lambda dataset: np.random.randint(100, size = dataset.shape[0]))",
          "",
-         "# Observe that days argument is in plural",
+         "# Note that the argument is in plural",
          "# https://stackoverflow.com/questions/36764487/pandas-dateoffset-step-back-one-day",
          "dataframe.assign(",
          "    DateMinus1Day = lambda dataset: dataset.Date - pd.DateOffset(days=1)",
