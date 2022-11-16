@@ -1,0 +1,26 @@
+{
+   "display_name": "Data Format - Make the data homogeneous - Specific Format",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning",
+         "Regex"
+      ],
+      "display_name": "Data Format - Make the data homogeneous - Specific Format",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "    .assign(",
+         "        CasesPercent = lambda dataset:dataset.Cases / dataset.Population",
+         "    )",
+         "",
+         "dataframe.assign(",
+         "    CasesPercent = ",
+         "        lambda dataset: dataset.CasesPercent.map(lambda value : format(value, '.03%'))",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

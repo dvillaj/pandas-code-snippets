@@ -1,0 +1,28 @@
+{
+   "display_name": "Data Format - Make the data homogeneous - Numbers",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning",
+         "Regex"
+      ],
+      "display_name": "Data Format - Make the data homogeneous - Numbers",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "    .assign(",
+         "        Cases = lambda dataset: dataset.Cases * 1.0001",
+         "    )",
+         "",
+         "dataframe.assign(",
+         "    Cases_Round_2 = lambda dataset: dataset.Cases.round(2),",
+         "    Cases_Round_Up = lambda dataset: dataset.Cases.apply(np.ceil).astype('int'),",
+         "    Cases_Round_Down = lambda dataset: dataset.Cases.apply(np.floor).astype('int')",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
