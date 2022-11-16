@@ -1,16 +1,17 @@
 {
-   "display_name": "Dropping one row",
+   "display_name": "Deleting rows by condition",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis"
       ],
-      "display_name": "Dropping one row",
+      "display_name": "Deleting rows by condition",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.drop(index = 0)"
+         "# Query with the rows to be kept",
+         "dataframe.query(\"Country != 'China'\")"
       ],
       "language": "Python"
    },
