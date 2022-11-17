@@ -4,6 +4,7 @@ import os
 import shutil
 import glob
 
+
 def check_file_exists(file: str) -> bool:
     from os.path import exists
 
@@ -29,15 +30,27 @@ def read_file(file: str):
     except FileNotFoundError:
         logger.error(f"'{file}' not found.")
 
+
 def dict_to_string(dictionary: dict) -> str:
     return json.dumps(dictionary, indent=3)
 
-def get_hash(dictionary: dict):
+
+def get_hash_md5(dictionary: dict):
     import hashlib
 
     value = dict_to_string(dictionary)
     hash_object = hashlib.md5(value.encode())
     return hash_object.hexdigest()
+
+
+def get_hash(dictionary: dict):
+    value = dict_to_string(dictionary)
+    hash_object = hash(value.encode())
+    if hash_object > 0:
+        return str(hash_object)
+    else:
+        return "0" + str(abs(hash_object))
+
 
 def save_file(filename: str, dictionary: dict):
     logger = logging.getLogger("utils")
@@ -49,11 +62,14 @@ def save_file(filename: str, dictionary: dict):
     f.write(json_txt)
     f.close()
 
+
 def delete_file(file_name: str):
     os.remove(file_name)
 
+
 def backup_file(file_name: str):
     shutil.copyfile(file_name, file_name + ".bak")   
+
 
 def get_file_name(display_name: str, hash:str, extension: str = 'json'):
     import re
@@ -63,6 +79,7 @@ def get_file_name(display_name: str, hash:str, extension: str = 'json'):
             .replace('  ', ' ') \
             .replace(' ','_') \
                 + f"_{hash}.{extension}"
+
 
 def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
     logger = logging.getLogger("utils")
