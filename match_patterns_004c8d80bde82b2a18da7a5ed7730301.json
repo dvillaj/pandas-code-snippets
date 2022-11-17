@@ -1,0 +1,21 @@
+{
+   "display_name": "Match Patterns",
+   "metadata": {
+      "tags": [
+         "Regex"
+      ],
+      "display_name": "Match Patterns",
+      "code": [
+         "import re",
+         "",
+         "regex = r'^F'",
+         "text = \"Finland\"",
+         "if (re.search(regex, text)):",
+         "    print(\"Yes!\")",
+         "else:",
+         "    print(\"No!\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

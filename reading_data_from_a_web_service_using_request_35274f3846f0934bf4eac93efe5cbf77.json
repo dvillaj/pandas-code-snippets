@@ -17,8 +17,8 @@
          "",
          "print(f\"Was it Ok? {response.ok}\")",
          "",
-         "df = pd.json_normalize(python_dictionary)",
-         "df"
+         "dataframe = pd.json_normalize(python_dictionary)",
+         "dataframe"
       ],
       "language": "Python"
    },

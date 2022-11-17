@@ -3,8 +3,7 @@
    "metadata": {
       "tags": [
          "Pandas",
-         "Data Cleaning",
-         "Regex"
+         "Data Cleaning"
       ],
       "display_name": "Data Format - Make the data homogeneous - Strings",
       "code": [

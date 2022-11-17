@@ -10,8 +10,8 @@
       "code": [
          "import pandas as pd",
          "",
-         "df = pd.read_json('https://api.github.com/repos/pandas-dev/pandas/issues')",
-         "df"
+         "dataframe = pd.read_json('https://api.github.com/repos/pandas-dev/pandas/issues')",
+         "dataframe"
       ],
       "language": "Python"
    },

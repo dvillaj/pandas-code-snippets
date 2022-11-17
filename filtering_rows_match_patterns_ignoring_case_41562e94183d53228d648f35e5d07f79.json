@@ -1,0 +1,21 @@
+{
+   "display_name": "Filtering Rows - Match Patterns Ignoring Case",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis",
+         "Regex"
+      ],
+      "display_name": "Filtering Rows - Match Patterns Ignoring Case",
+      "code": [
+         "import pandas as pd",
+         "import re",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\", \"table11\")",
+         "",
+         "dataframe[ dataframe.Country.str.match(r'^f', False, re.IGNORECASE) ]"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

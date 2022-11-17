@@ -1,0 +1,18 @@
+{
+   "display_name": "Replacing Text",
+   "metadata": {
+      "tags": [
+         "Regex"
+      ],
+      "display_name": "Replacing Text",
+      "code": [
+         "import re",
+         "",
+         "regex = r'-\\d'",
+         "text = \"Finland-1\"",
+         "re.sub(regex, '', text)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

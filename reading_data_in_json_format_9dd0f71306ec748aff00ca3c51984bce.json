@@ -21,8 +21,8 @@
          "\"\"\")",
          "text_file.close()",
          "",
-         "df = pd.read_json(\"data.json\")",
-         "df"
+         "dataframe = pd.read_json(\"data.json\")",
+         "dataframe"
       ],
       "language": "Python"
    },

@@ -20,8 +20,8 @@
          "text_file.close()",
          "",
          "",
-         "df = pd.read_csv(\"data.txt\")",
-         "df"
+         "dataframe = pd.read_csv(\"data.txt\")",
+         "dataframe"
       ],
       "language": "Python"
    },

@@ -29,8 +29,8 @@
          "with open('data.json') as file:",
          "    json_dictionary = json.load(file)",
          "    ",
-         "df = pd.json_normalize(json_dictionary['sibilings'])",
-         "df"
+         "dataframe = pd.json_normalize(json_dictionary['sibilings'])",
+         "dataframe"
       ],
       "language": "Python"
    },

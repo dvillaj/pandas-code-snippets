@@ -10,7 +10,7 @@
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.query(\"Country.str.contains('^C')\")"
+         "dataframe.query(\"Country.str.upper() == 'CHINA'\")"
       ],
       "language": "Python"
    },

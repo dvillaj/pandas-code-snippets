@@ -10,9 +10,9 @@
       "code": [
          "import pandas as pd",
          "",
-         "df = pd.read_excel(\"https://github.com/dvillaj/files-repository/blob/master/pandas/Orders-With%20Nulls.xlsx?raw=true\", ",
+         "dataframe = pd.read_excel(\"https://github.com/dvillaj/files-repository/blob/master/pandas/Orders-With%20Nulls.xlsx?raw=true\", ",
          "                   sheet_name = 'Orders')",
-         "df"
+         "dataframe"
       ],
       "language": "Python"
    },

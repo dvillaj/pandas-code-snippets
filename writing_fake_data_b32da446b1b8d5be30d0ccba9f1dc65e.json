@@ -20,8 +20,8 @@
          "              } for x in range(num)]",
          "    return output",
          "",
-         "df = pd.DataFrame(create_rows(10))",
-         "df"
+         "dataframe = pd.DataFrame(create_rows(10))",
+         "dataframe"
       ],
       "language": "Python"
    },
