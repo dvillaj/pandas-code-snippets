@@ -1,6 +1,6 @@
 # Pandas Code Snippets
 
-This repo is inspired for the article ["How to re-use code snippets](https://medium.com/ibm-data-ai/how-to-re-use-code-snippets-in-jupyterlab-3e4495fa6e31) by Patrick Titzler
+This repo is inspired for the article ["How to re-use code snippets"](https://medium.com/ibm-data-ai/how-to-re-use-code-snippets-in-jupyterlab-3e4495fa6e31) by Patrick Titzler
 
 Contains a collection of Pandas Snippets from data reading to data analysis or cleaning for use in a JupyterLab setting.
 
