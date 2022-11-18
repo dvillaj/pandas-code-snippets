@@ -8,7 +8,7 @@ Contains a collection of Pandas Snippets from data reading to data analysis or c
 
 In order to use these code snippets it is necessary to perform the following steps:
 
-- Install the (Elyra Code Snippet extension](https://github.com/elyra-ai/elyra)
+- Install the [Elyra Code Snippet extension](https://github.com/elyra-ai/elyra)
 
 ```
 pip install elyra-code-snippet-extension
