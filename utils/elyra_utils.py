@@ -22,7 +22,7 @@ def conf_logging(config_file: str = 'utils/logging.ini'):
 def read_file(file: str):
     logger = logging.getLogger("utils")
     try:
-        logger.info(f"Reading '{file}' ...")
+        logger.debug(f"Reading '{file}' ...")
         with open(file, 'r') as json_data:
             json_data = json.load(json_data)
             return json_data
@@ -46,8 +46,8 @@ def get_hash(dictionary: dict):
 
 def save_file(filename: str, dictionary: dict):
     logger = logging.getLogger("utils")
-    file_name = get_file_name(dictionary["display_name"], get_hash(dictionary))
-    logger.info(f"Writting '{file_name}' ...")
+    file_name = get_file_name(get_title(dictionary), get_hash(dictionary))
+    logger.debug(f"Writting '{file_name}' ...")
 
     json_txt = dict_to_string(dictionary)
     f = open(file_name,"w")
@@ -76,9 +76,9 @@ def get_file_name(display_name: str, hash:str, extension: str = 'json'):
 def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
     logger = logging.getLogger("utils")
     
-    snippet = dictionary['display_name']
-    lines = dictionary['metadata']['code']
-    language = dictionary['metadata']['language']
+    snippet = get_title(dictionary)
+    lines = get_code(dictionary)
+    language = get_language(dictionary)
 
     lines.insert(0, "from IPython.display import display")
 
@@ -99,3 +99,32 @@ def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
             logger.error(f"Sorry, There is an issue executing the snippet: {snippet}")
     else:
         logger.info(f"No Python Snippet. Can't be executed ...")
+
+
+def get_code(dictionary: dict):
+    return dictionary['metadata']['code']
+
+def get_language(dictionary: dict):
+    return dictionary['metadata']['language']
+
+def get_tags(dictionary: dict):
+    return dictionary['metadata']['tags']
+
+def get_title(dictionary: dict):
+    return dictionary['display_name']
+    
+
+def get_theme(dictionary: dict):
+    import re
+
+    title = get_title(dictionary)
+    regex = r'([^-]*)'
+    return re.findall(regex, title)[0].strip()      
+
+def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
+    tags = set(get_tags(dictionary))
+    if included_tags.intersection(tags) == included_tags:
+        if excluded_tags:
+            return not excluded_tags.intersection(tags) == excluded_tags
+        else:
+            return True

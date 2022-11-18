@@ -1,0 +1,18 @@
+{
+   "display_name": "Writting data - CSV format",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Writting data - CSV format",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.to_csv(\"data.csv\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

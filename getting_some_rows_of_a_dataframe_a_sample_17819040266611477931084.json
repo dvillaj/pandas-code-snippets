@@ -1,0 +1,21 @@
+{
+   "display_name": "Getting some rows of a Dataframe - A sample",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis",
+         "Exploring Data"
+      ],
+      "display_name": "Getting some rows of a Dataframe - A sample",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Use an argument if you want to specify a concrete number of lines",
+         "# random_state argument is the seed for the random number generator",
+         "dataframe.sample(2, random_state= 1000)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

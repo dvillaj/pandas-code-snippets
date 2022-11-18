@@ -1,0 +1,24 @@
+{
+   "display_name": "Reading data - String",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write"
+      ],
+      "display_name": "Reading data - String",
+      "code": [
+         "import pandas as pd",
+         "import io",
+         "",
+         "data_string = \"\"\"Letters, Numbers",
+         "                 a, 1",
+         "                 b, 2",
+         "                 c, 3\"\"\"",
+         "",
+         "data = io.StringIO(data_string)",
+         "pd.read_csv(data)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
