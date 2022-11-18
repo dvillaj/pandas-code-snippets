@@ -34,22 +34,14 @@ def read_file(file: str):
 def dict_to_string(dictionary: dict) -> str:
     return json.dumps(dictionary, indent=3)
 
-
-def get_hash_md5(dictionary: dict):
+def get_hash(dictionary: dict):
     import hashlib
+    import re
 
+    regex = r'[a-z]'
     value = dict_to_string(dictionary)
     hash_object = hashlib.md5(value.encode())
-    return hash_object.hexdigest()
-
-
-def get_hash(dictionary: dict):
-    value = dict_to_string(dictionary)
-    hash_object = hash(value.encode())
-    if hash_object > 0:
-        return str(hash_object)
-    else:
-        return "0" + str(abs(hash_object))
+    return re.sub(regex, '', hash_object.hexdigest())
 
 
 def save_file(filename: str, dictionary: dict):
