@@ -1,17 +1,17 @@
 {
-   "display_name": "Writting data - Binary format (Pickle)",
+   "display_name": "Writing data - JSON format",
    "metadata": {
       "tags": [
          "Read & Write",
-         "Pandas"
+         "Pandas",
+         "JSON"
       ],
-      "display_name": "Writting data - Binary format (Pickle)",
+      "display_name": "Writing data - JSON format",
       "code": [
          "import pandas as pd",
-         "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.to_pickle(\"data.pickle\")"
+         "dataframe.to_json(\"data.json\")"
       ],
       "language": "Python"
    },

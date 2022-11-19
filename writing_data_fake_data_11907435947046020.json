@@ -1,11 +1,11 @@
 {
-   "display_name": "Writting data - Fake data",
+   "display_name": "Writing data - Fake data",
    "metadata": {
       "tags": [
          "Pandas",
          "Read & Write"
       ],
-      "display_name": "Writting data - Fake data",
+      "display_name": "Writing data - Fake data",
       "code": [
          "import pandas as pd",
          "from faker import Faker",

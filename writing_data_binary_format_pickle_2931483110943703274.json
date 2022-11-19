@@ -1,16 +1,17 @@
 {
-   "display_name": "Writting data - CSV format",
+   "display_name": "Writing data - Binary format (Pickle)",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Writting data - CSV format",
+      "display_name": "Writing data - Binary format (Pickle)",
       "code": [
          "import pandas as pd",
+         "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.to_csv(\"data.csv\")"
+         "dataframe.to_pickle(\"data.pickle\")"
       ],
       "language": "Python"
    },

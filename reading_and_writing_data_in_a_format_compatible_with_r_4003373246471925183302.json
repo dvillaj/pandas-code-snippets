@@ -1,11 +1,11 @@
 {
-   "display_name": "Reading and Writting data in a format compatible with R",
+   "display_name": "Reading and Writing data in a format compatible with R",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Reading and Writting data in a format compatible with R",
+      "display_name": "Reading and Writing data in a format compatible with R",
       "code": [
          "import pandas as pd",
          "import feather",

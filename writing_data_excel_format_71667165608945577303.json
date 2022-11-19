@@ -1,12 +1,12 @@
 {
-   "display_name": "Writting data - Excel format",
+   "display_name": "Writing data - Excel format",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas",
          "Excel"
       ],
-      "display_name": "Writting data - Excel format",
+      "display_name": "Writing data - Excel format",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",

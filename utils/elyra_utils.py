@@ -47,7 +47,7 @@ def get_hash(dictionary: dict):
 def save_file(filename: str, dictionary: dict):
     logger = logging.getLogger("utils")
     file_name = get_file_name(get_title(dictionary), get_hash(dictionary))
-    logger.debug(f"Writting '{file_name}' ...")
+    logger.debug(f"Writing '{file_name}' ...")
 
     json_txt = dict_to_string(dictionary)
     f = open(file_name,"w")

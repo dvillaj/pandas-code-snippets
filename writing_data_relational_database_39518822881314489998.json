@@ -1,12 +1,12 @@
 {
-   "display_name": "Writting data - Relational Database",
+   "display_name": "Writing data - Relational Database",
    "metadata": {
       "tags": [
          "Databases",
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Writting data - Relational Database",
+      "display_name": "Writing data - Relational Database",
       "code": [
          "import pandas as pd",
          "from sqlalchemy import create_engine",

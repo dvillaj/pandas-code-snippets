@@ -20,7 +20,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Transforming Series
     - Transposing a Dataframe
 
-- Read and Writting data (`Read & Write` tag)
+- Read and Writing data (`Read & Write` tag)
     - CSV
     - JSON File
     - Excel
