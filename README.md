@@ -53,6 +53,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Pivot Tables
     - Renaming columns
     - Replacing existing columns
+    - Rewiting SQL in Pandas
     - Selecting columns
     - Selecting distinct values
     - Sorting columns
