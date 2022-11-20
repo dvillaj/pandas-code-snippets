@@ -10,7 +10,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Applying a lambda function to two columns in a Dataframe
     - Checking Missing or Null Values in a Serie
     - Columns of a Dataframe
-    - Creating a Dataframe from a Serie
+    - Creating a Dataframe
     - Operations with two Series
     - Selecting a cell from a Dataframe
     - Selecting a single column of a Dataframe

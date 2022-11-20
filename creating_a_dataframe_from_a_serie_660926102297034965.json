@@ -1,11 +1,11 @@
 {
-   "display_name": "Creating a Dataframe from a Serie",
+   "display_name": "Creating a Dataframe - From a Serie",
    "metadata": {
       "tags": [
          "Base",
          "Pandas"
       ],
-      "display_name": "Creating a Dataframe from a Serie",
+      "display_name": "Creating a Dataframe - From a Serie",
       "code": [
          "import pandas as pd",
          "",
