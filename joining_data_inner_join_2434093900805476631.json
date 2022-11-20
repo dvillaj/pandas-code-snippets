@@ -1,0 +1,26 @@
+{
+  "display_name": "Joining data - Inner Join",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Data Analysis"
+    ],
+    "display_name": "Joining data - Inner Join",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+      "",
+      "df_capitals = pd.DataFrame(",
+      "    {\"Country\" : [\"Afghanistan\", \"Brazil\", \"Spain\"],",
+      "     \"Capital\" : [\"Kabul\", \"Brasilia\", \"Madrid\"]},",
+      "     columns = [\"Country\", \"Capital\"]",
+      ")",
+      "",
+      "# Note: join() method is used to perform join on row indices and doesn\u2019t support joining on columns unless setting column as index",
+      "",
+      "dataframe.merge( df_capitals, on = \"Country\", how = \"inner\")"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

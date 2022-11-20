@@ -1,11 +1,11 @@
 {
-   "display_name": "Joining data - Pipe Function",
+   "display_name": "Joining data - Left Join",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis"
       ],
-      "display_name": "Joining data - Pipe Function",
+      "display_name": "Joining data - Left Join",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
@@ -16,12 +16,7 @@
          "     columns = [\"Country\", \"Capital\"]",
          ")",
          "",
-         "def join(df, df2, **arg):",
-         "    return pd.merge(df, df2, **arg)",
-         "",
-         "dataframe \\",
-         "    .pipe(join, df_capitals, on = \"Country\", how = \"inner\")",
-         ""
+         "dataframe.merge(df_capitals, on = \"Country\", how = \"left\")"
       ],
       "language": "Python"
    },

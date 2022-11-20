@@ -16,7 +16,7 @@
          "     columns = [\"CountryName\", \"Capital\"]",
          ")",
          "",
-         "pd.merge(dataframe, df_capitals, ",
+         "dataframe.merge(df_capitals, ",
          "         left_on = \"Country\",",
          "         right_on = \"CountryName\", ",
          "         how = \"inner\")"
