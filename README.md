@@ -34,12 +34,18 @@ Each Code Snippet contains a working example of a Pandas funcionality:
 - Exploring a Dataframe (`Exploring Data` tag)
     - Compute pairwise correlation of a Dataframe
     - Configuring global behavior related to DataFrame display
-    - Counting unique values of a Serie
+    - Counting unique values
     - Generate descriptive statistics
     - Getting information about a Dataframe
     - Getting some rows of a Dataframe
     - Highlight a Dataframe
     - Profiling Report
+
+- Exploring local Files in a Jupyter notebook (`Bash` tag)
+    - List files in a directory
+    - Locate files into a directory (and all the subdirectories)
+    - Search for a text inside a file
+    - Show the content of a file   
 
 - Data Analysis (`Data Analysis` tag)
     - Adding new columns

@@ -1,21 +1,19 @@
 {
-   "display_name": "Counting unique values of a Serie",
+   "display_name": "Counting unique values - Two Series",
    "metadata": {
       "tags": [
          "Exploring Data",
          "Series",
          "Stadistical"
       ],
-      "display_name": "Counting unique values of a Serie",
+      "display_name": "Counting unique values - Two Series",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "# Returns unique values",
-         "dataframe.Country.value_counts()",
+         "# The pandas crosstab function builds a cross-tabulation table that can show the frequency with which certain groups of data appear",
          "",
-         "# Returns percentages",
-         "dataframe.Country.value_counts(normalize=True)"
+         "pd.crosstab(dataframe.Country, dataframe.Year)"
       ],
       "language": "Python"
    },
