@@ -96,10 +96,29 @@ pip install elyra-code-snippet-extension
 jupyter --data-dir
 ```
 
-- Clone this repo in a subdirectory named `metadata` under the location of Jupyter Data Directory
+- Go to the location of Jupyter Data Directory and check if a subdirectory named `metadata` exists. 
+
+In my enviroment:
+
+```
+cd C:\Users\Daniel\AppData\Roaming\jupyter
+
+dir
+```
+
+If not exists create it with this command:
+
+```
+mkdir metadata
+```
+
+- Clone this repo in a subdirectory named `code-snippets` under the location `metadata` subdirectory
+
+If 
 
 In my environment, I use the following command:
 
 ```
-git clone git@github.com:dvillaj/pandas-code-snippets.git C:\Users\Daniel\AppData\Roaming\jupyter\metadata\code-snippets
+cd metadata
+git clone https://github.com/dvillaj/pandas-code-snippets.git code-snippets
 ```
