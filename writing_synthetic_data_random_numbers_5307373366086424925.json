@@ -1,26 +1,26 @@
 {
-   "display_name": "Writing Synthetic data - Random Numbers",
-   "metadata": {
-      "tags": [
-         "Pandas",
-         "Read & Write",
-         "NumPy"
-      ],
-      "display_name": "Writing Synthetic data - Random Numbers",
-      "code": [
-         "import pandas as pd",
-         "import numpy as np",
-         "",
-         "np.random.seed(1)",
-         "",
-         "dataframe = pd.DataFrame(",
-         "    np.random.normal(loc=10, scale=201, size=(500000, 2)),",
-         "    columns=list(['Number1', 'Number2'])",
-         ")",
-         "",
-         "dataframe"
-      ],
-      "language": "Python"
-   },
-   "schema_name": "code-snippet"
+  "display_name": "Generating Synthetic data - Random Numbers",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Read & Write",
+      "NumPy"
+    ],
+    "display_name": "Generating Synthetic data - Random Numbers",
+    "code": [
+      "import pandas as pd",
+      "import numpy as np",
+      "",
+      "np.random.seed(1)",
+      "",
+      "dataframe = pd.DataFrame(",
+      "    np.random.normal(loc=10, scale=201, size=(500000, 2)),",
+      "    columns=list(['Number1', 'Number2'])",
+      ")",
+      "",
+      "dataframe"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
 }
