@@ -1,0 +1,19 @@
+{
+   "display_name": "Writing data to a JSON File",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas",
+         "JSON"
+      ],
+      "display_name": "Writing data to a JSON File",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.to_json(\"data.json\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

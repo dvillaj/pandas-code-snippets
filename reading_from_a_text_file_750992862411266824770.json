@@ -1,0 +1,29 @@
+{
+   "display_name": "Reading from a Text File",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Reading from a Text File",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "color,quantity",
+         "red,10",
+         "blue,13",
+         "white,7",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

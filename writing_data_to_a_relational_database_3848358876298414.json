@@ -1,0 +1,23 @@
+{
+   "display_name": "Writing data to a Relational Database",
+   "metadata": {
+      "tags": [
+         "Databases",
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Writing data to a Relational Database",
+      "code": [
+         "import pandas as pd",
+         "from sqlalchemy import create_engine",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "engine = create_engine('sqlite:///:memory:', echo=False)",
+         "",
+         "dataframe.to_sql('table', engine, if_exists = 'append', index = False)",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

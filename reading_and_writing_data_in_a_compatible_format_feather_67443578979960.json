@@ -1,0 +1,21 @@
+{
+   "display_name": "Reading and Writing data in a compatible format - Feather",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Reading and Writing data in a compatible format - Feather",
+      "code": [
+         "import pandas as pd",
+         "import feather",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "feather.write_dataframe(dataframe, 'data.feather')",
+         "feather.read_dataframe(\"data.feather\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

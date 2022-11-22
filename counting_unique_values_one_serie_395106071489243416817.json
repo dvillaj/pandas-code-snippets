@@ -1,0 +1,24 @@
+{
+   "display_name": "Counting unique values - One Serie",
+   "metadata": {
+      "tags": [
+         "Exploring Data",
+         "Series",
+         "Stadistical",
+         "Pandas"
+      ],
+      "display_name": "Counting unique values - One Serie",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Returns unique values",
+         "dataframe.Country.value_counts()",
+         "",
+         "# Returns percentages",
+         "dataframe.Country.value_counts(normalize=True)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

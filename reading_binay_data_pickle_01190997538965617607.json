@@ -1,0 +1,21 @@
+{
+   "display_name": "Reading binay data - Pickle",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas"
+      ],
+      "display_name": "Reading binay data - Pickle",
+      "code": [
+         "import pandas as pd",
+         "",
+         "pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "    .to_pickle(\"data.pickle\")",
+         "",
+         "dataframe = pd.read_pickle(\"data.pickle\")",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

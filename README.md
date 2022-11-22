@@ -1,6 +1,6 @@
 # Reusable Pandas Code Snippets
 
-This repo is inspired for the article ["How to re-use code snippets"](https://medium.com/ibm-data-ai/how-to-re-use-code-snippets-in-jupyterlab-3e4495fa6e31) by Patrick Titzler
+This repo is inspired by the article ["How to re-use code snippets"](https://medium.com/ibm-data-ai/how-to-re-use-code-snippets-in-jupyterlab-3e4495fa6e31) by Patrick Titzler
 
 Contains a collection of Pandas Snippets from data reading to data analysis or cleaning for use in a JupyterLab setting.
 
@@ -21,15 +21,24 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Transposing a Dataframe
 
 - Read and Writing data (`Read & Write` tag)
-    - CSV
-    - JSON File
-    - Excel
-    - HTML
-    - Web Services
-    - Python dictionary
-    - Relational Database
-    - Fake Data
-    - Pickle
+    - Reading Financial data
+    - Reading Web Service data
+    - Reading and Writing data in a compatible format
+    - Reading binay data
+    - Reading data from Excel
+    - Reading data from a Database
+    - Reading data from a Python Dictionary
+    - Reading data from a String
+    - Reading data from a Web Service
+    - Reading from a JSON File
+    - Reading from a Text File
+    - Reading from data a Web Page
+    - Writing Synthetic data
+    - Writing a binary format
+    - Writing data to Excel
+    - Writing data to a JSON File
+    - Writing data to a Relational Database
+    - Writing data to a Text File
 
 - Exploring a Dataframe (`Exploring Data` tag)
     - Compute pairwise correlation of a Dataframe
@@ -80,11 +89,19 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Special Case
     - Widening tables
 
+- Regex Snippets (`Regex` tag)
+
+## How to use
+
+Check it out this [article](https://medium.com/ibm-data-ai/how-to-re-use-code-snippets-in-jupyterlab-3e4495fa6e31)
+
 ## How to install
 
 In order to use these code snippets it is necessary to perform the following steps:
 
-- Install the [Elyra Code Snippet extension](https://github.com/elyra-ai/elyra)
+- Open a [Command Line Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089)
+
+- Install the Elyra Code Snippet extension package
 
 ```
 pip install elyra-code-snippet-extension
@@ -98,7 +115,7 @@ jupyter --data-dir
 
 - Go to the location of Jupyter Data Directory and check if a subdirectory named `metadata` exists. 
 
-In my enviroment:
+In my environment, I used the following command:
 
 ```
 cd C:\Users\Daniel\AppData\Roaming\jupyter
@@ -106,19 +123,23 @@ cd C:\Users\Daniel\AppData\Roaming\jupyter
 dir
 ```
 
-If not exists create it with this command:
+If not exists create it
+
+In my environment, I used the following command:
 
 ```
+cd C:\Users\Daniel\AppData\Roaming\jupyter
+
 mkdir metadata
 ```
 
 - Clone this repo in a subdirectory named `code-snippets` under the location `metadata` subdirectory
 
-If 
-
-In my environment, I use the following command:
+In my environment, I used the following command:
 
 ```
-cd metadata
+
+cd C:\Users\Daniel\AppData\Roaming\jupyter\metadata
+
 git clone https://github.com/dvillaj/pandas-code-snippets.git code-snippets
 ```

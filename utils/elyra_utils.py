@@ -107,8 +107,8 @@ def get_code(dictionary: dict):
 def get_language(dictionary: dict):
     return dictionary['metadata']['language']
 
-def get_tags(dictionary: dict):
-    return dictionary['metadata']['tags']
+def get_tags(dictionary: dict) -> set:
+    return set(dictionary['metadata']['tags'])
 
 def get_title(dictionary: dict):
     return dictionary['display_name']
@@ -122,7 +122,7 @@ def get_theme(dictionary: dict):
     return re.findall(regex, title)[0].strip()      
 
 def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    tags = set(get_tags(dictionary))
+    tags = get_tags(dictionary)
     if included_tags.intersection(tags) == included_tags:
         if excluded_tags:
             return not excluded_tags.intersection(tags) == excluded_tags

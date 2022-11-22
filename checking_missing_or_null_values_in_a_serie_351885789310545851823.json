@@ -1,0 +1,23 @@
+{
+   "display_name": "Checking Missing or Null Values in a Serie",
+   "metadata": {
+      "tags": [
+         "Base",
+         "Series",
+         "Pandas"
+      ],
+      "display_name": "Checking Missing or Null Values in a Serie",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Null Columns",
+         "dataframe.Country.isnull()",
+         "",
+         "# Not Null Columns",
+         "dataframe.Country.notnull()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
