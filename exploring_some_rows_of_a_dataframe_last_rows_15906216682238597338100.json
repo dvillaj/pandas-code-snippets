@@ -1,16 +1,17 @@
 {
-   "display_name": "Getting some rows of a Dataframe - Top Rows",
+   "display_name": "Exploring some rows of a Dataframe - Last Rows",
    "metadata": {
       "tags": [
          "Pandas",
          "Exploring Data"
       ],
-      "display_name": "Getting some rows of a Dataframe - Top Rows",
+      "display_name": "Exploring some rows of a Dataframe - Last Rows",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.nlargest(2, columns='Cases')"
+         "# Use an argument if you want to specify a concrete number of lines",
+         "dataframe.tail(2)"
       ],
       "language": "Python"
    },

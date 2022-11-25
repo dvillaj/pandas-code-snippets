@@ -1,16 +1,16 @@
 {
-   "display_name": "Selecting a cell from a Dataframe",
+   "display_name": "Exploring a Value from a Dataframe",
    "metadata": {
       "tags": [
          "Pandas",
-         "Base"
+         "Exploring Data"
       ],
-      "display_name": "Selecting a cell from a Dataframe",
+      "display_name": "Exploring a Value from a Dataframe",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.iat[0, 0]"
+         "dataframe.at[0, 'Country']"
       ],
       "language": "Python"
    },

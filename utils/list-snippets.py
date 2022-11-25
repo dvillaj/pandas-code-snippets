@@ -2,7 +2,7 @@ import logging
 import glob
 from elyra_utils import *
 
-included_tags = set(["Read & Write"])
+included_tags = set(["Exploring Data"])
 #excluded_tags = set(["Base", "Bash", "Exploring Data", "Read & Write", "Data Analyisis", "Data Cleaning"])
 excluded_tags = None
 
@@ -25,11 +25,11 @@ for file in glob.glob("*.json"):
 
 print("\nThemes:")
 for theme in sorted(themes):
-    print(f"\t- {theme}")   
+    print(f"- {theme}")   
 
 print("\nTags:")
 for tag in sorted(tags):
-    print(f"\t- {tag}")   
+    print(f"- {tag}")   
 
 if show_not_included:
     print("\nSnippets Not Included::")

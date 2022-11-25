@@ -1,11 +1,11 @@
 {
-   "display_name": "Getting some rows of a Dataframe - A sample",
+   "display_name": "Exploring some rows of a Dataframe - A sample",
    "metadata": {
       "tags": [
          "Pandas",
          "Exploring Data"
       ],
-      "display_name": "Getting some rows of a Dataframe - A sample",
+      "display_name": "Exploring some rows of a Dataframe - A sample",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",

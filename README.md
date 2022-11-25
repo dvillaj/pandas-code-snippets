@@ -44,9 +44,10 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Compute pairwise correlation of a Dataframe
     - Configuring global behavior related to DataFrame display
     - Counting unique values
+    - Exploring a Value from a Dataframe
+    - Exploring some rows of a Dataframe
     - Generate descriptive statistics
     - Getting information about a Dataframe
-    - Getting some rows of a Dataframe
     - Highlight a Dataframe
     - Profiling Report
 

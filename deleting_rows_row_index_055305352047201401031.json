@@ -11,7 +11,7 @@
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
          "# Slice with the rows to be kept",
-         "dataframe.iloc[2:]"
+         "dataframe.loc[2:]"
       ],
       "language": "Python"
    },
