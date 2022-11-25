@@ -10,7 +10,10 @@
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe[ dataframe.duplicated() ]"
+         "def filter_rows_by_condition(dataset, condition_fund):",
+         "    return dataset[condition_fund(dataset)]",
+         "",
+         "dataframe.pipe(filter_rows_by_condition, lambda dataset:  ~dataset.duplicated())"
       ],
       "language": "Python"
    },

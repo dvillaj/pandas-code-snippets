@@ -1,11 +1,11 @@
 {
-   "display_name": "Filtering Rows - Date values",
+   "display_name": "Filtering Rows - Date columns",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis"
       ],
-      "display_name": "Filtering Rows - Date values",
+      "display_name": "Filtering Rows - Date columns",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\").assign(",

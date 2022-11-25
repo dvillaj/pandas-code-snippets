@@ -1,11 +1,11 @@
 {
-   "display_name": "Filtering Rows - String values",
+   "display_name": "Filtering Rows - String columns",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis"
       ],
-      "display_name": "Filtering Rows - String values",
+      "display_name": "Filtering Rows - String columns",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
