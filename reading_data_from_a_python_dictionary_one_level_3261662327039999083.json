@@ -1,0 +1,49 @@
+{
+   "display_name": "Reading data from a Python Dictionary - One Level",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas",
+         "JSON"
+      ],
+      "display_name": "Reading data from a Python Dictionary - One Level",
+      "code": [
+         "import pandas as pd",
+         "",
+         "data =[",
+         "  {",
+         "    \"id\": 1,",
+         "    \"name\": \"Coleen Volk\"",
+         "  },",
+         "  {",
+         "    \"id\": 2,",
+         "    \"name\": \"Mark Regner\"",
+         "  }",
+         "]",
+         "",
+         "display(pd.json_normalize(data))",
+         "",
+         "",
+         "data = [",
+         "  {",
+         "    \"id\": 1,",
+         "    \"name\": {",
+         "      \"first\": \"Coleen\",",
+         "      \"last\": \"Volk\"",
+         "    }",
+         "  },",
+         "  {",
+         "    \"id\": 2,",
+         "    \"name\": {",
+         "      \"first\": \"Mark\",",
+         "      \"last\": \"Regner\"",
+         "    }",
+         "  }",
+         "]",
+         "",
+         "pd.json_normalize(data, max_level=0)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
