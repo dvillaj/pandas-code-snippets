@@ -63,7 +63,6 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Concatenating Dataframes
     - Deleting columns
     - Deleting rows
-    - Duplicate column names
     - Filtering Rows
     - Grouping data
     - Joining data
@@ -76,14 +75,16 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Sorting columns
 
 - Data Cleaning (`Data Cleaning` tag)
+    - Adding new columns
     - Converting Data Types
     - Data Format
+    - Do not allow duplicate column names
     - Dropping Duplicates
-    - FIlling Missing Values
+    - Filling Missing Values
     - Identifying Data Types
     - Identifying Duplicates
     - Identifying Missing Values
-    - Identifying duplicate labels
+    - Identifying duplicates
     - Joining Columns
     - Narrowing down tables
     - Separating columns

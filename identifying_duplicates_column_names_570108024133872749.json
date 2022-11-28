@@ -1,11 +1,11 @@
 {
-   "display_name": "Identifying duplicate labels",
+   "display_name": "Identifying duplicates - Column names",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "Identifying duplicate labels",
+      "display_name": "Identifying duplicates - Column names",
       "code": [
          "import pandas as pd",
          "",

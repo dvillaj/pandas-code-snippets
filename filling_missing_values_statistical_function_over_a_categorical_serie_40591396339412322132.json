@@ -1,11 +1,11 @@
 {
-   "display_name": "FIlling Missing Values - Statistical Function over a Group",
+   "display_name": "Filling Missing Values - Statistical Function over a Categorical Serie",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "FIlling Missing Values - Statistical Function over a Group",
+      "display_name": "Filling Missing Values - Statistical Function over a Categorical Serie",
       "code": [
          "import pandas as pd",
          "",
@@ -26,7 +26,7 @@
          "display(dataframe)",
          "",
          "dataframe.assign(",
-         "    Age = (dataframe.groupby('Sex').Age.transform(lambda group: group.fillna(group.mean())))",
+         "    City = lambda dataset : dataset.City.fillna(dataset.City.mode()[0])",
          ")"
       ],
       "language": "Python"

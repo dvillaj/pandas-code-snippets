@@ -1,11 +1,11 @@
 {
-   "display_name": "Duplicate column names - Do not allow",
+   "display_name": "Do not allow duplicate column names",
    "metadata": {
       "tags": [
          "Pandas",
-         "Data Analysis"
+         "Data Cleaning"
       ],
-      "display_name": "Duplicate column names - Do not allow",
+      "display_name": "Do not allow duplicate column names",
       "code": [
          "import pandas as pd",
          "",

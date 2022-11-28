@@ -2,7 +2,7 @@ import logging
 import glob
 from elyra_utils import *
 
-included_tags = set(["Exploring Data"])
+included_tags = set(["Data Analysis"])
 #excluded_tags = set(["Base", "Bash", "Exploring Data", "Read & Write", "Data Analyisis", "Data Cleaning"])
 excluded_tags = None
 

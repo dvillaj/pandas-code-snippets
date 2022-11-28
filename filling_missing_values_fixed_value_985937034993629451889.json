@@ -1,11 +1,11 @@
 {
-   "display_name": "FIlling Missing Values - Statistical Function - Interpolation",
+   "display_name": "Filling Missing Values - Fixed Value",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "FIlling Missing Values - Statistical Function - Interpolation",
+      "display_name": "Filling Missing Values - Fixed Value",
       "code": [
          "import pandas as pd",
          "",
@@ -23,12 +23,20 @@
          "text_file.close()",
          "",
          "dataframe = pd.read_csv(\"data.csv\")",
+         "",
          "display(dataframe)",
          "",
+         "# A group of Series",
+         "missing_values = {",
+         "    'Name' : 'John', ",
+         "    'Age' : 17",
+         "}",
+         "",
+         "dataframe.fillna(missing_values)",
+         "",
+         "# A Serie",
          "dataframe.assign(",
-         "    Age = lambda dataset : dataset.Age.fillna(",
-         "        dataset.Age.interpolate(method = 'linear',limit_direction = 'backward')",
-         "    )",
+         "    Name = lambda dataset : dataset.Name.fillna('John')",
          ")"
       ],
       "language": "Python"

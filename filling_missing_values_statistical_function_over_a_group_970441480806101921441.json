@@ -1,31 +1,32 @@
 {
-   "display_name": "FIlling Missing Values - Previous row",
+   "display_name": "Filling Missing Values - Statistical Function over a Group",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "FIlling Missing Values - Previous row",
+      "display_name": "Filling Missing Values - Statistical Function over a Group",
       "code": [
          "import pandas as pd",
          "",
          "text_file = open(\"data.csv\", \"w\")",
          "text_file.write(",
          "\"\"\"",
-         "City,Name,Sex,Age",
-         "Austin, Sharon,F,17",
-         "New York,Kevin,M,34",
-         ",John,M,44",
-         ",Barbara,F,21",
+         "Name,Sex,City,Age",
+         "Sharon,F,Austin",
+         "Eva,F,Texax, 23",
+         "Kevin,M,New York,34",
+         "Joe,M,Boston,14",
+         ",,New York,44",
+         "Barbara,,,21",
          "\"\"\")",
          "text_file.close()",
          "",
          "dataframe = pd.read_csv(\"data.csv\")",
          "display(dataframe)",
          "",
-         "# Fill forward null values (From a Previos Row)",
          "dataframe.assign(",
-         "    City = lambda dataset : dataset.City.fillna(method = 'ffill')",
+         "    Age = (dataframe.groupby('Sex').Age.transform(lambda group: group.fillna(group.mean())))",
          ")"
       ],
       "language": "Python"

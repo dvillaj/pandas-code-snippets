@@ -1,11 +1,11 @@
 {
-   "display_name": "FIlling Missing Values - Statistical Function",
+   "display_name": "Filling Missing Values - Statistical Function",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "FIlling Missing Values - Statistical Function",
+      "display_name": "Filling Missing Values - Statistical Function",
       "code": [
          "import pandas as pd",
          "",
