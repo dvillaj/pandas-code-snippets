@@ -22,6 +22,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
 
 - Read and Writing data (`Read & Write` tag)
     - Generating Synthetic data
+    - Loading JSON data into a Python Dictionary
     - Reading Financial data
     - Reading Web Service data
     - Reading and Writing data in a compatible format
@@ -33,7 +34,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Reading data from a Web Service
     - Reading from a JSON File
     - Reading from a Text File
-    - Reading from data a Web Page
+    - Reading from data from a Web Page / HTML
     - Writing a binary format
     - Writing data to Excel
     - Writing data to a JSON File

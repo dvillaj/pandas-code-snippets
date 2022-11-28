@@ -1,0 +1,26 @@
+{
+   "display_name": "Reading data from a Python Dictionary - Only part of if",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Pandas",
+         "JSON"
+      ],
+      "display_name": "Reading data from a Python Dictionary - Only part of if",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dictionary = {'name': 'Wes',",
+         " 'placed_lived': ['United States', 'Spain', 'Germany'],",
+         " 'sibilings': [{'age': 30, 'name': 'Scott', 'pet': 'Zeus'},",
+         "  {'age': 38, 'name': 'Katie'}]}",
+         "",
+         "dictionary",
+         "",
+         "dataframe = pd.json_normalize(dictionary['sibilings'])",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
