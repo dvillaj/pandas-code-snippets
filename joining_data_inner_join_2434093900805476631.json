@@ -1,11 +1,11 @@
 {
-   "display_name": "Joining data - Anti Join",
+   "display_name": "Joining data - Inner Join",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis"
       ],
-      "display_name": "Joining data - Anti Join",
+      "display_name": "Joining data - Inner Join",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
@@ -16,11 +16,7 @@
          "     columns = [\"Country\", \"Capital\"]",
          ")",
          "",
-         "pd.merge(dataframe, df_capitals, on = \"Country\", ",
-         "         how = \"left\", ",
-         "         indicator = True) \\",
-         "    .query(\"_merge == 'left_only'\") \\",
-         "    .drop(columns = [\"Capital\", \"_merge\"])"
+         "dataframe.merge( df_capitals, on = \"Country\", how = \"inner\")"
       ],
       "language": "Python"
    },
