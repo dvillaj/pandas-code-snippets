@@ -1,0 +1,32 @@
+{
+   "display_name": "Populate table from Dataframe",
+   "metadata": {
+      "tags": [
+         "DuckDb"
+      ],
+      "display_name": "Populate table from Dataframe",
+      "code": [
+         "import duckdb",
+         "import pandas as pd",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") ",
+         "",
+         "conn = duckdb.connect('db.duckdb')",
+         "cursor = conn.cursor()",
+         "",
+         "cursor.execute(\"\"\"",
+         "CREATE TABLE my_table (",
+         "    Country      varchar not null,",
+         "    Year         int not null,",
+         "    Cases        int,",
+         "    Population   int",
+         ")",
+         "\"\"\")",
+         "",
+         "conn.execute(\"INSERT INTO my_table SELECT * FROM dataframe\")",
+         "conn.close()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
