@@ -2,7 +2,7 @@
 
 This repo is inspired by the article ["How to re-use code snippets"](https://medium.com/ibm-data-ai/how-to-re-use-code-snippets-in-jupyterlab-3e4495fa6e31) by Patrick Titzler
 
-Contains a collection of Pandas Snippets from data reading to data analysis or cleaning for use in a JupyterLab setting.
+Contains a collection of Pandas code snippets from data reading to data analysis or cleaning for use in a JupyterLab setting.
 
 Each Code Snippet contains a working example of a Pandas funcionality:
 
