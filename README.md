@@ -87,6 +87,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Identifying duplicates
     - Joining Columns
     - Narrowing down tables
+    - Removing index name
     - Separating columns
     - Set a Column as Index
     - Special Case
