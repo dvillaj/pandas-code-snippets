@@ -17,7 +17,7 @@
          "               columns = \"Type\", ",
          "               values=\"Count\") \\",
          "    .reset_index() \\",
-         "    .rename_axis(None, axis = 'columns')"
+         "    .rename_axis(columns = None)"
       ],
       "language": "Python"
    },
