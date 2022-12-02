@@ -1,0 +1,33 @@
+{
+   "display_name": "Separating columns - Lists of Items",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Cleaning"
+      ],
+      "display_name": "Separating columns - Lists of Items",
+      "code": [
+         "import pandas as pd",
+         "",
+         "def expand_column(df, column_name, separator):",
+         "    return pd.concat([",
+         "         df,",
+         "         (df[column_name]",
+         "            .str.split(separator, expand=True)",
+         "            .rename(columns = lambda column: \"Item_\" + str(column))",
+         "          )",
+         "    ], axis = 'columns')",
+         "",
+         "",
+         "dataframe = pd.read_csv(\"https://bit.ly/Csv-Example-PT\", encoding = \"Windows-1252\")",
+         "",
+         "display(dataframe.head())",
+         "",
+         "(dataframe",
+         "     .pipe(expand_column, 'ingredients', r'\\s*,\\s*')",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,11 +1,11 @@
 {
-   "display_name": "Reading from data from a Web Page / HTML",
+   "display_name": "Reading data from a Web Page / HTML",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Reading from data from a Web Page / HTML",
+      "display_name": "Reading data from a Web Page / HTML",
       "code": [
          "import pandas as pd",
          "",

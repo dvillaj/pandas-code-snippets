@@ -1,11 +1,11 @@
 {
-   "display_name": "Reading from a JSON File",
+   "display_name": "Reading data from a JSON File",
    "metadata": {
       "tags": [
          "Pandas",
          "Read & Write"
       ],
-      "display_name": "Reading from a JSON File",
+      "display_name": "Reading data from a JSON File",
       "code": [
          "import pandas as pd",
          "",

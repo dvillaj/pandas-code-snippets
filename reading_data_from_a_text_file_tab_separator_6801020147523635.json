@@ -1,11 +1,11 @@
 {
-   "display_name": "Reading from a Text File - Tab Separator",
+   "display_name": "Reading data from a Text File - Tab Separator",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Reading from a Text File - Tab Separator",
+      "display_name": "Reading data from a Text File - Tab Separator",
       "code": [
          "import pandas as pd",
          "",

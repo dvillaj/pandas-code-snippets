@@ -4,8 +4,7 @@
       "tags": [
          "Pandas",
          "Data Analysis",
-         "Regex",
-         "Data Cleaning"
+         "Regex"
       ],
       "display_name": "Adding new columns - Replacing Text",
       "code": [

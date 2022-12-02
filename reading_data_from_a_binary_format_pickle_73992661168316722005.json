@@ -1,11 +1,11 @@
 {
-   "display_name": "Reading binay data - Pickle",
+   "display_name": "Reading data from a binary format - Pickle",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Reading binay data - Pickle",
+      "display_name": "Reading data from a binary format - Pickle",
       "code": [
          "import pandas as pd",
          "",

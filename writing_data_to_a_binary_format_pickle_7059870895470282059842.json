@@ -1,11 +1,11 @@
 {
-   "display_name": "Writing a binary format - Pickle",
+   "display_name": "Writing data to a binary format - Pickle",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas"
       ],
-      "display_name": "Writing a binary format - Pickle",
+      "display_name": "Writing data to a binary format - Pickle",
       "code": [
          "import pandas as pd",
          "",
