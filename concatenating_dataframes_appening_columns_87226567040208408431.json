@@ -13,7 +13,7 @@
          "dataset_year = dataframe.filter([\"Country\", \"Year\"])",
          "dataset_population = dataframe.filter([\"Cases\", \"Population\"])",
          "",
-         "pd.concat((dataset_year, dataset_population), axis = 'columns')"
+         "pd.concat([dataset_year, dataset_population], axis = 'columns')"
       ],
       "language": "Python"
    },

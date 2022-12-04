@@ -12,6 +12,7 @@
          "",
          "dataframe.pivot_table(",
          "    index = \"Country\",",
+         "    columns = \"Year\",",
          "    values = \"Cases\",",
          "    aggfunc = \"sum\"",
          ")"

@@ -1,11 +1,11 @@
 {
-   "display_name": "Separating columns - Fixed Width",
+   "display_name": "Separating columns - Separator",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Cleaning"
       ],
-      "display_name": "Separating columns - Fixed Width",
+      "display_name": "Separating columns - Separator",
       "code": [
          "import pandas as pd",
          "",
@@ -23,11 +23,11 @@
          "",
          "display(dataframe)",
          "",
-         "dataframe.assign (",
-         "        City = lambda dataset : dataset[\"City-Age\"].str[:-3],",
-         "        Age = lambda dataset : dataset[\"City-Age\"].str[-2:]",
-         "   ) \\",
-         "   .drop(columns = \"City-Age\")"
+         "def separate_columns(df, column_name, separator, new_columns):",
+         "    df[new_columns] = df[column_name].str.split(separator, expand = True)",
+         "    return df",
+         "",
+         "dataframe.pipe(separate_columns, 'City-Age', '-', ['City', 'Age'])"
       ],
       "language": "Python"
    },
