@@ -133,3 +133,85 @@ def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) 
             return not excluded_tags.intersection(tags) == excluded_tags
         else:
             return True
+
+def generate_id() -> str:
+    import uuid
+    import random
+    from datetime import datetime
+
+    rnd = random.Random()
+    random.seed(datetime.now().timestamp())
+    return str(uuid.UUID(int=rnd.getrandbits(128), version=4))
+
+
+def get_cells(snippets: list) -> list:
+    n = 0
+    cells = []
+    for snippet in snippets:
+        n += 2
+        title = {
+            "cell_type": "markdown",
+            "id": generate_id(),
+            "metadata": {},
+            "source": [f"## {snippet['main_title']} - {snippet['display_name']}"]
+            }
+
+        lines = []
+        for line in snippet['code']:
+            lines.append(f"{line}\n")
+
+        code = {
+        "cell_type": "code",
+        "execution_count": n,
+        "id": generate_id(),
+        "metadata": {},
+        "outputs": [],
+        "source": lines
+        }
+
+        cells.append(title)
+        cells.append(code)
+    return cells
+
+def get_snippets(dataframe) -> list:
+    spippets = list(dataframe.transpose().to_dict().values())
+    clean_snippets = []
+    for snippet in spippets:
+        snippet['tags'] = list(snippet['tags'])
+        snippet['code'] = list(snippet['code'])
+        clean_snippets.append(snippet)
+
+    return clean_snippets
+
+def get_notebook(dataframe) -> dict: 
+    snippets = get_snippets(dataframe)
+    return {
+            "cells": get_cells(snippets),
+            "metadata": {
+            "kernelspec": {
+            "display_name": "Python 3 (ipykernel)",
+            "language": "python",
+            "name": "python3"
+            },
+            "language_info": {
+            "codemirror_mode": {
+                "name": "ipython",
+                "version": 3
+            },
+            "file_extension": ".py",
+            "mimetype": "text/x-python",
+            "name": "python",
+            "nbconvert_exporter": "python",
+            "pygments_lexer": "ipython3",
+            "version": "3.9.5"
+            }
+            },
+            "nbformat": 4,
+            "nbformat_minor": 5
+            }
+
+def write_to_notebook(dataframe, filename: str) -> None:
+    notebook = get_notebook(dataframe)
+    json_object = json.dumps(notebook, indent=4)
+    with open(filename, "w") as outfile:
+        outfile.write(json_object)
