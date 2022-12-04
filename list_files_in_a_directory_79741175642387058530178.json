@@ -1,0 +1,22 @@
+{
+   "display_name": "List files in a directory",
+   "metadata": {
+      "tags": [
+         "Bash",
+         "Extra"
+      ],
+      "display_name": "List files in a directory",
+      "code": [
+         "# Get the Current Directory",
+         "! pwd",
+         "",
+         "# List all the files located in the current directory ",
+         "! ls -lah . ",
+         "",
+         "# List all the files located in a subdirectory",
+         "! ls -lha sample_data"
+      ],
+      "language": "Shell"
+   },
+   "schema_name": "code-snippet"
+}

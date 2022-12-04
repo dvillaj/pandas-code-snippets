@@ -1,0 +1,36 @@
+{
+   "display_name": "Reading data from a Python Dictionary",
+   "metadata": {
+      "tags": [
+         "Extra",
+         "Pandas",
+         "Read & Write",
+         "JSON"
+      ],
+      "display_name": "Reading data from a Python Dictionary",
+      "code": [
+         "import pandas as pd",
+         "",
+         "data = [",
+         "  {",
+         "    \"id\": 1,",
+         "    \"name\": {",
+         "      \"first\": \"Coleen\",",
+         "      \"last\": \"Volk\"",
+         "    }",
+         "  },",
+         "  {",
+         "    \"id\": 2,",
+         "    \"name\": {",
+         "      \"first\": \"Mark\",",
+         "      \"last\": \"Regner\"",
+         "    }",
+         "  }",
+         "]",
+         "",
+         "pd.json_normalize(data)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

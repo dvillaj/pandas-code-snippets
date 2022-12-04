@@ -1,0 +1,33 @@
+{
+   "display_name": "Dropping Duplicates - Subset of Columns",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Dropping Duplicates - Subset of Columns",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "JobNumber,Name,Sex,City,Age",
+         "12312,Sharon,F,Austin,30",
+         "12312,Sharon,F,Austin,29",
+         "12411,Sharon,F,Austin,29",
+         "12422,Kevin,M,New York,34",
+         "14121,Michael,M,New York,44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "",
+         "dataframe.drop_duplicates(subset = ['JobNumber'], keep = 'last')",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

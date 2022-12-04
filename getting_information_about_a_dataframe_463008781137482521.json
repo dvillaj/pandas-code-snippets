@@ -1,0 +1,19 @@
+{
+   "display_name": "Getting information about a Dataframe",
+   "metadata": {
+      "tags": [
+         "Exploring Data",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Getting information about a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.info()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

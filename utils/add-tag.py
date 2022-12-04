@@ -12,7 +12,7 @@ for file in glob.glob("*.json"):
     logger.info(f"Adding '{new_tag}' tag to {get_title(dictionary)} ...")
 
     add_tag(dictionary, new_tag)
-    #delete_file(file)
-    #save_file(file, dictionary)
+    delete_file(file)
+    save_file(file, dictionary)
 
 logger.info("All good :-)")

@@ -1,0 +1,22 @@
+{
+   "display_name": "Writing data to Excel",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write",
+         "Extra",
+         "Excel"
+      ],
+      "display_name": "Writing data to Excel",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "xlsx = pd.ExcelWriter(\"data.xlsx\")",
+         "dataframe.to_excel(xlsx, \"SheetName\", index = False)",
+         "xlsx.close()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

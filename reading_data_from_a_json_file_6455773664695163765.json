@@ -1,0 +1,31 @@
+{
+   "display_name": "Reading data from a JSON File",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write",
+         "Extra"
+      ],
+      "display_name": "Reading data from a JSON File",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.json\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "[",
+         "    {\"fruit\":\"apples\",\"weight\":5,\"count\":20},",
+         "    {\"fruit\":\"bananas\",\"weight\":8,\"count\":30},",
+         "    {\"fruit\":\"cherries\",\"weight\":2,\"count\":120},",
+         "    {\"fruit\":\"pears\",\"weight\":4,\"count\":16}",
+         "]",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_json(\"data.json\")",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

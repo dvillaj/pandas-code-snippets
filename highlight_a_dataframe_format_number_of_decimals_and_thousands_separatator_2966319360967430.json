@@ -1,0 +1,19 @@
+{
+   "display_name": "Highlight a Dataframe - Format number of decimals and thousands separatator",
+   "metadata": {
+      "tags": [
+         "Exploring Data",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Highlight a Dataframe - Format number of decimals and thousands separatator",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.style.format(thousands=\",\", precision = 2)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

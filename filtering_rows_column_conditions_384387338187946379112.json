@@ -1,0 +1,27 @@
+{
+   "display_name": "Filtering Rows - Column conditions",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Filtering Rows - Column conditions",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.query(\"Country == 'China'or Year == 1999\")",
+         "dataframe.query(\"Year not in (2000, 2001)\")",
+         "",
+         "# Use any boolean Series function",
+         "dataframe.query(\"Cases.between(30000, 100000)\")",
+         "",
+         "# Use engine argument in Google Colab",
+         "dataframe.query(\"Year == 1999 \\",
+         "    and Population.between(0, 3272815272)\", engine = \"python\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

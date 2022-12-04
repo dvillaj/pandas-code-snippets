@@ -1,0 +1,19 @@
+{
+   "display_name": "Rewiting SQL in Pandas - Select Count",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Rewite SQL in Pandas - Select Count",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.groupby(\"Country\", as_index = False).size()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

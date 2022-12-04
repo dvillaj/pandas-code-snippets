@@ -1,0 +1,26 @@
+{
+   "display_name": "Special Case - Variables as Index",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Special Case - Variables as Index",
+      "code": [
+         "import pandas as pd",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "    .set_index(\"Country\").rename_axis(None)",
+         " )",
+         "",
+         "display(dataframe)",
+         "",
+         "(dataframe",
+         "    .reset_index()",
+         "    .rename( columns = { 'index' : 'Country' })",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

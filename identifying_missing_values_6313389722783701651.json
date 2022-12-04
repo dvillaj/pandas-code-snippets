@@ -1,0 +1,39 @@
+{
+   "display_name": "Identifying Missing Values",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Identifying Missing Values",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,City,Age",
+         "Sharon,F,Austin",
+         "Eva,F,Texas,23",
+         "Kevin,M,New York,34",
+         "Michael,M,New York,44",
+         "Barbara,,New York,21",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "",
+         "# To Show non-null values",
+         "dataframe.info()",
+         "",
+         "# To Show null values",
+         "dataframe.isnull().sum()",
+         "",
+         "# To Show a percentage of null values",
+         "dataframe.isnull().mean() * 100"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,19 @@
+{
+   "display_name": "Writing data to a Text File",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write",
+         "Extra"
+      ],
+      "display_name": "Writing data to a Text File",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.to_csv(\"data.csv\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

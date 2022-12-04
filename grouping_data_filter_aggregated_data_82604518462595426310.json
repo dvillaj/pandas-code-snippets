@@ -1,0 +1,19 @@
+{
+   "display_name": "Grouping data -  Filter aggregated data",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Grouping data -  Filter aggregated data",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.groupby(\"Country\").filter(lambda dataset: dataset.Cases.mean() > 2000)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

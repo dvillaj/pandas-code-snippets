@@ -1,0 +1,27 @@
+{
+   "display_name": "Reading data from a Text File - Guest Encondig",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write",
+         "Extra"
+      ],
+      "display_name": "Reading data from a Text File - Guest Encondig",
+      "code": [
+         "import pandas as pd",
+         "from pathlib import Path",
+         "import chardet",
+         "import urllib.request",
+         "",
+         "filename = \"data.csv\"",
+         "urllib.request.urlretrieve(\"https://bit.ly/Csv-Example-PT\", filename)",
+         "encoding = chardet.detect(Path(filename).read_bytes()).get(\"encoding\")",
+         "assert encoding, \"Unable to detect encoding, is it a binary file?\"",
+         "",
+         "dataframe = pd.read_csv(filename, encoding=encoding)",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

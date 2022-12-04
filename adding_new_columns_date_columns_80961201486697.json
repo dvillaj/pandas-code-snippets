@@ -1,0 +1,33 @@
+{
+   "display_name": "Adding new columns - Date columns",
+   "metadata": {
+      "tags": [
+         "Time Series",
+         "Pandas",
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Date columns",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = (pd.DataFrame({",
+         "        'Date' : pd.date_range(start = '2020-01-01', end = '2020-04-05', freq = 'D'),",
+         "    })",
+         "    .assign(Value = lambda dataset: np.random.randint(100, size = dataset.shape[0]))",
+         " )",
+         "",
+         "dataframe.assign(",
+         "    Year = lambda dataset: dataset.Date.dt.year,",
+         "    Month = lambda dataset: dataset.Date.dt.month,",
+         "    Day = lambda dataset: dataset.Date.dt.day,",
+         "    Week = lambda dataset: dataset.Date.dt.isocalendar().week,",
+         "    DayOfWeek = lambda dataset: dataset.Date.dt.dayofweek,",
+         "    IsLeapYear = lambda dataset: dataset.Date.dt.is_leap_year",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

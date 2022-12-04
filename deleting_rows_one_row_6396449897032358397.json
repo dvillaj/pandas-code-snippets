@@ -1,0 +1,19 @@
+{
+   "display_name": "Deleting rows - One row",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Deleting rows - One row",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.drop(index = 0)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,23 @@
+{
+   "display_name": "Creating a Dataframe - From a Serie",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Base"
+      ],
+      "display_name": "Creating a Dataframe - From a Serie",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "display(dataframe.Country)",
+         "",
+         "dataframe.Country.to_frame()",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

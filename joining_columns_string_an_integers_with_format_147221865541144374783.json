@@ -1,0 +1,35 @@
+{
+   "display_name": "Joining Columns -  String an Integers with Format",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Joining Columns -  String an Integers with Format",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,City,Age",
+         "Sharon,F,Austin,30",
+         "Kevin,M,New York,34",
+         "Michael,M,New York,44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign (",
+         "   NameAge = lambda x: x.apply(lambda dataset: f\"{dataset.Name}-{dataset.Age:03}\", ",
+         "                              axis = 'columns')",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

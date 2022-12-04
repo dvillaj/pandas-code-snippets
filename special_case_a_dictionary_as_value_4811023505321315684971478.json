@@ -1,0 +1,34 @@
+{
+   "display_name": "Special Case - A Dictionary as Value",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Special Case - A Dictionary as Value",
+      "code": [
+         "import pandas as pd",
+         "import json",
+         "",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\") ",
+         "            .assign(",
+         "                Data = lambda dataset: dataset.apply(lambda row: json.loads(f'{{\"Cases\" : {row.Cases} , \"Population\" : {row.Population} }}') , axis = 'columns')",
+         "             )",
+         "             .filter([\"Country\", \"Year\", \"Data\"])",
+         "            )    ",
+         "",
+         "",
+         "display(dataframe)",
+         "",
+         "pd.concat((",
+         "    dataframe.filter([\"Country\", \"Year\"]),",
+         "    dataframe.Data.apply(pd.Series)",
+         "    ),",
+         "    axis = 'columns'",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

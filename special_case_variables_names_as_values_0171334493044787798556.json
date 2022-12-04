@@ -1,0 +1,36 @@
+{
+   "display_name": "Special Case - Variables Names as Values",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Special Case - Variables Names as Values",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,City,Age",
+         "Sharon,F,Austin,30",
+         "Kevin,M,New York,34",
+         "Michael,M,New York,44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\",header=None)",
+         "",
+         "display(dataframe)",
+         "",
+         "(dataframe",
+         "    .set_axis(dataframe.iloc[0].to_list(),",
+         "              axis = 'columns')",
+         "    .drop(0)",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

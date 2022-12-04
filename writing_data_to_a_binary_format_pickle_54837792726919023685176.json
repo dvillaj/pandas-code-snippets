@@ -1,0 +1,20 @@
+{
+   "display_name": "Writing data to a binary format - Pickle",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Read & Write",
+         "Extra"
+      ],
+      "display_name": "Writing data to a binary format - Pickle",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.to_pickle(\"data.pickle\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,16 @@
+{
+   "display_name": "DuckDb Connection",
+   "metadata": {
+      "tags": [
+         "DuckDb",
+         "Extra"
+      ],
+      "display_name": "DuckDb Connection",
+      "code": [
+         "%load_ext sql",
+         "%sql duckdb:///dataframes.duckdb"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

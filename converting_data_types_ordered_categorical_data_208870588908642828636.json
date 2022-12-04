@@ -1,0 +1,29 @@
+{
+   "display_name": "Converting Data Types - Ordered Categorical Data",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Converting Data Types - Ordered Categorical Data",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "display(dataframe)",
+         "dataframe.info()",
+         "",
+         "dataframe = dataframe.assign(",
+         "    CountryCategory = lambda dataset: pd.Categorical(dataset.Country, ",
+         "                    categories=[\"Brazil\",\"Afghanistan\",\"China\"], ",
+         "                    ordered=True)",
+         "  )",
+         "",
+         "dataframe.sort_values([\"CountryCategory\"])",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

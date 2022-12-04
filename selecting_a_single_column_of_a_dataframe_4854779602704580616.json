@@ -1,0 +1,20 @@
+{
+   "display_name": "Selecting a single column of a Dataframe",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Base"
+      ],
+      "display_name": "Selecting a single column of a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.Country",
+         "dataframe[\"Country\"]"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

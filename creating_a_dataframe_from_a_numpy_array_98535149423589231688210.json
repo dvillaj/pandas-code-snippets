@@ -1,0 +1,24 @@
+{
+   "display_name": "Creating a Dataframe - From a NumPy array",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Extra",
+         "Base"
+      ],
+      "display_name": "Creating a Dataframe - From a NumPy array",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame(",
+         "    data = np.arange(16).reshape(4, 4),",
+         "    columns = [\"A\", \"B\", \"C\", \"D\"]",
+         ")",
+         "",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

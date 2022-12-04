@@ -1,0 +1,19 @@
+{
+   "display_name": "Counting Occurrences",
+   "metadata": {
+      "tags": [
+         "Regex",
+         "Extra"
+      ],
+      "display_name": "Counting Occurrences",
+      "code": [
+         "import re",
+         "",
+         "regex = r'[fd]'",
+         "text = \"Finland\"",
+         "re.findall(regex, text, re.IGNORECASE)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

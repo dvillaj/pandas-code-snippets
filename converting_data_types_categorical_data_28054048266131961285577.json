@@ -1,0 +1,27 @@
+{
+   "display_name": "Converting Data Types - Categorical Data",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Pandas",
+         "Extra"
+      ],
+      "display_name": "Converting Data Types - Categorical Data",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "display(dataframe)",
+         "dataframe.info()",
+         "",
+         "dataframe = dataframe.assign(",
+         "    CountryCategory = lambda dataset: pd.Categorical(dataset.Country)",
+         "  )",
+         "",
+         "display(dataframe)",
+         "dataframe.info()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
