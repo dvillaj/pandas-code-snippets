@@ -101,16 +101,21 @@ def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
         logger.info(f"No Python Snippet. Can't be executed ...")
 
 
-def get_code(dictionary: dict):
+def add_tag(dictionary: dict, tag: str) -> None:
+    tags = set(dictionary['metadata']['tags'])
+    tags.add(tag)
+    dictionary['metadata']['tags'] = list(tags)
+
+def get_code(dictionary: dict) -> list:
     return dictionary['metadata']['code']
 
-def get_language(dictionary: dict):
+def get_language(dictionary: dict) -> str:
     return dictionary['metadata']['language']
 
 def get_tags(dictionary: dict) -> set:
     return set(dictionary['metadata']['tags'])
 
-def get_title(dictionary: dict):
+def get_title(dictionary: dict) -> str:
     return dictionary['display_name']
     
 
