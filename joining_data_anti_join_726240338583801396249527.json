@@ -17,11 +17,13 @@
          "     columns = [\"Country\", \"Capital\"]",
          ")",
          "",
-         "dataframe.merge(df_capitals, on = \"Country\", ",
+         "(dataframe",
+         "    .merge(df_capitals, on = \"Country\", ",
          "         how = \"left\",",
-         "         indicator = True) \\",
-         "    .query(\"_merge == 'left_only'\") \\",
-         "    .drop(columns = [\"Capital\", \"_merge\"])"
+         "         indicator = True)",
+         "    .query(\"_merge == 'left_only'\")",
+         "    .drop(columns = [\"Capital\", \"_merge\"])",
+         " )"
       ],
       "language": "Python"
    },

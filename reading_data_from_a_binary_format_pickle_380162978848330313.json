@@ -9,8 +9,9 @@
       "code": [
          "import pandas as pd",
          "",
-         "pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "(pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "    .to_pickle(\"data.pickle\")",
+         " )",
          "",
          "dataframe = pd.read_pickle(\"data.pickle\")",
          "dataframe"

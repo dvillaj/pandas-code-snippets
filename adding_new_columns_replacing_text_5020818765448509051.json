@@ -10,10 +10,11 @@
       "code": [
          "import pandas as pd",
          "",
-         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\", \"table11\") \\",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\", \"table11\")",
          "    .assign(",
          "        Country = lambda dataset: dataset.Country + \"-\" + dataset.index.astype(\"str\")",
          "    )",
+         " )",
          "",
          "dataframe.assign(",
          "    Cleaned_Country = lambda dataset: dataset.Country.str.replace(r'-\\d', '', regex=True)",

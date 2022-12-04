@@ -9,8 +9,9 @@
       "code": [
          "import pandas as pd",
          "",
-         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "    .set_flags(allows_duplicate_labels=False)",
+         " )",
          "",
          "dataframe.rename(columns = {",
          "    'Country' : 'Year'",

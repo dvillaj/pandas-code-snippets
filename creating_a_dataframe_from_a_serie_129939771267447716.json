@@ -9,8 +9,12 @@
       "code": [
          "import pandas as pd",
          "",
-         "serie = pd.Series([1, 2, 3, 4])",
-         "serie.rename(\"Numbers\").to_frame()"
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "display(dataframe.Country)",
+         "",
+         "dataframe.Country.to_frame()",
+         ""
       ],
       "language": "Python"
    },

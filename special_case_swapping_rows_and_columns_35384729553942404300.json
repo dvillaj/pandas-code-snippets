@@ -27,11 +27,12 @@
          "",
          "display(dataframe)",
          "",
-         "dataframe \\",
-         "    .set_index(\"Attrib\").rename_axis(None) \\",
-         "    .transpose() \\",
-         "    .reset_index() \\",
-         "    .rename( columns = { 'index' : 'Student' })"
+         "(dataframe",
+         "    .set_index(\"Attrib\").rename_axis(None)",
+         "    .transpose()",
+         "    .reset_index()",
+         "    .rename( columns = { 'index' : 'Student' })",
+         " )"
       ],
       "language": "Python"
    },

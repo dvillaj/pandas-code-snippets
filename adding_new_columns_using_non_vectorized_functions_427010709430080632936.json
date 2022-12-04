@@ -19,8 +19,9 @@
          ")",
          "",
          "# When more than one column are involved we must use 'apply' over the Dataframe",
-         "dataframe \\",
-         "    .assign(IncidenceByPopulationSqrt = lambda dataset: dataset.apply(lambda row: math.sqrt(row.Cases / row.Population), axis = 'columns'))"
+         "(dataframe",
+         "    .assign(IncidenceByPopulationSqrt = lambda dataset: dataset.apply(lambda row: math.sqrt(row.Cases / row.Population), axis = 'columns'))",
+         " )"
       ],
       "language": "Python"
    },

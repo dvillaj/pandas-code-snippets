@@ -15,9 +15,6 @@
          "print(serie.str.lower().tolist())",
          "print(serie.str.strip().tolist())",
          "print(serie.str.len().tolist())",
-         "print(serie.str.split(\"_\") \\",
-         "     .str.get(0).tolist())",
-         "print(serie.str.contains(\"Item\").tolist())",
          "print(serie.str[0:3].tolist())"
       ],
       "language": "Python"

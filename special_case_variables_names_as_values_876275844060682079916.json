@@ -23,10 +23,11 @@
          "",
          "display(dataframe)",
          "",
-         "dataframe \\",
+         "(dataframe",
          "    .set_axis(dataframe.iloc[0].to_list(),",
-         "              axis = 'columns') \\",
-         "    .drop(0)"
+         "              axis = 'columns')",
+         "    .drop(0)",
+         " )"
       ],
       "language": "Python"
    },

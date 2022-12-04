@@ -10,13 +10,16 @@
       "code": [
          "import pandas as pd",
          "import numpy as np",
-         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "    .assign(",
          "        Year = lambda dataset : pd.to_datetime(dataset.Year, format = \"%Y\"),",
          "    )",
+         " )",
          "",
-         "dataframe.groupby(\"Country\").resample('3M', on='Year').sum() \\",
-         "    .reset_index()"
+         "(dataframe",
+         "    .groupby(\"Country\").resample('3M', on='Year').sum()",
+         "    .reset_index()",
+         " )"
       ],
       "language": "Python"
    },

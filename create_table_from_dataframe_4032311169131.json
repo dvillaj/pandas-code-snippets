@@ -11,7 +11,7 @@
          "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") ",
          "",
-         "conn = duckdb.connect('db.duckdb')",
+         "conn = duckdb.connect('data.duckdb')",
          "conn.execute(\"CREATE TABLE my_table AS SELECT * FROM dataframe\")",
          "conn.close()"
       ],

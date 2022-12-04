@@ -13,11 +13,13 @@
          "",
          "display(dataframe)",
          "",
-         "dataframe.pivot_table(index = [\"Country\", \"Year\"],",
+         "(dataframe",
+         "    .pivot_table(index = [\"Country\", \"Year\"],",
          "               columns = \"Type\", ",
-         "               values=\"Count\") \\",
-         "    .reset_index() \\",
-         "    .rename_axis(columns = None)"
+         "               values=\"Count\")",
+         "    .reset_index()",
+         "    .rename_axis(columns = None)",
+         " )"
       ],
       "language": "Python"
    },

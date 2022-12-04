@@ -9,10 +9,11 @@
       "code": [
          "import pandas as pd",
          "",
-         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\") \\",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "    .assign(",
          "        CasesPercent = lambda dataset:dataset.Cases / dataset.Population",
          "    )",
+         " )",
          "",
          "dataframe.assign(",
          "    CasesPercent = ",

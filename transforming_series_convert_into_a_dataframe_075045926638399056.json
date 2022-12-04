@@ -11,8 +11,9 @@
          "import pandas as pd",
          "",
          "serie = pd.Series([1, 2, 3, 4, 5])",
-         "serie.rename(\"Numbers\") \\",
-         "    .to_frame()"
+         "(serie.rename(\"Numbers\")",
+         "    .to_frame()",
+         " )"
       ],
       "language": "Python"
    },

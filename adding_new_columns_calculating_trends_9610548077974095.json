@@ -1,26 +1,25 @@
 {
-   "display_name": "Adding new columns - Operations with Date columns",
+   "display_name": "Adding new columns - Calculating Trends",
    "metadata": {
       "tags": [
          "Pandas",
          "Data Analysis",
          "Time Series"
       ],
-      "display_name": "Adding new columns - Operations with Date columns",
+      "display_name": "Adding new columns - Calculating Trends",
       "code": [
          "import pandas as pd",
          "import numpy as np",
          "",
-         "dataframe = pd.DataFrame({",
+         "dataframe = (pd.DataFrame({",
          "        'Date' : pd.date_range(start = '2020-01-01', end = '2020-04-05', freq = 'D'),",
-         "    }) \\",
+         "    })",
          "    .assign(Value = lambda dataset: np.random.randint(100, size = dataset.shape[0]))",
+         " )",
          "",
-         "# Note that the argument is in plural",
-         "# https://stackoverflow.com/questions/36764487/pandas-dateoffset-step-back-one-day",
          "dataframe.assign(",
-         "    DateMinus1Day = lambda dataset: dataset.Date - pd.DateOffset(days=1),",
-         "    daysToNow = lambda dataset: (pd.Timestamp.now() - dataset.Date).dt.days",
+         "    PreviousValue = lambda dataset : dataset.Value.shift(1),",
+         "    Increment = lambda dataset : dataset.Value - dataset.Value.shift(1),",
          ")"
       ],
       "language": "Python"
