@@ -182,7 +182,7 @@ def get_cells(snippets: list) -> list:
             "cell_type": "markdown",
             "id": generate_id(),
             "metadata": {},
-            "source": [f"## {snippet['main_title']} - {get_title(snippet)}"]
+            "source": [f"## {snippet['main_title']}: {get_title(snippet)}"]
             }
 
         lines = []
