@@ -106,6 +106,11 @@ def add_tag(dictionary: dict, tag: str) -> None:
     tags.add(tag)
     dictionary['metadata']['tags'] = list(tags)
 
+def remove_tag(dictionary: dict, tag: str) -> None:
+    tags = list(set(dictionary['metadata']['tags']))
+    tags.remove(tag)
+    dictionary['metadata']['tags'] = list(tags)    
+
 def get_code(dictionary: dict) -> list:
     return dictionary['metadata']['code']
 
