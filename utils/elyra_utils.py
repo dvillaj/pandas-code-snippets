@@ -126,17 +126,35 @@ def get_theme(dictionary: dict):
     regex = r'([^-]*)'
     return re.findall(regex, title)[0].strip()      
 
+def check_lists_included_and(tags: list, included_tags:set = None ) -> bool:
+    return included_tags.intersection(tags) == included_tags
+
+def check_lists_included_or(tags: list, included_tags:set = None ) -> bool:
+    for included_tag in included_tags:
+            if included_tag in tags:
+                return True
+    return False
+
+def check_lists_excluded(tags: list, excluded_tags:set = None ) -> bool:
+    if excluded_tags:
+        for excluded_tag in excluded_tags:
+            if excluded_tag in tags:
+                return False
+    return True
+
 def check_lists(tags: list, included_tags: set, excluded_tags:set = None ) -> bool:
-    if included_tags.intersection(tags) == included_tags:
-        if excluded_tags:
-            for excluded_tag in excluded_tags:
-                if excluded_tag in tags:
-                    return False
-        return True
+    if check_lists_included_and(tags, included_tags):
+        return check_lists_excluded(tags, excluded_tags)
+
+def check_lists_or(tags: list, included_tags: set, excluded_tags:set = None ) -> bool:
+    if check_lists_included_or(tags, included_tags):
+        return check_lists_excluded(tags, excluded_tags)
 
 def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    tags = get_tags(dictionary)
-    return check_lists(tags, included_tags, excluded_tags)
+    return check_lists(get_tags(dictionary), included_tags, excluded_tags)
+
+def check_tags_or(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
+    return check_lists_or(get_tags(dictionary), included_tags, excluded_tags)    
 
 def generate_id() -> str:
     import uuid
