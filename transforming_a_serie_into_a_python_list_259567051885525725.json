@@ -1,13 +1,12 @@
 {
-   "display_name": "Transforming Series - Convert into a Python List",
+   "display_name": "Transforming a Serie into a Python list",
    "metadata": {
       "tags": [
          "Series",
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "Transforming Series - Convert into a Python List",
+      "display_name": "Transforming a Serie into a Python list",
       "code": [
          "import pandas as pd",
          "",

@@ -4,7 +4,8 @@
       "tags": [
          "Pandas",
          "Extra",
-         "Base"
+         "Base",
+         "NumPy"
       ],
       "display_name": "Creating a Dataframe - From a NumPy array",
       "code": [

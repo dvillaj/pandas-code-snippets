@@ -1,18 +1,17 @@
 {
-   "display_name": "Transforming Series - Applying a Function",
+   "display_name": "Transforming Series - Non Vectorized - Applying a Function",
    "metadata": {
       "tags": [
          "Series",
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "Transforming Series - Applying a Function",
+      "display_name": "Transforming Series - Non Vectorized - Applying a Function",
       "code": [
          "import pandas as pd",
          "import math",
          "",
-         "serie = pd.Series([1, 10, 34, 45])",
+         "serie = pd.Series([1, 5, 10, 45])",
          "",
          "print(serie.tolist())",
          "print(serie.map(lambda value: math.sqrt(value)).tolist())",

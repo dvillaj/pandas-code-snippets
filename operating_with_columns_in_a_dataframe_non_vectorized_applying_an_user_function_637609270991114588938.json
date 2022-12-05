@@ -1,12 +1,11 @@
 {
-   "display_name": "Applying a lambda function to two columns in a Dataframe",
+   "display_name": "Operating with Columns in a Dataframe - Non Vectorized - Applying an User Function",
    "metadata": {
       "tags": [
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "Applying a lambda function to two columns in a Dataframe",
+      "display_name": "Operating with Columns in a Dataframe - Non Vectorized - Applying an User Function",
       "code": [
          "import pandas as pd",
          "import math",

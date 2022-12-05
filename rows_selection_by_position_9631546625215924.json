@@ -1,0 +1,23 @@
+{
+   "display_name": "Rows Selection by position",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Base"
+      ],
+      "display_name": "Rows Selection by position",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe[:-2]",
+         "",
+         "# Explicit way",
+         "dataframe.iloc[:-2]",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

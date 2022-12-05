@@ -1,0 +1,19 @@
+{
+   "display_name": "Rows Selection by condition",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Base"
+      ],
+      "display_name": "Rows Selection by condition",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe[dataframe.Cases > 5000]",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

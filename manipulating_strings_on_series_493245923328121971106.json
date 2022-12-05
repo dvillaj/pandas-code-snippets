@@ -1,13 +1,12 @@
 {
-   "display_name": "String Operations on Series",
+   "display_name": "Manipulating Strings on Series",
    "metadata": {
       "tags": [
          "Series",
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "String Operations on Series",
+      "display_name": "Manipulating Strings on Series",
       "code": [
          "import pandas as pd",
          "",

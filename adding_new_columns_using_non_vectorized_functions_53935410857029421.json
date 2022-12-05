@@ -1,12 +1,12 @@
 {
-   "display_name": "Adding new columns - Using non vectorized functions",
+   "display_name": "Adding new columns - Using Non Vectorized functions",
    "metadata": {
       "tags": [
          "Pandas",
          "Extra",
          "Data Analysis"
       ],
-      "display_name": "Adding new columns - Using non vectorized functions",
+      "display_name": "Adding new columns - Using Non Vectorized functions",
       "code": [
          "import pandas as pd",
          "import math",

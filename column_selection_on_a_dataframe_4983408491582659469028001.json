@@ -1,17 +1,17 @@
 {
-   "display_name": "Shape of a Dataframe",
+   "display_name": "Column Selection on a Dataframe",
    "metadata": {
       "tags": [
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "Shape of a Dataframe",
+      "display_name": "Column Selection on a Dataframe",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.shape"
+         "dataframe.Country",
+         "dataframe[\"Country\"]"
       ],
       "language": "Python"
    },

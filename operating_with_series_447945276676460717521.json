@@ -1,13 +1,12 @@
 {
-   "display_name": "Operations with two Series",
+   "display_name": "Operating with Series",
    "metadata": {
       "tags": [
-         "Series",
          "Pandas",
-         "Extra",
-         "Base"
+         "Base",
+         "Series"
       ],
-      "display_name": "Operations with two Series",
+      "display_name": "Operating with Series",
       "code": [
          "import pandas as pd",
          "import numpy as np",

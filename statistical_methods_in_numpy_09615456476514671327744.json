@@ -1,13 +1,12 @@
 {
-   "display_name": "Statistical methods - NumPy",
+   "display_name": "Statistical methods in NumPy",
    "metadata": {
       "tags": [
          "NumPy",
          "Stadistical",
-         "Extra",
          "Base"
       ],
-      "display_name": "Statistical methods - NumPy",
+      "display_name": "Statistical methods in NumPy",
       "code": [
          "import numpy as np",
          "",

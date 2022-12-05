@@ -1,13 +1,12 @@
 {
-   "display_name": "Transforming Series - Convert into a Dataframe",
+   "display_name": "Convert a Serie into a Dataframe",
    "metadata": {
       "tags": [
          "Series",
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "Transforming Series - Convert into a Dataframe",
+      "display_name": "Convert a Serie into a Dataframe",
       "code": [
          "import pandas as pd",
          "",

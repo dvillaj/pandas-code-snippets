@@ -3,7 +3,6 @@
    "metadata": {
       "tags": [
          "Pandas",
-         "Extra",
          "Base"
       ],
       "display_name": "Creating a Dataframe - From a Python Dictionary",

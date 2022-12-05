@@ -1,17 +1,18 @@
 {
-   "display_name": "Columns of a Dataframe",
+   "display_name": "Single Row Selection by position",
    "metadata": {
       "tags": [
          "Pandas",
-         "Extra",
          "Base"
       ],
-      "display_name": "Columns of a Dataframe",
+      "display_name": "Single Row Selection by position",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.columns.tolist()"
+         "dataframe.iloc[0]",
+         "",
+         ""
       ],
       "language": "Python"
    },

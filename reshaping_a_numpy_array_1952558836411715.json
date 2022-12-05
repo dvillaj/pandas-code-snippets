@@ -1,12 +1,12 @@
 {
-   "display_name": "Maniputaling NumPy Arrays - Reshaping",
+   "display_name": "Reshaping a NumPy Array",
    "metadata": {
       "tags": [
          "Pandas",
          "Base",
          "NumPy"
       ],
-      "display_name": "Maniputaling NumPy Arrays - Reshaping",
+      "display_name": "Reshaping a NumPy Array",
       "code": [
          "import numpy as np",
          "",

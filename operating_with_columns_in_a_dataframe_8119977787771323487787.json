@@ -1,18 +1,17 @@
 {
-   "display_name": "Selecting a single column of a Dataframe",
+   "display_name": "Operating with Columns in a Dataframe",
    "metadata": {
       "tags": [
          "Pandas",
-         "Extra",
-         "Base"
+         "Base",
+         "Series"
       ],
-      "display_name": "Selecting a single column of a Dataframe",
+      "display_name": "Operating with Columns in a Dataframe",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.Country",
-         "dataframe[\"Country\"]"
+         "dataframe.Cases / dataframe.Population * 100"
       ],
       "language": "Python"
    },

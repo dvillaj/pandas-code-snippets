@@ -1,0 +1,25 @@
+{
+   "display_name": "Empty or Null Values on a Serie",
+   "metadata": {
+      "tags": [
+         "Series",
+         "Pandas",
+         "Base"
+      ],
+      "display_name": "Empty or Null Values on a Serie",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "serie = pd.Series([1, 2, np.nan, 4])",
+         "",
+         "print(\"Null elements\")",
+         "print(serie.isnull())",
+         "",
+         "print(\"Not Null elements\")",
+         "print(serie.notnull())"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
