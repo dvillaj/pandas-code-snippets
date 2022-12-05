@@ -2,9 +2,8 @@
    "display_name": "Reading data from a binary format - Parquet",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
       "display_name": "Reading data from a binary format - Parquet",
       "code": [

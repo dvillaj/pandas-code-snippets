@@ -1,26 +1,26 @@
 {
-   "display_name": "Reading data from a Text File - No Header",
+   "display_name": "Reading data from a Text File - Tab Separator",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
-      "display_name": "Reading data from a Text File - No Header",
+      "display_name": "Reading data from a Text File - Tab Separator",
       "code": [
          "import pandas as pd",
          "",
          "text_file = open(\"data.txt\", \"w\")",
          "text_file.write(",
          "\"\"\"",
-         "1|2|3|4|hello",
-         "5|6|7|8|world",
-         "9|10|11|12|foo",
+         "a\tb\tc\td\tmessage",
+         "1\t2\t3\t4\thello",
+         "5\t6\t7\t8\tworld",
+         "9\t10\t11\t12\tfoo",
          "\"\"\")",
          "text_file.close()",
          "",
          "",
-         "dataframe = pd.read_csv(\"data.txt\", sep = \"|\", header = None)",
+         "dataframe = pd.read_csv(\"data.txt\", sep = \"\\t\")",
          "dataframe"
       ],
       "language": "Python"

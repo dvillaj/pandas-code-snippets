@@ -2,9 +2,8 @@
    "display_name": "Generating Synthetic data - Faker",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
       "display_name": "Generating Synthetic data - Faker",
       "code": [

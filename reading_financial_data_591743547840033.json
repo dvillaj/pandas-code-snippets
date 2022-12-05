@@ -2,9 +2,8 @@
    "display_name": "Reading Financial data",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
       "display_name": "Reading Financial data",
       "code": [

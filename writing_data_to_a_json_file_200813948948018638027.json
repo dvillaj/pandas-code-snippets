@@ -1,18 +1,17 @@
 {
-   "display_name": "Writing data to a binary format - Parquet",
+   "display_name": "Writing data to a JSON File",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas",
+         "JSON"
       ],
-      "display_name": "Writing data to a binary format - Parquet",
+      "display_name": "Writing data to a JSON File",
       "code": [
          "import pandas as pd",
-         "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.to_parquet(\"data.parquet\")"
+         "dataframe.to_json(\"data.json\")"
       ],
       "language": "Python"
    },

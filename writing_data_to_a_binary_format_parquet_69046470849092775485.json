@@ -1,17 +1,17 @@
 {
-   "display_name": "Writing data to a Text File",
+   "display_name": "Writing data to a binary format - Parquet",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
-      "display_name": "Writing data to a Text File",
+      "display_name": "Writing data to a binary format - Parquet",
       "code": [
          "import pandas as pd",
+         "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.to_csv(\"data.csv\")"
+         "dataframe.to_parquet(\"data.parquet\")"
       ],
       "language": "Python"
    },

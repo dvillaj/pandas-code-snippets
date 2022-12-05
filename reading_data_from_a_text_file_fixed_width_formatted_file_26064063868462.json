@@ -2,9 +2,8 @@
    "display_name": "Reading data from a Text File - Fixed-width Formatted File",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
       "display_name": "Reading data from a Text File - Fixed-width Formatted File",
       "code": [

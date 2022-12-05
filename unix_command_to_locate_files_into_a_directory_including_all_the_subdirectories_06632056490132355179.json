@@ -1,0 +1,15 @@
+{
+   "display_name": "Unix command to locate files into a directory - Including all the subdirectories",
+   "metadata": {
+      "tags": [
+         "Bash",
+         "Read & Write"
+      ],
+      "display_name": "Unix command to locate files into a directory - Including all the subdirectories",
+      "code": [
+         "! find . -name mnist*"
+      ],
+      "language": "Shell"
+   },
+   "schema_name": "code-snippet"
+}

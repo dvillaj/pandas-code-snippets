@@ -2,9 +2,8 @@
    "display_name": "Loading JSON data into a Python Dictionary - Json File",
    "metadata": {
       "tags": [
-         "Extra",
-         "Pandas",
          "Read & Write",
+         "Pandas",
          "JSON"
       ],
       "display_name": "Loading JSON data into a Python Dictionary - Json File",

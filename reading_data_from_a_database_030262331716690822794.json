@@ -2,10 +2,9 @@
    "display_name": "Reading data from a Database",
    "metadata": {
       "tags": [
-         "Databases",
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Databases",
+         "Pandas"
       ],
       "display_name": "Reading data from a Database",
       "code": [

@@ -1,18 +1,17 @@
 {
-   "display_name": "Writing data to a JSON File",
+   "display_name": "Writing data to a binary format - Pickle",
    "metadata": {
       "tags": [
-         "Extra",
-         "Pandas",
          "Read & Write",
-         "JSON"
+         "Pandas"
       ],
-      "display_name": "Writing data to a JSON File",
+      "display_name": "Writing data to a binary format - Pickle",
       "code": [
          "import pandas as pd",
+         "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.to_json(\"data.json\")"
+         "dataframe.to_pickle(\"data.pickle\")"
       ],
       "language": "Python"
    },

@@ -2,9 +2,8 @@
    "display_name": "Reading and Writing data in a compatible format - Feather",
    "metadata": {
       "tags": [
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas"
       ],
       "display_name": "Reading and Writing data in a compatible format - Feather",
       "code": [

@@ -2,10 +2,9 @@
    "display_name": "Generating Synthetic data - Random Numbers",
    "metadata": {
       "tags": [
-         "NumPy",
-         "Pandas",
          "Read & Write",
-         "Extra"
+         "Pandas",
+         "NumPy"
       ],
       "display_name": "Generating Synthetic data - Random Numbers",
       "code": [
