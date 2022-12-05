@@ -1,12 +1,12 @@
 {
-   "display_name": "Reading data from a Python Dictionary - Only part of if",
+   "display_name": "Reading JSON data from a Python Dictionary - Only part of if",
    "metadata": {
       "tags": [
          "Read & Write",
          "Pandas",
          "JSON"
       ],
-      "display_name": "Reading data from a Python Dictionary - Only part of if",
+      "display_name": "Reading JSON data from a Python Dictionary - Only part of if",
       "code": [
          "import pandas as pd",
          "",

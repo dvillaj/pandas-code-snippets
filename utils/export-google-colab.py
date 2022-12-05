@@ -2,7 +2,7 @@ import logging
 import glob
 from elyra_utils import *
 
-included_tags = set(["Read & Write"])
+included_tags = set(["Base", "Read & Write"])
 #excluded_tags = set(["Base", "Bash", "Exploring Data", "Read & Write", "Data Analyisis", "Data Cleaning"])
 excluded_tags = set(["Extra"])
 
@@ -21,7 +21,7 @@ snippets = []
 print(f"Snippet including {included_tags} and excluding {excluded_tags}:")
 for file in glob.glob("*.json"):
     dictionary = read_file(file)
-    if check_tags(dictionary, included_tags, excluded_tags):
+    if check_tags_or(dictionary, included_tags, excluded_tags):
         tags = get_tags(dictionary)
         del dictionary['metadata']['display_name']
         dictionary['main_title'] = list(included_tags.intersection(tags))[0]

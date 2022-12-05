@@ -1,19 +1,20 @@
 {
-   "display_name": "Reading data from a binary format - Pickle",
+   "display_name": "Reading data from a binary format - Parquet",
    "metadata": {
       "tags": [
          "Read & Write",
-         "Pandas"
+         "Pandas",
+         "Extra"
       ],
-      "display_name": "Reading data from a binary format - Pickle",
+      "display_name": "Reading data from a binary format - Parquet",
       "code": [
          "import pandas as pd",
          "",
          "(pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
-         "    .to_pickle(\"data.pickle\")",
+         "    .to_parquet(\"data.parquet\")",
          " )",
          "",
-         "dataframe = pd.read_pickle(\"data.pickle\")",
+         "dataframe = pd.read_parquet(\"data.parquet\")",
          "dataframe"
       ],
       "language": "Python"
