@@ -1,11 +1,11 @@
 {
-   "display_name": "Unix command to list files in a directory",
+   "display_name": "Unix commands to explore directories - List files in a directory",
    "metadata": {
       "tags": [
          "Bash",
          "Read & Write"
       ],
-      "display_name": "Unix command to list files in a directory",
+      "display_name": "Unix commands to explore directories - List files in a directory",
       "code": [
          "# Get the Current Directory",
          "! pwd",

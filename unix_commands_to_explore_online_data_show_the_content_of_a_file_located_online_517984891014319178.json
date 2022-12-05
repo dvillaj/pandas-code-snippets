@@ -1,11 +1,11 @@
 {
-   "display_name": "Unix command to show the content of a file - Located online",
+   "display_name": "Unix commands to explore online data - Show the content of a file located online",
    "metadata": {
       "tags": [
          "Bash",
          "Read & Write"
       ],
-      "display_name": "Unix command to show the content of a file - Located online",
+      "display_name": "Unix commands to explore online data - Show the content of a file located online",
       "code": [
          "# Shows the content of the file on the console",
          "",

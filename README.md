@@ -45,10 +45,9 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Reading data from a Web Page / HTML
     - Reading data from a Web Service
     - Reading data from a binary format
-    - Unix command to list files in a directory
-    - Unix command to locate files into a directory
-    - Unix command to search for a text inside a file
-    - Unix command to show the content of a file
+    - Unix commands to explore directories
+    - Unix commands to explore files
+    - Unix commands to explore online data
     - Writing data to Excel
     - Writing data to a JSON File
     - Writing data to a Relational Database

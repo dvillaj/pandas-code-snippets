@@ -1,11 +1,11 @@
 {
-   "display_name": "Unix command to show the content of a file - Local",
+   "display_name": "Unix commands to explore files -  Show the content of a file - Local",
    "metadata": {
       "tags": [
          "Bash",
          "Read & Write"
       ],
-      "display_name": "Unix command to show the content of a file - Local",
+      "display_name": "Unix commands to explore files -  Show the content of a file - Local",
       "code": [
          "# Shows all the content of a file",
          "",

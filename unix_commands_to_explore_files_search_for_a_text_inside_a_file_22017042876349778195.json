@@ -1,11 +1,11 @@
 {
-   "display_name": "Unix command to search for a text inside a file",
+   "display_name": "Unix commands to explore files -  Search for a text inside a file",
    "metadata": {
       "tags": [
          "Bash",
          "Read & Write"
       ],
-      "display_name": "Unix command to search for a text inside a file",
+      "display_name": "Unix commands to explore files -  Search for a text inside a file",
       "code": [
          "! grep \"92.253.223\" ./sample_data/mnist_test.csv"
       ],
