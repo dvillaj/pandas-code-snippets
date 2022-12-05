@@ -15,7 +15,7 @@
          "        return 18",
          "    else:",
          "        return -n",
-         "    ",
+         "",
          "serie = pd.Series([1, 5, 10, 45])",
          "serie.apply(transform, middle_number = 4)"
       ],

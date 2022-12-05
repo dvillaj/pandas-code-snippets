@@ -1,19 +1,20 @@
 {
-   "display_name": "Creating a Serie - From a Python List",
-   "metadata": {
-      "tags": [
-         "Pandas",
-         "Base"
-      ],
-      "display_name": "Creating a Serie - From a Python List",
-      "code": [
-         "import pandas as pd",
-         "",
-         "lista = [1, 2, 3, 4, 5]",
-         "serie = pd.Series(lista)",
-         "serie"
-      ],
-      "language": "Python"
-   },
-   "schema_name": "code-snippet"
+  "display_name": "Creating a Serie - From a Python List",
+  "metadata": {
+    "tags": [
+      "Pandas",
+      "Base",
+      "Series"
+    ],
+    "display_name": "Creating a Serie - From a Python List",
+    "code": [
+      "import pandas as pd",
+      "",
+      "lista = [1, 2, 3, 4, 5]",
+      "serie = pd.Series(lista)",
+      "serie"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
 }

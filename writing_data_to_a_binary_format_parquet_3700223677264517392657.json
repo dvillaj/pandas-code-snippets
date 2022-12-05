@@ -1,17 +1,18 @@
 {
-   "display_name": "Column Selection on a Dataframe",
+   "display_name": "Writing data to a binary format - Parquet",
    "metadata": {
       "tags": [
          "Pandas",
-         "Base"
+         "Read & Write",
+         "Extra"
       ],
-      "display_name": "Column Selection on a Dataframe",
+      "display_name": "Writing data to a binary format - Parquet",
       "code": [
          "import pandas as pd",
+         "",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.Country",
-         "dataframe[\"Country\"]"
+         "dataframe.to_parquet(\"data.parquet\")"
       ],
       "language": "Python"
    },

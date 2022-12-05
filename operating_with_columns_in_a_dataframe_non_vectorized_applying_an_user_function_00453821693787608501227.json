@@ -9,7 +9,10 @@
       "code": [
          "import pandas as pd",
          "import math",
-         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+         "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
+         "                          'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+         "                          'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
          "# Lambda Function",
          "dataframe.apply(lambda dataset : math.sqrt(dataset.Cases / dataset.Population * 100), axis = 'columns')",

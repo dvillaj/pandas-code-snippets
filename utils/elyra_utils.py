@@ -126,13 +126,17 @@ def get_theme(dictionary: dict):
     regex = r'([^-]*)'
     return re.findall(regex, title)[0].strip()      
 
-def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    tags = get_tags(dictionary)
+def check_lists(tags: list, included_tags: set, excluded_tags:set = None ) -> bool:
     if included_tags.intersection(tags) == included_tags:
         if excluded_tags:
-            return not excluded_tags.intersection(tags) == excluded_tags
-        else:
-            return True
+            for excluded_tag in excluded_tags:
+                if excluded_tag in tags:
+                    return False
+        return True
+
+def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
+    tags = get_tags(dictionary)
+    return check_lists(tags, included_tags, excluded_tags)
 
 def generate_id() -> str:
     import uuid
@@ -149,15 +153,16 @@ def get_cells(snippets: list) -> list:
     cells = []
     for snippet in snippets:
         n += 2
+
         title = {
             "cell_type": "markdown",
             "id": generate_id(),
             "metadata": {},
-            "source": [f"## {snippet['main_title']} - {snippet['display_name']}"]
+            "source": [f"## {snippet['main_title']} - {get_title(snippet)}"]
             }
 
         lines = []
-        for line in snippet['code']:
+        for line in get_code(snippet):
             lines.append(f"{line}\n")
 
         code = {
@@ -173,18 +178,8 @@ def get_cells(snippets: list) -> list:
         cells.append(code)
     return cells
 
-def get_snippets(dataframe) -> list:
-    spippets = list(dataframe.transpose().to_dict().values())
-    clean_snippets = []
-    for snippet in spippets:
-        snippet['tags'] = list(snippet['tags'])
-        snippet['code'] = list(snippet['code'])
-        clean_snippets.append(snippet)
 
-    return clean_snippets
-
-def get_notebook(dataframe) -> dict: 
-    snippets = get_snippets(dataframe)
+def get_notebook(snippets: list) -> dict: 
     return {
             "cells": get_cells(snippets),
             "metadata": {
@@ -210,8 +205,15 @@ def get_notebook(dataframe) -> dict:
             "nbformat_minor": 5
             }
 
-def write_to_notebook(dataframe, filename: str) -> None:
-    notebook = get_notebook(dataframe)
+def write_to_notebook(snippets: list, filename: str) -> None:
+    notebook = get_notebook(randomize_list(snippets))
     json_object = json.dumps(notebook, indent=4)
     with open(filename, "w") as outfile:
         outfile.write(json_object)
+
+
+def randomize_list(list: list) -> list:
+    import random
+    random.shuffle(list)
+
+    return list
