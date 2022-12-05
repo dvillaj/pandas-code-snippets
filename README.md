@@ -6,19 +6,30 @@ Contains a collection of Pandas code snippets from data reading to data analysis
 
 Each Code Snippet contains a working example of a Pandas funcionality:
 
-- Base knowledge of pandas (`Base` tag) 
-    - Applying a lambda function to two columns in a Dataframe
-    - Checking Missing or Null Values in a Serie
-    - Columns of a Dataframe
+- Base knowledge of NumPy & Pandas (`Base` tag) 
+    - Accessing to NumPy Arrays
+    - Accessing to Series
+    - Column Selection on a Dataframe
+    - Convert a Serie into a Dataframe
+    - Creating NumPy Arrays
     - Creating a Dataframe
-    - Operations with two Series
-    - Selecting a cell from a Dataframe
-    - Selecting a single column of a Dataframe
+    - Creating a Serie
+    - Dataframe  Rows Selection
+    - Dataframe Rows Selection
+    - Empty or Null Values on a Serie
+    - Filtering NumPy Arrays
+    - Filtering Series
+    - Manipulating Strings on Series
+    - Multi Column Selection on a Dataframe
+    - Operating with Columns in a Dataframe
+    - Operating with Series
+    - Reshaping a NumPy Array
     - Shape of a Dataframe
+    - Single Row Selection by position
     - Statistical methods
-    - String Operations on Series
     - Transforming Series
-    - Transposing a Dataframe
+    - Values and Index of a Serie
+    - Values, Columns and Index of a Dataframe
 
 - Read and Writing data (`Read & Write` tag)
     - Generating Synthetic data
@@ -34,6 +45,10 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Reading data from a Web Page / HTML
     - Reading data from a Web Service
     - Reading data from a binary format
+    - Unix command to list files in a directory
+    - Unix command to locate files into a directory
+    - Unix command to search for a text inside a file
+    - Unix command to show the content of a file
     - Writing data to Excel
     - Writing data to a JSON File
     - Writing data to a Relational Database
