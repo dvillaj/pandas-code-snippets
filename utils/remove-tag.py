@@ -10,7 +10,7 @@ excluded_tags = set([])
 
 print(f"Snippet including {included_tags} and excluding {excluded_tags}:")
 
-tag = 'Stadistical'
+tag = 'JSON'
 for file in glob.glob("*.json"):
     snippet = read_file(file)
     if check_tags(snippet, included_tags, excluded_tags):

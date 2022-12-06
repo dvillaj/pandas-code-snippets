@@ -2,9 +2,8 @@
    "display_name": "Writing data to a JSON File",
    "metadata": {
       "tags": [
-         "Read & Write",
          "Pandas",
-         "JSON"
+         "Read & Write"
       ],
       "display_name": "Writing data to a JSON File",
       "code": [

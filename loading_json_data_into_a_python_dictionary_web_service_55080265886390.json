@@ -2,9 +2,8 @@
    "display_name": "Loading JSON data into a Python Dictionary - Web Service",
    "metadata": {
       "tags": [
-         "Read & Write",
          "Pandas",
-         "JSON"
+         "Read & Write"
       ],
       "display_name": "Loading JSON data into a Python Dictionary - Web Service",
       "code": [

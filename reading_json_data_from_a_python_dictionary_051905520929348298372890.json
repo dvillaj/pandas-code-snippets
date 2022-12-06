@@ -2,9 +2,8 @@
    "display_name": "Reading JSON data from a Python Dictionary",
    "metadata": {
       "tags": [
-         "Read & Write",
          "Pandas",
-         "JSON"
+         "Read & Write"
       ],
       "display_name": "Reading JSON data from a Python Dictionary",
       "code": [

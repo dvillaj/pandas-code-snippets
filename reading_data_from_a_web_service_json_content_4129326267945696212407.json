@@ -2,9 +2,8 @@
    "display_name": "Reading data from a Web Service - JSON Content",
    "metadata": {
       "tags": [
-         "Read & Write",
          "Pandas",
-         "JSON"
+         "Read & Write"
       ],
       "display_name": "Reading data from a Web Service - JSON Content",
       "code": [
