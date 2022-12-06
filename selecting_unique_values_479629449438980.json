@@ -1,0 +1,17 @@
+{
+  "display_name": "Distinct values",
+  "metadata": {
+    "tags": [
+      "Data Analysis"
+    ],
+    "display_name": "Distinct values",
+    "code": [
+      "import pandas as pd",
+      "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+      "",
+      "dataframe.filter([\"Country\"]).drop_duplicates()"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

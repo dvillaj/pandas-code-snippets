@@ -1,0 +1,21 @@
+{
+   "display_name": "Pandas styling - Highlight specific Columns",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Extra"
+      ],
+      "display_name": "Pandas styling - Highlight specific Columns",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "def highlight_columns(df):",
+         "    return [\"background-color: #FFF4D2\" for v in df]",
+         "",
+         "dataframe.style.apply(highlight_columns, subset=[\"Country\", \"Year\"], axis=1)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

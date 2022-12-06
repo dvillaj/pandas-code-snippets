@@ -1,0 +1,20 @@
+{
+   "display_name": "Filtering Rows - Dataframe methods",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Filtering Rows - Dataframe methods",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "def filter_rows_by_condition(dataset, condition):",
+         "    return dataset[condition(dataset)]",
+         "",
+         "dataframe.pipe(filter_rows_by_condition, lambda dataset:  ~dataset.duplicated())"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

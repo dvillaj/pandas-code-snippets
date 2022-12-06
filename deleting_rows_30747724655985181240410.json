@@ -1,0 +1,23 @@
+{
+   "display_name": "Deleting rows",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Deleting rows",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Only can be specified row positions ",
+         "",
+         "# One Row",
+         "dataframe.drop(5)",
+         "",
+         "# Multiple rows",
+         "dataframe.drop([4,5])"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

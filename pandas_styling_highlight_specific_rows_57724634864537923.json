@@ -1,0 +1,24 @@
+{
+   "display_name": "Pandas styling - Highlight specific Rows",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Extra"
+      ],
+      "display_name": "Pandas styling - Highlight specific Rows",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "def highlight_rows(df, column_name, column_value):",
+         "    if str(df[column_name]).startswith(column_value) :",
+         "        return ['font-weight: bold' for v in df]",
+         "    else:",
+         "        return ['background-color: white' for v in df]",
+         "",
+         "dataframe.style.apply(highlight_rows, axis = 1, column_name = \"Country\", column_value = \"Brazil\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

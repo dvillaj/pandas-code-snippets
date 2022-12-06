@@ -2,7 +2,7 @@ import logging
 import glob
 from elyra_utils import *
 
-tags = ["Base", "Read & Write", ]
+tags = ["Base", "Read & Write", "Data Analysis"]
 
 conf_logging()
 logger = logging.getLogger("app")

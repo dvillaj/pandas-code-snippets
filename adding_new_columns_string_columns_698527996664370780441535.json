@@ -1,0 +1,22 @@
+{
+   "display_name": "Adding new columns - String columns",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - String columns",
+      "code": [
+         "import pandas as pd",
+         "import math",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Column must to be a String",
+         "dataframe.assign(",
+         "    FirstTwoLetters = lambda dataset: dataset.Country.str[0:2],",
+         "    CountryUpperCase = lambda dataset: dataset.Country.str.upper()",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

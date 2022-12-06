@@ -26,7 +26,8 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Reshaping a NumPy Array
     - Shape of a Dataframe
     - Single Row Selection by position
-    - Statistical methods
+    - Statistical methods on NumPy Arrays
+    - Statistical methods on Series
     - Transforming Series
     - Values and Index of a Serie
     - Values, Columns and Index of a Dataframe
@@ -40,52 +41,34 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Reading and Writing data in a binary format
     - Reading and Writing data in a compatible format
     - Reading data from Excel
-    - Reading data from a JSON File
+    - Reading data from JSON
     - Reading data from a String
     - Reading data from a Text File
     - Reading data from a Web Page / HTML
     - Reading data from a Web Service
-    - Reading data from a binary format
     - Unix commands to explore directories
     - Unix commands to explore files
     - Unix commands to explore online data
     - Writing data to Excel
     - Writing data to a JSON File
     - Writing data to a Text File
-    - Writing data to a binary format
-
-- Exploring a Dataframe (`Exploring Data` tag)
-    - Compute pairwise correlation of a Dataframe
-    - Configuring global behavior related to DataFrame display
-    - Counting unique values
-    - Exploring a Value from a Dataframe
-    - Exploring some rows of a Dataframe
-    - Generate descriptive statistics
-    - Getting information about a Dataframe
-    - Highlight a Dataframe
-    - Profiling Report
-
-- Exploring local Files in a Jupyter notebook (`Bash` tag)
-    - List files in a directory
-    - Locate files into a directory (and all the subdirectories)
-    - Search for a text inside a file
-    - Show the content of a file   
 
 - Data Analysis (`Data Analysis` tag)
     - Adding new columns
     - Concatenating Dataframes
     - Deleting columns
     - Deleting rows
+    - Distinct values
+    - Exploring a Dataframe
     - Filtering Rows
+    - Filtering columns
     - Grouping data
     - Joining data
+    - Ordering Rows
+    - Pandas Options
+    - Pandas styling
     - Pivot Tables
     - Renaming columns
-    - Replacing existing columns
-    - Rewiting SQL in Pandas
-    - Selecting columns
-    - Selecting distinct values
-    - Sorting columns
 
 - Data Cleaning (`Data Cleaning` tag)
     - Converting Data Types

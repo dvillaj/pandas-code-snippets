@@ -1,0 +1,18 @@
+{
+   "display_name": "Filtering Rows - String columns",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Filtering Rows - String columns",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Important: The column must be a String",
+         "dataframe.query(\"Country.str.upper() == 'CHINA'\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

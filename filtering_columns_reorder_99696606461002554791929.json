@@ -1,0 +1,17 @@
+{
+   "display_name": "Filtering columns - Reorder",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Filtering columns - Reorder",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.filter([\"Cases\", \"Population\", \"Country\", \"Year\"])"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

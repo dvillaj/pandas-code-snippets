@@ -1,0 +1,19 @@
+{
+   "display_name": "Grouping data - One column",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Grouping data - One column",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.groupby(\"Country\", as_index = False).Cases.sum()",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

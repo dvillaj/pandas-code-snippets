@@ -79,14 +79,14 @@ def get_file_name(display_name: str, hash:str, extension: str = 'json'):
 def execute_code(snippet: dict, file_name: str = 'snippet.py'):
     logger = logging.getLogger("utils")
     
-    snippet = get_title(snippet)
+    title = get_title(snippet)
     lines = get_code(snippet)
     language = get_language(snippet)
 
     lines.insert(0, "from IPython.display import display")
 
     if language == "Python":
-        logger.info(f"Executing '{snippet}' ...")
+        logger.info(f"Executing '{title}' ...")
 
         with open(file_name, 'w') as fp:
             for item in lines:
@@ -99,7 +99,7 @@ def execute_code(snippet: dict, file_name: str = 'snippet.py'):
             delete_file(data_file)
 
         if return_value:
-            logger.error(f"Sorry, There is an issue executing the snippet: {snippet}")
+            logger.error(f"Sorry, There is an issue executing the snippet: {title}")
     else:
         logger.info(f"No Python Snippet. Can't be executed ...")
 

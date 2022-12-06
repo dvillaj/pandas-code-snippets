@@ -1,0 +1,27 @@
+{
+   "display_name": "Grouping data",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Grouping data",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# We can use any of theese options to specify the aggregation function:",
+         "# - A String",
+         "# - A Serie Statistical function",
+         "# - A numpy Statistical function",
+         "dataframe.groupby(\"Country\", as_index = False).agg(",
+         "    Total_records  = (\"Year\" , \"count\"),",
+         "    Sum_cases = (\"Cases\",  lambda serie: serie.sum()),",
+         "    Mean_population = (\"Population\", lambda serie: np.mean(serie))",
+         ")",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

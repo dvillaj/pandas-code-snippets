@@ -1,0 +1,18 @@
+{
+   "display_name": "Pandas styling - Format number of decimals and thousands separatator",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Extra"
+      ],
+      "display_name": "Pandas styling - Format number of decimals and thousands separatator",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.style.format(thousands=\",\", precision = 2)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,18 @@
+{
+   "display_name": "Deleting rows - Row Positons",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Deleting rows - Row Positons",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Slice with the rows to be kept",
+         "dataframe.iloc[2:]"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
