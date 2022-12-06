@@ -62,6 +62,13 @@ def delete_file(file_name: str):
 def backup_file(file_name: str):
     shutil.copyfile(file_name, file_name + ".bak")   
 
+def clean_snippet(file_name: str):
+    logger = logging.getLogger("utils")
+
+    dictionary = read_file(file_name)
+    logger.info(f"Cleaning '{get_title(dictionary)} ...")
+    delete_file(file_name)
+    save_file(file_name, dictionary)
 
 def get_file_name(display_name: str, hash:str, extension: str = 'json'):
     import re
@@ -106,12 +113,18 @@ def add_tag(dictionary: dict, tag: str) -> None:
     if not tag in tags:
         tags.add(tag)
         dictionary['metadata']['tags'] = list(tags)
+        return True
+    
+    return False
 
 def remove_tag(dictionary: dict, tag: str) -> None:
     tags = list(set(dictionary['metadata']['tags']))
     if tag in tags:
         tags.remove(tag)
-        dictionary['metadata']['tags'] = list(tags)    
+        dictionary['metadata']['tags'] = list(tags) 
+        return True
+
+    return False   
 
 def get_code(dictionary: dict) -> list:
     return dictionary['metadata']['code']

@@ -2,10 +2,10 @@
    "display_name": "Exploring a Dataframe -  Generate descriptive statistics for a Grouped Column",
    "metadata": {
       "tags": [
-         "Stadistical",
-         "Exploring Data",
+         "Data Analysis",
+         "Extra",
          "Pandas",
-         "Extra"
+         "Stadistical"
       ],
       "display_name": "Exploring a Dataframe -  Generate descriptive statistics for a Grouped Column",
       "code": [

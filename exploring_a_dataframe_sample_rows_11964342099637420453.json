@@ -1,18 +1,19 @@
 {
-   "display_name": "Exploring a Dataframe - Last Rows",
+   "display_name": "Exploring a Dataframe - Sample rows",
    "metadata": {
       "tags": [
-         "Exploring Data",
-         "Pandas",
-         "Extra"
+         "Data Analysis",
+         "Extra",
+         "Pandas"
       ],
-      "display_name": "Exploring a Dataframe - Last Rows",
+      "display_name": "Exploring a Dataframe - Sample rows",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
          "# Use an argument if you want to specify a concrete number of lines",
-         "dataframe.tail(2)"
+         "# random_state argument is the seed for the random number generator",
+         "dataframe.sample(2, random_state= 1000)"
       ],
       "language": "Python"
    },

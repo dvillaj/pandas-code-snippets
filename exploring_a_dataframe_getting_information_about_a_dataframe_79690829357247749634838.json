@@ -2,9 +2,9 @@
    "display_name": "Exploring a Dataframe - Getting information about a Dataframe",
    "metadata": {
       "tags": [
-         "Exploring Data",
-         "Pandas",
-         "Extra"
+         "Data Analysis",
+         "Extra",
+         "Pandas"
       ],
       "display_name": "Exploring a Dataframe - Getting information about a Dataframe",
       "code": [

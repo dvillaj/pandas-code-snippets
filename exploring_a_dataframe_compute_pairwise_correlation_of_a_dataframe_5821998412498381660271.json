@@ -2,9 +2,9 @@
    "display_name": "Exploring a Dataframe - Compute pairwise correlation of a Dataframe",
    "metadata": {
       "tags": [
-         "Exploring Data",
-         "Pandas",
-         "Extra"
+         "Data Analysis",
+         "Extra",
+         "Pandas"
       ],
       "display_name": "Exploring a Dataframe - Compute pairwise correlation of a Dataframe",
       "code": [

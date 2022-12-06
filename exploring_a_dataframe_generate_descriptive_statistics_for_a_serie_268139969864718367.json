@@ -2,10 +2,10 @@
    "display_name": "Exploring a Dataframe - Generate descriptive statistics for a Serie",
    "metadata": {
       "tags": [
-         "Stadistical",
-         "Exploring Data",
-         "Pandas",
+         "Data Analysis",
          "Extra",
+         "Pandas",
+         "Stadistical",
          "Series"
       ],
       "display_name": "Exploring a Dataframe - Generate descriptive statistics for a Serie",

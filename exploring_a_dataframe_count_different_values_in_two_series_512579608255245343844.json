@@ -2,11 +2,11 @@
    "display_name": "Exploring a Dataframe - Count different values in two Series",
    "metadata": {
       "tags": [
-         "Series",
-         "Exploring Data",
+         "Data Analysis",
          "Extra",
+         "Pandas",
          "Stadistical",
-         "Pandas"
+         "Series"
       ],
       "display_name": "Exploring a Dataframe - Count different values in two Series",
       "code": [

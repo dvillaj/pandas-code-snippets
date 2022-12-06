@@ -2,9 +2,9 @@
    "display_name": "Highlight a Dataframe - Specific Columns",
    "metadata": {
       "tags": [
-         "Exploring Data",
-         "Pandas",
-         "Extra"
+         "Data Analysis",
+         "Extra",
+         "Pandas"
       ],
       "display_name": "Highlight a Dataframe - Specific Columns",
       "code": [
