@@ -5,14 +5,19 @@ from elyra_utils import *
 conf_logging()
 logger = logging.getLogger("app")
 
-new_tag = 'Extra'
-logger.info("Beginning ...")
+included_tags = set(["Read & Write"])
+excluded_tags = set([])
+
+print(f"Snippet including {included_tags} and excluding {excluded_tags}:")
+
+tag = 'Data Analyisis'
 for file in glob.glob("*.json"):
     dictionary = read_file(file)
-    logger.info(f"Adding '{new_tag}' tag to {get_title(dictionary)} ...")
+    if check_tags(dictionary, included_tags, excluded_tags):
+        logger.info(f"Adding '{tag}' tag to {get_title(dictionary)} ...")
 
-    add_tag(dictionary, new_tag)
-    delete_file(file)
-    save_file(file, dictionary)
+        add_tag(dictionary, tag)
+        delete_file(file)
+        save_file(file, dictionary)
 
-logger.info("All good :-)")
+

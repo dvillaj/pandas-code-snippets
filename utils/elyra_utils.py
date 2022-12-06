@@ -103,8 +103,9 @@ def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
 
 def add_tag(dictionary: dict, tag: str) -> None:
     tags = set(dictionary['metadata']['tags'])
-    tags.add(tag)
-    dictionary['metadata']['tags'] = list(tags)
+    if not tag in tags:
+        tags.add(tag)
+        dictionary['metadata']['tags'] = list(tags)
 
 def remove_tag(dictionary: dict, tag: str) -> None:
     tags = list(set(dictionary['metadata']['tags']))

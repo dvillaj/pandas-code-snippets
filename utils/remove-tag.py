@@ -19,5 +19,3 @@ for file in glob.glob("*.json"):
         remove_tag(dictionary, tag)
         delete_file(file)
         save_file(file, dictionary)
-
-logger.info("All good :-)")
