@@ -1,20 +1,17 @@
 {
-   "display_name": "Match Patterns",
+   "display_name": "Counting Occurrences with Python",
    "metadata": {
       "tags": [
          "Regex",
          "Extra"
       ],
-      "display_name": "Match Patterns",
+      "display_name": "Counting Occurrences with Python",
       "code": [
          "import re",
          "",
-         "regex = r'^F'",
+         "regex = r'[fd]'",
          "text = \"Finland\"",
-         "if (re.search(regex, text)):",
-         "    print(\"Yes!\")",
-         "else:",
-         "    print(\"No!\")"
+         "re.findall(regex, text, re.IGNORECASE)"
       ],
       "language": "Python"
    },

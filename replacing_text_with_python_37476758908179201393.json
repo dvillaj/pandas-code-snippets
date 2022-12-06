@@ -1,11 +1,11 @@
 {
-   "display_name": "Replacing Text",
+   "display_name": "Replacing Text with Python",
    "metadata": {
       "tags": [
          "Regex",
          "Extra"
       ],
-      "display_name": "Replacing Text",
+      "display_name": "Replacing Text with Python",
       "code": [
          "import re",
          "",

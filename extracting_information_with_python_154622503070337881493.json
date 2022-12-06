@@ -1,11 +1,11 @@
 {
-   "display_name": "Extracting Information",
+   "display_name": "Extracting Information with Python",
    "metadata": {
       "tags": [
          "Regex",
          "Extra"
       ],
-      "display_name": "Extracting Information",
+      "display_name": "Extracting Information with Python",
       "code": [
          "import re",
          "",
