@@ -246,15 +246,15 @@ def randomize_list(list: list) -> list:
     return list
 
 
-def export_tag_to_google_colab(tag: str, fileName: str):
+def export_tag_to_google_colab(tags: list, fileName: str):
     logger = logging.getLogger("utils")
 
     snippets = []
     excluded_tags = set(['Extra'])
     for file in glob.glob("*.json"):
         snippet = read_file(file)
-        if check_tags(snippet, set([tag]), excluded_tags):
+        if check_tags(snippet, set(tags), excluded_tags):
             logger.debug(f" - {get_language(snippet)}: {get_title(snippet)}")
             snippets.append(snippet)
         
-    write_to_notebook(tag, snippets, fileName)    
+    write_to_notebook(tags[0], snippets, fileName)    

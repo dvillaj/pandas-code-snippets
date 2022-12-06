@@ -1,0 +1,18 @@
+{
+   "display_name": "Extracting Information with Python",
+   "metadata": {
+      "tags": [
+         "Regex"
+      ],
+      "display_name": "Extracting Information with Python",
+      "code": [
+         "import re",
+         "",
+         "regex = r'([\\w ]*) \\((\\d{4})\\)'",
+         "text = \"Toy Story (1995)\"",
+         "re.findall(regex, text)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

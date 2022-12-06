@@ -1,0 +1,32 @@
+{
+   "display_name": "Identifying Data Types",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Identifying Data Types",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Country\tYear\tCases\tPopulation",
+         "Afghanistan \t1999 \t745.0 \t19,987,071",
+         "Afghanistan \t2000 \t2666.0 \t20,595,360",
+         "Brazil \t1999 \t37737.0 \t172,006,362",
+         "Brazil \t2000 \t80488.0 \t174,504,898",
+         "China \t1999 \t212258.0 \t1,272,915,272",
+         "China \t2000 \t213766.0 \t1,280,428,583",
+         "\"\"\")",
+         "",
+         "text_file.close()",
+         "dataframe = pd.read_csv(\"data.csv\", sep = \"\\t\")",
+         "",
+         "display(dataframe)",
+         "dataframe.info()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
