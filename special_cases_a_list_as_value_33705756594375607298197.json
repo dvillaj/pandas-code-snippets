@@ -1,11 +1,11 @@
 {
-   "display_name": "Special Case - A List as Value",
+   "display_name": "Special Cases - A List as Value",
    "metadata": {
       "tags": [
          "Data Cleaning",
          "Extra"
       ],
-      "display_name": "Special Case - A List as Value",
+      "display_name": "Special Cases - A List as Value",
       "code": [
          "import pandas as pd",
          "import json",

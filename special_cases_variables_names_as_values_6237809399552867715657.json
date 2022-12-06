@@ -1,35 +1,33 @@
 {
-   "display_name": "Special Case - Missing Data as non-null Values",
+   "display_name": "Special Cases - Variables Names as Values",
    "metadata": {
       "tags": [
          "Data Cleaning",
          "Extra"
       ],
-      "display_name": "Special Case - Missing Data as non-null Values",
+      "display_name": "Special Cases - Variables Names as Values",
       "code": [
          "import pandas as pd",
-         "import numpy as np",
          "",
          "text_file = open(\"data.csv\", \"w\")",
          "text_file.write(",
          "\"\"\"",
          "Name,Sex,City,Age",
          "Sharon,F,Austin,30",
-         "Eva,F,Texas,23",
          "Kevin,M,New York,34",
          "Michael,M,New York,44",
-         "Barbara,-,New York,21",
          "\"\"\")",
          "text_file.close()",
          "",
-         "dataframe = pd.read_csv(\"data.csv\")",
+         "dataframe = pd.read_csv(\"data.csv\",header=None)",
          "",
-         "dataframe.info()",
-         "dataframe.Sex.value_counts()",
+         "display(dataframe)",
          "",
-         "dataframe.assign(",
-         "    Sex = lambda dataset: dataset.Sex.replace({'-' : np.nan})",
-         ")"
+         "(dataframe",
+         "    .set_axis(dataframe.iloc[0].tolist(),",
+         "              axis = 'columns')",
+         "    .drop(0)",
+         " )"
       ],
       "language": "Python"
    },

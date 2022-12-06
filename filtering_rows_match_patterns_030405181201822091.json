@@ -1,22 +1,20 @@
 {
-   "display_name": "Filtering Rows - Match Patterns Ignoring Case",
+   "display_name": "Filtering Rows - Match Patterns",
    "metadata": {
       "tags": [
          "Regex",
-         "Data Cleaning"
+         "Data Analysis"
       ],
-      "display_name": "Filtering Rows - Match Patterns Ignoring Case",
+      "display_name": "Filtering Rows - Match Patterns",
       "code": [
          "import pandas as pd",
-         "import re",
-         "",
          "dataframe = pd.DataFrame({'Country': ['Finland', 'Denmark', 'Norway', 'Iceland', 'Netherlands'],",
          " 'Ladder': [1, 2, 3, 4, 5],",
          " 'Generosity': [47.0, 22.0, 11.0, 3.0, 7.0]})",
          "",
          "display(dataframe)",
          "",
-         "dataframe[ dataframe.Country.str.match(r'^f', False, re.IGNORECASE) ]"
+         "dataframe.query(\"Country.str.match(r'^F')\")"
       ],
       "language": "Python"
    },

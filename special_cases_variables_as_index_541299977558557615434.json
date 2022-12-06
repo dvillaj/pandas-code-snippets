@@ -1,11 +1,11 @@
 {
-   "display_name": "Special Case - Variables as Index",
+   "display_name": "Special Cases - Variables as Index",
    "metadata": {
       "tags": [
          "Data Cleaning",
          "Extra"
       ],
-      "display_name": "Special Case - Variables as Index",
+      "display_name": "Special Cases - Variables as Index",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame([[ 1999, 745, 19987071], [ 2000, 2666, 20595360], [ 1999, 37737, 172006362], [ 2000, 80488, 174504898], [ 1999, 212258, 1272915272], [ 2000, 213766, 1280428583]],",

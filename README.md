@@ -10,7 +10,6 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Accessing to NumPy Arrays
     - Accessing to Series
     - Column Selection on a Dataframe
-    - Convert a Serie into a Dataframe
     - Creating NumPy Arrays
     - Creating a Dataframe
     - Creating a Serie
@@ -28,6 +27,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Single Row Selection by position
     - Statistical methods on NumPy Arrays
     - Statistical methods on Series
+    - Transforming Dataframes
     - Transforming Series
     - Values and Index of a Serie
     - Values, Columns and Index of a Dataframe
@@ -65,6 +65,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Grouping data
     - Joining data
     - Ordering Rows
+    - Pandas Flags    
     - Pandas Options
     - Pandas styling
     - Pivot Tables
