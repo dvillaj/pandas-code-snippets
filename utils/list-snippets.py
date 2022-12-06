@@ -2,9 +2,9 @@ import logging
 import glob
 from elyra_utils import *
 
-included_tags = set(["Regex"])
+included_tags = set(["Data Cleaning"])
 #excluded_tags = set(["Base", "Read & Write", "Data Analysis", "Data Cleaning"])
-excluded_tags = set([])
+excluded_tags = set(['Extra'])
 
 conf_logging()
 logger = logging.getLogger("app")

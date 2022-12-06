@@ -165,6 +165,11 @@ def check_tags(snippet: dict, included_tags: set, excluded_tags:set = None ) -> 
     if check_lists_included_and(tags, included_tags):
         return not check_lists_included_or(tags, excluded_tags)
 
+def check_tags_or(snippet: dict, included_tags: set, excluded_tags:set = None ) -> bool:
+    tags = get_tags(snippet)
+    if check_lists_included_or(tags, included_tags):
+        return not check_lists_included_or(tags, excluded_tags)
+
 def generate_id() -> str:
     import uuid
     import random
@@ -253,8 +258,8 @@ def export_tag_to_google_colab(tags: list, fileName: str):
     excluded_tags = set(['Extra'])
     for file in glob.glob("*.json"):
         snippet = read_file(file)
-        if check_tags(snippet, set(tags), excluded_tags):
-            logger.debug(f" - {get_language(snippet)}: {get_title(snippet)}")
+        if check_tags_or(snippet, set(tags), excluded_tags):
+            logger.info(f" - {get_language(snippet)}: {get_title(snippet)}")
             snippets.append(snippet)
         
     write_to_notebook(tags[0], snippets, fileName)    
