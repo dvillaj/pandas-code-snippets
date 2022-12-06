@@ -1,0 +1,22 @@
+{
+   "display_name": "Narrowing down tables",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Narrowing down tables",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\", \"table4a\")",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.melt(id_vars=\"Country\",",
+         "                 var_name = 'Year',",
+         "                 value_name = 'Cases')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

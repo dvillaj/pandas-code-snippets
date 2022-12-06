@@ -1,0 +1,20 @@
+{
+   "display_name": "Data Format - Make the data homogeneous - Strings",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Data Format - Make the data homogeneous - Strings",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.assign(",
+         "    Country = lambda dataset: dataset.Country.str.lower().str.strip()",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

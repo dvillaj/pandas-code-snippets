@@ -1,0 +1,19 @@
+{
+   "display_name": "Creating NumPy Arrays - From a Python List",
+   "metadata": {
+      "tags": [
+         "Base",
+         "NumPy"
+      ],
+      "display_name": "Creating NumPy Arrays - From a Python List",
+      "code": [
+         "import numpy as np",
+         "",
+         "lista = [12, 12, 53]",
+         "array = np.array(lista)",
+         "print(array)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

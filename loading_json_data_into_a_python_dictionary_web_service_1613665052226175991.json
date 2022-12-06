@@ -1,0 +1,20 @@
+{
+   "display_name": "Loading JSON data into a Python Dictionary - Web Service",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Loading JSON data into a Python Dictionary - Web Service",
+      "code": [
+         "import requests",
+         "",
+         "url = 'https://api.github.com/repos/pandas-dev/pandas/issues'",
+         "response = requests.get(url)",
+         "dictionary = response.json()",
+         "",
+         "dictionary"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

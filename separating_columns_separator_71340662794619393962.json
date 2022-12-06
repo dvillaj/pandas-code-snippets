@@ -1,0 +1,35 @@
+{
+   "display_name": "Separating columns - Separator",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Separating columns - Separator",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.csv\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "Name,Sex,City-Age",
+         "Sharon,F,Austin-30",
+         "Kevin,M,New York-34",
+         "Michael,M,New York-44",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"data.csv\")",
+         "",
+         "display(dataframe)",
+         "",
+         "def separate_columns(df, column_name, separator, new_columns):",
+         "    df[new_columns] = df[column_name].str.split(separator, expand = True)",
+         "    return df",
+         "",
+         "dataframe.pipe(separate_columns, 'City-Age', '-', ['City', 'Age'])"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

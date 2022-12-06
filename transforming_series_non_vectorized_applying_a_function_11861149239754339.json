@@ -1,0 +1,32 @@
+{
+   "display_name": "Transforming Series - Non Vectorized - Applying a Function",
+   "metadata": {
+      "tags": [
+         "Base"
+      ],
+      "display_name": "Transforming Series - Non Vectorized - Applying a Function",
+      "code": [
+         "import pandas as pd",
+         "import math",
+         "",
+         "serie = pd.Series([1, 5, 10, 45])",
+         "",
+         "print(serie.tolist())",
+         "print(serie.map(lambda value: math.sqrt(value)).tolist())",
+         "print(serie.map(lambda value: value if value > 15 else 0).tolist())",
+         "",
+         "def multiplica(n):",
+         "    if n > 5:",
+         "        return math.sqrt(n) - n**2",
+         "    else:",
+         "        if n > -10:",
+         "            return math.sqrt(n)",
+         "        else:",
+         "            return -1",
+         "",
+         "print(serie.map(multiplica).tolist())"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

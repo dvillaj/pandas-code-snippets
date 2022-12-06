@@ -1,0 +1,28 @@
+{
+   "display_name": "Grouping data - Multiple aggregation columns",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Grouping data - Multiple aggregation columns",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# We can use any of theese options to specify the aggregation function:",
+         "# - A String",
+         "# - A Serie Statistical function",
+         "# - A numpy Statistical function",
+         "dataframe.groupby(\"Country\").agg(",
+         "    total_records  = (\"Year\" , \"count\"),",
+         "    sum_cases = (\"Cases\",  lambda serie: serie.sum()),",
+         "    mean_population = (\"Population\", lambda serie: np.mean(serie))",
+         ")",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

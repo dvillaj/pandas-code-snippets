@@ -1,0 +1,30 @@
+{
+   "display_name": "Converting Data Types - Date with Year, Month and Day",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Time Series",
+         "Extra"
+      ],
+      "display_name": "Converting Data Types - Date with Year, Month and Day",
+      "code": [
+         "import pandas as pd",
+         "dataframe = (pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "    .assign(",
+         "        Month = 1,",
+         "        Day = 1",
+         "    )",
+         " )",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe = dataframe.assign(",
+         "    Date = lambda dataset : pd.to_datetime(dataset.filter([\"Year\", \"Month\", \"Day\"]))",
+         ")",
+         "",
+         "display(dataframe)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

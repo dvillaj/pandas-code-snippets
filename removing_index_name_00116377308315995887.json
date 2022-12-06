@@ -1,0 +1,18 @@
+{
+   "display_name": "Removing index name",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Removing index name",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.rename_axis(index=None)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

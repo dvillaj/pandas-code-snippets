@@ -1,0 +1,17 @@
+{
+   "display_name": "Selecting distinct values",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Selecting distinct values",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.filter([\"Country\"]).drop_duplicates()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

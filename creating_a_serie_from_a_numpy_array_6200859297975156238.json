@@ -1,0 +1,20 @@
+{
+   "display_name": "Creating a Serie - From a NumPy array",
+   "metadata": {
+      "tags": [
+         "Base",
+         "NumPy"
+      ],
+      "display_name": "Creating a Serie - From a NumPy array",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "array = np.arange(-3, 2)",
+         "serie = pd.Series(array)",
+         "serie"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

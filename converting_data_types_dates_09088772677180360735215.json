@@ -1,0 +1,30 @@
+{
+   "display_name": "Converting Data Types - Dates",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Time Series",
+         "Extra"
+      ],
+      "display_name": "Converting Data Types - Dates",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "display(dataframe)",
+         "dataframe.info()",
+         "",
+         "# Date and Time Formats",
+         "# https://strftime.org/",
+         "",
+         "dataframe = dataframe.assign(",
+         "    Year = lambda dataset : pd.to_datetime(dataset.Year, format = \"%Y\"),",
+         ")",
+         "",
+         "display(dataframe)",
+         "dataframe.info()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
