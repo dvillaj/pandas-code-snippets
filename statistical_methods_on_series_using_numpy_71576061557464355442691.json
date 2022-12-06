@@ -1,14 +1,13 @@
 {
-   "display_name": "Statistical methods - Series Using NumPy",
+   "display_name": "Statistical methods on Series - Using NumPy",
    "metadata": {
       "tags": [
+         "Pandas",
          "Base",
-         "Series",
          "NumPy",
-         "Stadistical",
-         "Pandas"
+         "Series"
       ],
-      "display_name": "Statistical methods - Series Using NumPy",
+      "display_name": "Statistical methods on Series - Using NumPy",
       "code": [
          "import pandas as pd",
          "import numpy as np",
