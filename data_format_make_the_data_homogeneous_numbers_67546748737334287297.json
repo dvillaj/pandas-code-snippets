@@ -1,0 +1,29 @@
+{
+   "display_name": "Data Format - Make the data homogeneous - Numbers",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Data Format - Make the data homogeneous - Numbers",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+         "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000],",
+         "                          'Cases': [745.0745, 2666.2666, 37740.7737, 80496.0488, 212279.2258, 213787.3766],",
+         "                          'Population': [19987071, 20595360, 172006362, 174504898, 1272915272, 1280428583]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign(",
+         "    Cases_Round_2 = lambda dataset: dataset.Cases.round(2),",
+         "    Cases_Round_Up = lambda dataset: dataset.Cases.apply(np.ceil).astype('int'),",
+         "    Cases_Round_Down = lambda dataset: dataset.Cases.apply(np.floor).astype('int')",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

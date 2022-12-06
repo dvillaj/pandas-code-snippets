@@ -15,13 +15,13 @@ themes = set()
 tags = set()
 print(f"Snippet including {included_tags} and excluding {excluded_tags}:")
 for file in glob.glob("*.json"):
-    dictionary = read_file(file)
-    if check_tags(dictionary, included_tags, excluded_tags):
-        themes.add(get_theme(dictionary))
-        tags = tags.union(get_tags(dictionary))
-        print(f" - {get_language(dictionary)}: {get_title(dictionary)} - {get_tags(dictionary)}")
+    snippet = read_file(file)
+    if check_tags(snippet, included_tags, excluded_tags):
+        themes.add(get_theme(snippet))
+        tags = tags.union(get_tags(snippet))
+        print(f" - {get_language(snippet)}: {get_title(snippet)} - {get_tags(snippet)}")
     else:
-        snippets_not_included.append(dictionary)
+        snippets_not_included.append(snippet)
 
 print("\nThemes:")
 for theme in sorted(themes):
@@ -33,8 +33,8 @@ for tag in sorted(tags):
 
 if show_not_included:
     print("\nSnippets Not Included::")
-    for dictionary in snippets_not_included:
-        print(f" - {get_language(dictionary)}: {get_title(dictionary)} - {get_tags(dictionary)}")
+    for snippet in snippets_not_included:
+        print(f" - {get_language(snippet)}: {get_title(snippet)} - {get_tags(snippet)}")
             
 
 

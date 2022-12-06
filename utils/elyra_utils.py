@@ -29,6 +29,9 @@ def read_file(file: str):
 
     except FileNotFoundError:
         logger.error(f"'{file}' not found.")
+        
+    except:
+        raise Exception(f"An exception occurred in file '{file}'")
 
 
 def dict_to_string(snippet: dict) -> str:
@@ -75,8 +78,10 @@ def get_file_name(display_name: str, hash:str, extension: str = 'json'):
             .replace(' ','_') \
                 + f"_{hash}.{extension}"
 
+def execute_python_file(file_name: str) -> int:
+    return os.system(f'python {file_name}')
 
-def execute_code(snippet: dict, file_name: str = 'snippet.py'):
+def execute_snippet(snippet: dict, file_name: str = 'snippet.py'):
     logger = logging.getLogger("utils")
     
     title = get_title(snippet)
@@ -92,7 +97,7 @@ def execute_code(snippet: dict, file_name: str = 'snippet.py'):
             for item in lines:
                 fp.write("%s\n" % item)
 
-        return_value = os.system(f'python {file_name}')
+        return_value = execute_python_file(file_name)
         delete_file(file_name)
 
         for data_file in glob.glob("data.*"):
@@ -100,8 +105,11 @@ def execute_code(snippet: dict, file_name: str = 'snippet.py'):
 
         if return_value:
             logger.error(f"Sorry, There is an issue executing the snippet: {title}")
+            return False
     else:
         logger.info(f"No Python Snippet. Can't be executed ...")
+
+    return True
 
 
 def add_tag(snippet: dict, tag: str) -> None:
@@ -168,11 +176,8 @@ def generate_id() -> str:
 
 
 def get_cells(tag: str, snippets: list) -> list:
-    n = 0
     cells = []
     for snippet in snippets:
-        n += 2
-
         title = {
             "cell_type": "markdown",
             "id": generate_id(),
@@ -186,7 +191,6 @@ def get_cells(tag: str, snippets: list) -> list:
 
         code = {
         "cell_type": "code",
-        "execution_count": n,
         "id": generate_id(),
         "metadata": {},
         "outputs": [],
@@ -227,7 +231,7 @@ def get_notebook(tag: str, snippets: list) -> dict:
 def write_to_notebook(tag: str, snippets: list, filename: str) -> None:
     logger = logging.getLogger("utils")
 
-    logger.info(f"Writting {filename} ...")
+    logger.debug(f"Writting {filename} ...")
     notebook = get_notebook(tag, randomize_list(snippets))
     json_object = json.dumps(notebook, indent=4)
     with open(filename, "w") as outfile:
@@ -247,7 +251,6 @@ def export_tag_to_google_colab(tag: str, fileName: str):
 
     snippets = []
     excluded_tags = set(['Extra'])
-    logger.info(f"Exporting {tag} to Google Colab ...")
     for file in glob.glob("*.json"):
         snippet = read_file(file)
         if check_tags(snippet, set([tag]), excluded_tags):
