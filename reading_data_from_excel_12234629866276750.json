@@ -3,8 +3,7 @@
    "metadata": {
       "tags": [
          "Read & Write",
-         "Pandas",
-         "Excel"
+         "Pandas"
       ],
       "display_name": "Reading data from Excel",
       "code": [
