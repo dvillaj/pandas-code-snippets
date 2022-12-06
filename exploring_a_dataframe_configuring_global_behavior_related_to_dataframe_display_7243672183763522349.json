@@ -1,12 +1,12 @@
 {
-   "display_name": "Configuring global behavior related to DataFrame display",
+   "display_name": "Exploring a Dataframe - Configuring global behavior related to DataFrame display",
    "metadata": {
       "tags": [
          "Exploring Data",
          "Pandas",
          "Extra"
       ],
-      "display_name": "Configuring global behavior related to DataFrame display",
+      "display_name": "Exploring a Dataframe - Configuring global behavior related to DataFrame display",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",

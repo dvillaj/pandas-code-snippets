@@ -1,12 +1,12 @@
 {
-   "display_name": "Compute pairwise correlation of a Dataframe",
+   "display_name": "Exploring a Dataframe - Compute pairwise correlation of a Dataframe",
    "metadata": {
       "tags": [
          "Exploring Data",
          "Pandas",
          "Extra"
       ],
-      "display_name": "Compute pairwise correlation of a Dataframe",
+      "display_name": "Exploring a Dataframe - Compute pairwise correlation of a Dataframe",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",

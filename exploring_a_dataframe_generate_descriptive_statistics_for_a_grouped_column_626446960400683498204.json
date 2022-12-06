@@ -1,20 +1,18 @@
 {
-   "display_name": "Profiling Report",
+   "display_name": "Exploring a Dataframe -  Generate descriptive statistics for a Grouped Column",
    "metadata": {
       "tags": [
-         "Tools",
+         "Stadistical",
          "Exploring Data",
          "Pandas",
          "Extra"
       ],
-      "display_name": "Profiling Report",
+      "display_name": "Exploring a Dataframe -  Generate descriptive statistics for a Grouped Column",
       "code": [
          "import pandas as pd",
-         "import pandas_profiling",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "profile = dataframe.profile_report(title=\"Pandas Profiling Report\")",
-         "profile.to_file(output_file=\"profiling-report.html\")"
+         "dataframe.groupby(\"Country\").Year.describe()"
       ],
       "language": "Python"
    },

@@ -1,17 +1,17 @@
 {
-   "display_name": "Exploring some rows of a Dataframe - Top Rows",
+   "display_name": "Exploring a Dataframe - A Value",
    "metadata": {
       "tags": [
          "Exploring Data",
          "Pandas",
          "Extra"
       ],
-      "display_name": "Exploring some rows of a Dataframe - Top Rows",
+      "display_name": "Exploring a Dataframe - A Value",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
          "",
-         "dataframe.nlargest(2, columns='Cases')"
+         "dataframe.at[0, 'Country']"
       ],
       "language": "Python"
    },

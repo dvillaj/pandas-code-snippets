@@ -1,5 +1,5 @@
 {
-   "display_name": "Counting unique values - Two Series",
+   "display_name": "Exploring a Dataframe - Count different values in one Serie",
    "metadata": {
       "tags": [
          "Series",
@@ -8,7 +8,7 @@
          "Stadistical",
          "Pandas"
       ],
-      "display_name": "Counting unique values - Two Series",
+      "display_name": "Exploring a Dataframe - Count different values in one Serie",
       "code": [
          "import pandas as pd",
          "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
