@@ -31,25 +31,25 @@ def read_file(file: str):
         logger.error(f"'{file}' not found.")
 
 
-def dict_to_string(dictionary: dict) -> str:
-    return json.dumps(dictionary, indent=3)
+def dict_to_string(snippet: dict) -> str:
+    return json.dumps(snippet, indent=3)
 
-def get_hash(dictionary: dict):
+def get_hash(snippet: dict):
     import hashlib
     import re
 
     regex = r'[a-z]'
-    value = dict_to_string(dictionary)
+    value = dict_to_string(snippet)
     hash_object = hashlib.md5(value.encode())
     return re.sub(regex, '', hash_object.hexdigest())
 
 
-def save_file(filename: str, dictionary: dict):
+def save_file(filename: str, snippet: dict):
     logger = logging.getLogger("utils")
-    file_name = get_file_name(get_title(dictionary), get_hash(dictionary))
+    file_name = get_file_name(get_title(snippet), get_hash(snippet))
     logger.debug(f"Writing '{file_name}' ...")
 
-    json_txt = dict_to_string(dictionary)
+    json_txt = dict_to_string(snippet)
     f = open(file_name,"w")
     f.write(json_txt)
     f.close()
@@ -62,13 +62,9 @@ def delete_file(file_name: str):
 def backup_file(file_name: str):
     shutil.copyfile(file_name, file_name + ".bak")   
 
-def clean_snippet(file_name: str):
-    logger = logging.getLogger("utils")
-
-    dictionary = read_file(file_name)
-    logger.info(f"Cleaning '{get_title(dictionary)} ...")
+def clean_snippet(file_name: str, snippet: dict):
     delete_file(file_name)
-    save_file(file_name, dictionary)
+    save_file(file_name, snippet)
 
 def get_file_name(display_name: str, hash:str, extension: str = 'json'):
     import re
@@ -80,12 +76,12 @@ def get_file_name(display_name: str, hash:str, extension: str = 'json'):
                 + f"_{hash}.{extension}"
 
 
-def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
+def execute_code(snippet: dict, file_name: str = 'snippet.py'):
     logger = logging.getLogger("utils")
     
-    snippet = get_title(dictionary)
-    lines = get_code(dictionary)
-    language = get_language(dictionary)
+    snippet = get_title(snippet)
+    lines = get_code(snippet)
+    language = get_language(snippet)
 
     lines.insert(0, "from IPython.display import display")
 
@@ -108,41 +104,41 @@ def execute_code(dictionary: dict, file_name: str = 'snippet.py'):
         logger.info(f"No Python Snippet. Can't be executed ...")
 
 
-def add_tag(dictionary: dict, tag: str) -> None:
-    tags = set(dictionary['metadata']['tags'])
+def add_tag(snippet: dict, tag: str) -> None:
+    tags = set(snippet['metadata']['tags'])
     if not tag in tags:
         tags.add(tag)
-        dictionary['metadata']['tags'] = list(tags)
+        snippet['metadata']['tags'] = list(tags)
         return True
     
     return False
 
-def remove_tag(dictionary: dict, tag: str) -> None:
-    tags = list(set(dictionary['metadata']['tags']))
+def remove_tag(snippet: dict, tag: str) -> None:
+    tags = list(set(snippet['metadata']['tags']))
     if tag in tags:
         tags.remove(tag)
-        dictionary['metadata']['tags'] = list(tags) 
+        snippet['metadata']['tags'] = list(tags) 
         return True
 
     return False   
 
-def get_code(dictionary: dict) -> list:
-    return dictionary['metadata']['code']
+def get_code(snippet: dict) -> list:
+    return snippet['metadata']['code']
 
-def get_language(dictionary: dict) -> str:
-    return dictionary['metadata']['language']
+def get_language(snippet: dict) -> str:
+    return snippet['metadata']['language']
 
-def get_tags(dictionary: dict) -> set:
-    return set(dictionary['metadata']['tags'])
+def get_tags(snippet: dict) -> set:
+    return set(snippet['metadata']['tags'])
 
-def get_title(dictionary: dict) -> str:
-    return dictionary['display_name']
+def get_title(snippet: dict) -> str:
+    return snippet['display_name']
     
 
-def get_theme(dictionary: dict):
+def get_theme(snippet: dict):
     import re
 
-    title = get_title(dictionary)
+    title = get_title(snippet)
     regex = r'([^-]*)'
     return re.findall(regex, title)[0].strip()      
 
@@ -156,8 +152,8 @@ def check_lists_included_or(tags: list, included_tags:set = None ) -> bool:
                     return True
     return False
 
-def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    tags = get_tags(dictionary)
+def check_tags(snippet: dict, included_tags: set, excluded_tags:set = None ) -> bool:
+    tags = get_tags(snippet)
     if check_lists_included_and(tags, included_tags):
         return not check_lists_included_or(tags, excluded_tags)
 
@@ -253,9 +249,9 @@ def export_tag_to_google_colab(tag: str, fileName: str):
     excluded_tags = set(['Extra'])
     logger.info(f"Exporting {tag} to Google Colab ...")
     for file in glob.glob("*.json"):
-        dictionary = read_file(file)
-        if check_tags(dictionary, set([tag]), excluded_tags):
-            logger.debug(f" - {get_language(dictionary)}: {get_title(dictionary)}")
-            snippets.append(dictionary)
+        snippet = read_file(file)
+        if check_tags(snippet, set([tag]), excluded_tags):
+            logger.debug(f" - {get_language(snippet)}: {get_title(snippet)}")
+            snippets.append(snippet)
         
     write_to_notebook(tag, snippets, fileName)    

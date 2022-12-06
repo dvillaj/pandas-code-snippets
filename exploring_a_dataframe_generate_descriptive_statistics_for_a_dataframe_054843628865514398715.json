@@ -1,0 +1,26 @@
+{
+   "display_name": "Exploring a Dataframe - Generate descriptive statistics for a Dataframe",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Stadistical",
+         "Data Analysis"
+      ],
+      "display_name": "Exploring a Dataframe - Generate descriptive statistics for a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# Numerical columns",
+         "dataframe.describe()",
+         "",
+         "# Numerical and non Numerical columns",
+         "dataframe.describe(include = 'all')",
+         "",
+         "# Describing a specific column",
+         "dataframe.Cases.describe()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

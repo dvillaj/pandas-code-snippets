@@ -1,0 +1,23 @@
+{
+   "display_name": "Concatenating Dataframes - Appening rows",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Concatenating Dataframes - Appening rows",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe_1999 = dataframe.query(\"Year == 1999\").reset_index(drop=True)",
+         "dataframe_2000 = dataframe.query(\"Year == 2000\").reset_index(drop=True)",
+         "",
+         "pd.concat([dataframe_1999, dataframe_2000], ignore_index = True)",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

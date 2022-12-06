@@ -1,0 +1,22 @@
+{
+   "display_name": "Exploring a Dataframe - Count different values in one Serie",
+   "metadata": {
+      "tags": [
+         "Stadistical",
+         "Pandas",
+         "Data Analysis",
+         "Series"
+      ],
+      "display_name": "Exploring a Dataframe - Count different values in one Serie",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "# The pandas crosstab function builds a cross-tabulation table that can show the frequency with which certain groups of data appear",
+         "",
+         "pd.crosstab(dataframe.Country, dataframe.Year)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

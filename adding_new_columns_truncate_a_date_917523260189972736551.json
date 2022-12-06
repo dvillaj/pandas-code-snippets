@@ -1,0 +1,29 @@
+{
+   "display_name": "Adding new columns - Truncate a Date",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Time Series",
+         "Pandas"
+      ],
+      "display_name": "Adding new columns - Truncate a Date",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = (pd.DataFrame({",
+         "        'Date' : pd.date_range(start = '2022-11-16', end = '2022-12-05', freq = 'D'),",
+         "    })",
+         "    .assign(Value = lambda dataset: np.random.randint(100, size = dataset.shape[0]))",
+         " )",
+         "",
+         "# https://pandas.pydata.org/docs/user_guide/timeseries.html#timeseries-offset-aliases",
+         "dataframe.assign(",
+         "    Week = lambda dataset: dataset.Date.dt.to_period('W').dt.to_timestamp(),",
+         "    Month = lambda dataset: dataset.Date.dt.to_period('M').dt.to_timestamp()",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

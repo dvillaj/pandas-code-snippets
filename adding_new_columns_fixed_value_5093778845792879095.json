@@ -1,0 +1,20 @@
+{
+   "display_name": "Adding new columns - Fixed Value",
+   "metadata": {
+      "tags": [
+         "Pandas",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Fixed Value",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.read_excel(\"https://bit.ly/Tables-xlsx\")",
+         "",
+         "dataframe.assign(",
+         "     FileName = 'data2100.dat'",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
