@@ -136,31 +136,16 @@ def check_lists_included_and(tags: list, included_tags:set = None ) -> bool:
     return included_tags.intersection(tags) == included_tags
 
 def check_lists_included_or(tags: list, included_tags:set = None ) -> bool:
-    for included_tag in included_tags:
-            if included_tag in tags:
-                return True
+    if included_tags:
+        for included_tag in included_tags:
+                if included_tag in tags:
+                    return True
     return False
 
-def check_lists_excluded(tags: list, excluded_tags:set = None ) -> bool:
-    if excluded_tags:
-        for excluded_tag in excluded_tags:
-            if excluded_tag in tags:
-                return False
-    return True
-
-def check_lists(tags: list, included_tags: set, excluded_tags:set = None ) -> bool:
-    if check_lists_included_and(tags, included_tags):
-        return check_lists_excluded(tags, excluded_tags)
-
-def check_lists_or(tags: list, included_tags: set, excluded_tags:set = None ) -> bool:
-    if check_lists_included_or(tags, included_tags):
-        return check_lists_excluded(tags, excluded_tags)
-
 def check_tags(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    return check_lists(get_tags(dictionary), included_tags, excluded_tags)
-
-def check_tags_or(dictionary: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    return check_lists_or(get_tags(dictionary), included_tags, excluded_tags)    
+    tags = get_tags(dictionary)
+    if check_lists_included_and(tags, included_tags):
+        return not check_lists_included_or(tags, excluded_tags)
 
 def generate_id() -> str:
     import uuid
@@ -172,7 +157,7 @@ def generate_id() -> str:
     return str(uuid.UUID(int=rnd.getrandbits(128), version=4))
 
 
-def get_cells(snippets: list) -> list:
+def get_cells(tag: str, snippets: list) -> list:
     n = 0
     cells = []
     for snippet in snippets:
@@ -182,7 +167,7 @@ def get_cells(snippets: list) -> list:
             "cell_type": "markdown",
             "id": generate_id(),
             "metadata": {},
-            "source": [f"## {snippet['main_title']}: {get_title(snippet)}"]
+            "source": [f"## {tag}: {get_title(snippet)}"]
             }
 
         lines = []
@@ -203,9 +188,9 @@ def get_cells(snippets: list) -> list:
     return cells
 
 
-def get_notebook(snippets: list) -> dict: 
+def get_notebook(tag: str, snippets: list) -> dict: 
     return {
-            "cells": get_cells(snippets),
+            "cells": get_cells(tag, snippets),
             "metadata": {
             "kernelspec": {
             "display_name": "Python 3 (ipykernel)",
@@ -229,11 +214,15 @@ def get_notebook(snippets: list) -> dict:
             "nbformat_minor": 5
             }
 
-def write_to_notebook(snippets: list, filename: str) -> None:
-    notebook = get_notebook(randomize_list(snippets))
+def write_to_notebook(tag: str, snippets: list, filename: str) -> None:
+    logger = logging.getLogger("utils")
+
+    logger.info(f"Writting {filename} ...")
+    notebook = get_notebook(tag, randomize_list(snippets))
     json_object = json.dumps(notebook, indent=4)
     with open(filename, "w") as outfile:
         outfile.write(json_object)
+
 
 
 def randomize_list(list: list) -> list:
@@ -241,3 +230,18 @@ def randomize_list(list: list) -> list:
     random.shuffle(list)
 
     return list
+
+
+def export_tag_to_google_colab(tag: str, fileName: str):
+    logger = logging.getLogger("utils")
+
+    snippets = []
+    excluded_tags = set(['Extra'])
+    logger.info(f"Exporting {tag} to Google Colab ...")
+    for file in glob.glob("*.json"):
+        dictionary = read_file(file)
+        if check_tags(dictionary, set([tag]), excluded_tags):
+            logger.debug(f" - {get_language(dictionary)}: {get_title(dictionary)}")
+            snippets.append(dictionary)
+        
+    write_to_notebook(tag, snippets, fileName)    
