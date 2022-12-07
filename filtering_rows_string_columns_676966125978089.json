@@ -13,7 +13,7 @@
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
          "# Important: The column must be a String",
-         "dataframe.query(\"Country.str.upper() == 'CHINA'\")"
+         "dataframe.query(\"Country.str.upper() == 'CHINA'\", engine=\"python\")"
       ],
       "language": "Python"
    },

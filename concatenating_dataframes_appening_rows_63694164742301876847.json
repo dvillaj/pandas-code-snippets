@@ -1,0 +1,28 @@
+{
+   "display_name": "Concatenating Dataframes - Appening rows",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Concatenating Dataframes - Appening rows",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe_1999 = pd.DataFrame({'Country': ['Afghanistan', 'Brazil', 'China'],",
+         " 'Year': [1999, 1999, 1999],",
+         " 'Cases': [745, 37737, 212258],",
+         " 'Population': [19987071, 172006362, 1272815272]})",
+         "",
+         "dataframe_2000 = pd.DataFrame({'Country': ['Afghanistan', 'Brazil', 'China'],",
+         " 'Year': [2000, 2000, 2000],",
+         " 'Cases': [2666, 80488, 213766],",
+         " 'Population': [20595360, 174504898, 1280428583]})",
+         "",
+         "pd.concat([dataframe_1999, dataframe_2000], ignore_index = True)",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -7,6 +7,10 @@
       "display_name": "Writing data to Excel - Manipulate Workbook",
       "code": [
          "import pandas as pd",
+         "",
+         "# xlsxwriter package is needed",
+         "# ! pip install xlsxwriter",
+         "",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
          "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
          "                          'Cases': [745, 2666, 37737, 80488, 212258, 213766],",

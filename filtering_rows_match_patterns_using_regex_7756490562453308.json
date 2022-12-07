@@ -13,7 +13,7 @@
          "",
          "display(dataframe)",
          "",
-         "dataframe.query(\"Country.str.match(r'^F')\")"
+         "dataframe.query(\"Country.str.match(r'^F')\", engine=\"python\")"
       ],
       "language": "Python"
    },
