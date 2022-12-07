@@ -1,0 +1,25 @@
+{
+   "display_name": "Joining Columns - String Fields",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Joining Columns - String Fields",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', 'Michael'],",
+         " 'Sex': ['F', 'M', 'M'],",
+         " 'City': ['Austin', 'New York', 'New York'],",
+         " 'Age': [30, 34, 44]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign (",
+         "    NameCity = lambda dataset: dataset.Name + \"-\" + dataset.City",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

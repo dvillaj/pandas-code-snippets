@@ -1,0 +1,30 @@
+{
+   "display_name": "Data Formatting - Different values for the same concept - Replace wrong values",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Data Formatting - Different values for the same concept - Replace wrong values",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Country': ['Afg', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+         "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000],",
+         "                          'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+         "                          'Population': [19987071, 20595360, 172006362, 174504898, 1272915272, 1280428583]})",
+         "",
+         "display(dataframe)",
+         "",
+         "# Replacing Wrong Values",
+         "dataframe.assign(",
+         "    country = lambda dataset: dataset.Country.replace( ",
+         "                { ",
+         "                  'Afg' : 'Afghanistan'",
+         "                }",
+         "              )",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

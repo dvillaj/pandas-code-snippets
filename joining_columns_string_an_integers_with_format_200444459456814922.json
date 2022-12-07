@@ -1,0 +1,29 @@
+{
+   "display_name": "Joining Columns -  String an Integers with Format",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Joining Columns -  String an Integers with Format",
+      "code": [
+         "import pandas as pd",
+         "",
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', 'Michael'],",
+         " 'Sex': ['F', 'M', 'M'],",
+         " 'City': ['Austin', 'New York', 'New York'],",
+         " 'Age': [30, 34, 44]})",
+         "",
+         "display(dataframe)",
+         "",
+         "",
+         "dataframe.assign (",
+         "   NameAge = lambda x: x.apply(lambda dataset: f\"{dataset.Name}-{dataset.Age:03}\", ",
+         "                              axis = 'columns')",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
