@@ -136,8 +136,8 @@ def get_code(snippet: dict) -> list:
 def get_language(snippet: dict) -> str:
     return snippet['metadata']['language']
 
-def get_tags(snippet: dict) -> set:
-    return set(snippet['metadata']['tags'])
+def get_tags(snippet: dict) -> list:
+    return snippet['metadata']['tags']
 
 def get_title(snippet: dict) -> str:
     return snippet['display_name']
@@ -161,13 +161,8 @@ def check_lists_included_or(tags: list, included_tags:set = None ) -> bool:
     return False
 
 def check_tags(snippet: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    tags = get_tags(snippet)
+    tags = set(get_tags(snippet))
     if check_lists_included_and(tags, included_tags):
-        return not check_lists_included_or(tags, excluded_tags)
-
-def check_tags_or(snippet: dict, included_tags: set, excluded_tags:set = None ) -> bool:
-    tags = get_tags(snippet)
-    if check_lists_included_or(tags, included_tags):
         return not check_lists_included_or(tags, excluded_tags)
 
 def generate_id() -> str:
@@ -180,14 +175,14 @@ def generate_id() -> str:
     return str(uuid.UUID(int=rnd.getrandbits(128), version=4))
 
 
-def get_cells(tag: str, snippets: list) -> list:
+def get_cells(snippets: list) -> list:
     cells = []
     for snippet in snippets:
         title = {
             "cell_type": "markdown",
             "id": generate_id(),
             "metadata": {},
-            "source": [f"## {tag}: {get_title(snippet)}"]
+            "source": [f"## {snippet['tag']}: {get_title(snippet)}"]
             }
 
         lines = []
@@ -207,9 +202,9 @@ def get_cells(tag: str, snippets: list) -> list:
     return cells
 
 
-def get_notebook(tag: str, snippets: list) -> dict: 
+def get_notebook(snippets: list) -> dict:
     return {
-            "cells": get_cells(tag, snippets),
+            "cells": get_cells(snippets),
             "metadata": {
             "kernelspec": {
             "display_name": "Python 3 (ipykernel)",
@@ -233,11 +228,11 @@ def get_notebook(tag: str, snippets: list) -> dict:
             "nbformat_minor": 5
             }
 
-def write_to_notebook(tag: str, snippets: list, filename: str) -> None:
+def write_to_notebook(snippets: list, filename: str) -> None:
     logger = logging.getLogger("utils")
 
     logger.debug(f"Writting {filename} ...")
-    notebook = get_notebook(tag, randomize_list(snippets))
+    notebook = get_notebook(randomize_list(snippets))
     json_object = json.dumps(notebook, indent=4)
     with open(filename, "w") as outfile:
         outfile.write(json_object)
@@ -250,16 +245,23 @@ def randomize_list(list: list) -> list:
 
     return list
 
+def get_snippets_by_tag(tag: str, excluded_tags: list = None) -> list:
+    snippets = []
+    for file in glob.glob("*.json"):
+        snippet = read_file(file)
+        if check_tags(snippet, set([tag]), set(excluded_tags)):
+            snippet['tag'] = tag
+            snippets.append(snippet)
+            
+    return snippets
 
 def export_tag_to_google_colab(tags: list, fileName: str):
     logger = logging.getLogger("utils")
 
     snippets = []
-    excluded_tags = set(['Extra'])
-    for file in glob.glob("*.json"):
-        snippet = read_file(file)
-        if check_tags_or(snippet, set(tags), excluded_tags):
-            logger.info(f" - {get_language(snippet)}: {get_title(snippet)}")
+    for tag in tags:
+        for snippet in get_snippets_by_tag(tag, set(['Extra'])):
+            logger.info(f" - {snippet['tag']}: {get_title(snippet)}")
             snippets.append(snippet)
-        
-    write_to_notebook(tags[0], snippets, fileName)    
+
+    write_to_notebook(snippets, fileName)

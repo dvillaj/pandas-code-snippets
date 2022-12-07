@@ -16,7 +16,7 @@
          "",
          "# Download a file from internet",
          "",
-         "! curl -s https://dummy.restapiexample.com/api/v1/employees --output employess.json"
+         "! curl -s https://dummy.restapiexample.com/api/v1/employees --output employees.json"
       ],
       "language": "Shell"
    },
