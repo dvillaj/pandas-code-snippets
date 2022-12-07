@@ -20,5 +20,5 @@ path = "C:/Develop/Projects/Practicas-Pandas/notebooks/Snippets/"
 logger.info(f"Exporting Snippets to Google Colab [{path}] ...")
 for item in notebooks.keys():
     file = f"{item} Snippets Notebook.ipynb"
-    logger.debug(f"Exporting {item} to Google Colab: {file}")
+    logger.info(f"Exporting {item} to Google Colab: {file}")
     export_tag_to_google_colab(notebooks[item], f"{path}{file}") 
