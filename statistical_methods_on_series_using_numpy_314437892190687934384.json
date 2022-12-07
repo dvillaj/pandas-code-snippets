@@ -13,7 +13,7 @@
          "np.random.seed(13)",
          "serie = pd.Series(np.random.randint(10, size=100))",
          "",
-         "print(\"Serie:\", serie.tolist())",
+         "print(\"Serie:\", serie.to_list())",
          "print(\"Percentile 10%:\", np.percentile(serie, 10))",
          "print(\"Quantile 25%:\", np.quantile(serie, 0.25))"
       ],

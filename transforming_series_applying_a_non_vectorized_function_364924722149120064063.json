@@ -11,9 +11,9 @@
          "",
          "serie = pd.Series([1, 5, 10, 45])",
          "",
-         "print(serie.tolist())",
-         "print(serie.map(lambda value: math.sqrt(value)).tolist())",
-         "print(serie.map(lambda value: value if value > 15 else 0).tolist())",
+         "print(serie.to_list())",
+         "print(serie.map(lambda value: math.sqrt(value)).to_list())",
+         "print(serie.map(lambda value: value if value > 15 else 0).to_list())",
          "",
          "def multiplica(n):",
          "    if n > 5:",
@@ -24,7 +24,7 @@
          "        else:",
          "            return -1",
          "",
-         "print(serie.map(multiplica).tolist())"
+         "print(serie.map(multiplica).to_list())"
       ],
       "language": "Python"
    },

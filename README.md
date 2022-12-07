@@ -63,7 +63,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Filtering Rows
     - Filtering columns
     - Grouping data
-    - Joining data
+    - Joining Dataframes
     - Ordering Rows
     - Pandas Options
     - Pandas styling
@@ -72,24 +72,23 @@ Each Code Snippet contains a working example of a Pandas funcionality:
 
 - Data Cleaning (`Data Cleaning` and `Regex` tags )
     - Converting Data Types
-    - Data Format
+    - Data Formatting
     - Dropping Duplicates
-    - Filling Missing Values
+    - Filling Missing Data
     - Identifying Data Types
     - Identifying Duplicates
-    - Identifying Missing Values
-    - Identifying duplicates
+    - Identifying Missing Data
+    - Identifying duplicated column names
     - Joining Columns
     - Narrowing down tables
     - Pandas Flags
+    - Removing Missing Data
     - Removing columns name
     - Removing index name
     - Separating columns
     - Special Cases
     - Transforming Dataframes
     - Widening tables
-
-- Regex Snippets (`Regex` tag)
 
 ## How to use
 

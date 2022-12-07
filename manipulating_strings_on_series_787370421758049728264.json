@@ -10,10 +10,10 @@
          "",
          "serie = pd.Series(['ITEM_ONE', 'Item_Two', 'Three   '])",
          "",
-         "print(serie.str.lower().tolist())",
-         "print(serie.str.strip().tolist())",
-         "print(serie.str.len().tolist())",
-         "print(serie.str[0:3].tolist())"
+         "print(serie.str.lower().to_list())",
+         "print(serie.str.strip().to_list())",
+         "print(serie.str.len().to_list())",
+         "print(serie.str[0:3].to_list())"
       ],
       "language": "Python"
    },

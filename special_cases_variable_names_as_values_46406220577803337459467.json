@@ -16,7 +16,7 @@
          "display(dataframe)",
          "",
          "(dataframe",
-         "    .set_axis(dataframe.iloc[0].tolist(),",
+         "    .set_axis(dataframe.iloc[0].to_list(),",
          "              axis = 'columns')",
          "    .drop(0)",
          " )"

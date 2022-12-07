@@ -16,10 +16,10 @@
          "print(dataframe.values)",
          "",
          "print(\"Columns\")",
-         "print(dataframe.index.tolist())",
+         "print(dataframe.index.to_list())",
          "",
          "print(\"Index\")",
-         "print(dataframe.index.tolist())"
+         "print(dataframe.index.to_list())"
       ],
       "language": "Python"
    },
