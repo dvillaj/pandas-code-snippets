@@ -1,10 +1,10 @@
 {
-   "display_name": "Accessing to Series - Positions",
+   "display_name": "Accessing to Series",
    "metadata": {
       "tags": [
          "Base"
       ],
-      "display_name": "Accessing to Series - Positions",
+      "display_name": "Accessing to Series",
       "code": [
          "import pandas as pd",
          "import numpy as np",
