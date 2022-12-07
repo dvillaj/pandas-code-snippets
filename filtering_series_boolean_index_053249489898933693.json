@@ -1,0 +1,29 @@
+{
+   "display_name": "Filtering Series - Boolean Index",
+   "metadata": {
+      "tags": [
+         "Base"
+      ],
+      "display_name": "Filtering Series - Boolean Index",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "serie = pd.Series([12, 21, 43, np.nan, 11])",
+         "",
+         "print(\"serie = 12\")",
+         "print(serie == 12)",
+         "print(serie[serie == 12])",
+         "",
+         "print(\"serie is null\")",
+         "print(serie[serie.isnull()])",
+         "",
+         "print(\"serie is not null\")",
+         "print(serie[serie.notnull()])",
+         "",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

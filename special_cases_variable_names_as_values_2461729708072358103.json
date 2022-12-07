@@ -1,0 +1,27 @@
+{
+   "display_name": "Special Cases - Variable Names as Values",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Special Cases - Variable Names as Values",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({0: ['Name', 'Sharon', 'Kevin', 'Michael'],",
+         " 1: ['Sex', 'F', 'M', 'M'],",
+         " 2: ['City', 'Austin', 'New York', 'New York'],",
+         " 3: ['Age', '30', '34', '44']})",
+         "",
+         "display(dataframe)",
+         "",
+         "(dataframe",
+         "    .set_axis(dataframe.iloc[0].tolist(),",
+         "              axis = 'columns')",
+         "    .drop(0)",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

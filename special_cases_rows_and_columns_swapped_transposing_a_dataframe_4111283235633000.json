@@ -1,0 +1,21 @@
+{
+   "display_name": "Special Cases - Rows and columns swapped - Transposing a Dataframe",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Special Cases - Rows and columns swapped - Transposing a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame([['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'], [1999, 2000, 1999, 2000, 1999, 2000], [745, 2666, 37737, 80488, 212258, 213766], [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]],",
+         "                         columns = [0, 1, 2, 3, 4, 5],",
+         "                         index = ['Country', 'Year', 'Cases', 'Population'])",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.transpose()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

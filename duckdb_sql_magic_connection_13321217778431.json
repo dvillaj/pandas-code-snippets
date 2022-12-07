@@ -1,0 +1,15 @@
+{
+   "display_name": "DuckDb - Sql Magic Connection",
+   "metadata": {
+      "tags": [
+         "Extra"
+      ],
+      "display_name": "DuckDb - Sql Magic Connection",
+      "code": [
+         "%load_ext sql",
+         "%sql duckdb:///dataframes.duckdb"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

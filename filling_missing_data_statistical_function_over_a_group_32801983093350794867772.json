@@ -1,0 +1,26 @@
+{
+   "display_name": "Filling Missing Data - Statistical Function over a Group",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Filling Missing Data - Statistical Function over a Group",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Eva', 'Kevin', 'Joe', np.nan, 'Barbara'],",
+         " 'Sex': ['F', 'F', 'M', 'M', np.nan, np.nan],",
+         " 'City': ['Austin', 'Texas', 'New York', 'Boston', 'New York', np.nan],",
+         " 'Age': [np.nan, 23.0, 34.0, 14.0, 44.0, 21.0]})",
+         "",
+         "",
+         "dataframe.assign(",
+         "    Age = (dataframe.groupby('Sex').Age.transform(lambda group: group.fillna(group.mean())))",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

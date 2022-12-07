@@ -1,0 +1,25 @@
+{
+   "display_name": "Separating columns - Fixed Positions",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Separating columns - Fixed Positions",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'City': ['Austin', 'New York', 'New York'],",
+         " 'Age': [30, 34, 44],",
+         " 'Sex-Name': ['F-Sharon', 'M-Kevin', 'M-Michael']})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign(",
+         "    Sex = lambda dataset: dataset[\"Sex-Name\"].str[:1],",
+         "    Name = lambda dataset: dataset[\"Sex-Name\"].str[2:]",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

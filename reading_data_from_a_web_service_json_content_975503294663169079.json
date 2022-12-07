@@ -1,0 +1,17 @@
+{
+   "display_name": "Reading data from a Web Service - JSON Content",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Reading data from a Web Service - JSON Content",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.read_json('https://api.github.com/repos/pandas-dev/pandas/issues')",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

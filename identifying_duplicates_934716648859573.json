@@ -1,0 +1,28 @@
+{
+   "display_name": "Identifying Duplicates",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Identifying Duplicates",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', 'Michael', 'George', 'George'],",
+         " 'Sex': ['F', 'M', 'M', 'M', 'M'],",
+         " 'City': ['Austin', 'New York', 'New York', 'New York', 'New York'],",
+         " 'Age': [30, 34, 44, 32, 32]})",
+         "",
+         "# To Show the number of row duplicates",
+         "dataframe.duplicated().sum()",
+         "",
+         "# To Show a percentage of row duplicates",
+         "dataframe.duplicated().mean() * 100",
+         "",
+         "# To show the actual duplicates",
+         "dataframe[ dataframe.duplicated() ]"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

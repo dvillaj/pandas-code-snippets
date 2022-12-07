@@ -1,0 +1,23 @@
+{
+   "display_name": "Transforming Series - Applying a Function with Parameters",
+   "metadata": {
+      "tags": [
+         "Base"
+      ],
+      "display_name": "Transforming Series - Applying a Function with Parameters",
+      "code": [
+         "import pandas as pd",
+         "",
+         "def transform(n, middle_number):",
+         "    if n > middle_number:",
+         "        return 18",
+         "    else:",
+         "        return -n",
+         "",
+         "serie = pd.Series([1, 5, 10, 45])",
+         "serie.apply(transform, middle_number = 4)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

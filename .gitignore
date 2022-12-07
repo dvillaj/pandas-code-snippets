@@ -2,5 +2,3 @@
 __pycache__/
 
 snippet.py
-
-*.duckdb

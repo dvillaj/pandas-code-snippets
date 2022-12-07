@@ -1,0 +1,30 @@
+{
+   "display_name": "Statistical methods on Series",
+   "metadata": {
+      "tags": [
+         "Base"
+      ],
+      "display_name": "Statistical methods on Series",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "np.random.seed(13)",
+         "serie = pd.Series(np.random.randint(500, size=100))",
+         "",
+         "print(\"Serie:\", serie.tolist())",
+         "print(\"Size:\", serie.size)",
+         "print(\"Sum:\", serie.sum())",
+         "print(\"Mean:\", serie.mean())",
+         "print(\"Min:\", serie.min())",
+         "print(\"Max:\", serie.max())",
+         "print(\"Varianze:\", serie.var())",
+         "print(\"Standard Deviation:\", serie.std())",
+         "print(\"Median:\", serie.median())",
+         "print(\"Percentile 10%:\", np.percentile(serie, 10))",
+         "print(\"Quantile 25%:\", np.quantile(serie, 0.25))"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,24 @@
+{
+   "display_name": "Dropping Duplicates - Subset of Columns",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Dropping Duplicates - Subset of Columns",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'JobNumber': [12312, 12312, 12411, 12422, 14121],",
+         " 'Name': ['Sharon', 'Sharon', 'Sharon', 'Kevin', 'Michael'],",
+         " 'Sex': ['F', 'F', 'F', 'M', 'M'],",
+         " 'City': ['Austin', 'Austin', 'Austin', 'New York', 'New York'],",
+         " 'Age': [30, 29, 29, 34, 44]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.drop_duplicates(subset = ['JobNumber'], keep = 'last')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

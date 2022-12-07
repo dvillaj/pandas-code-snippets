@@ -1,0 +1,21 @@
+{
+   "display_name": "Filtering Rows - Match Patterns using Regex",
+   "metadata": {
+      "tags": [
+         "Regex"
+      ],
+      "display_name": "Filtering Rows - Match Patterns using Regex",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Country': ['Finland', 'Denmark', 'Norway', 'Iceland', 'Netherlands'],",
+         " 'Ladder': [1, 2, 3, 4, 5],",
+         " 'Generosity': [47.0, 22.0, 11.0, 3.0, 7.0]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.query(\"Country.str.match(r'^F')\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

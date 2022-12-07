@@ -1,0 +1,22 @@
+{
+   "display_name": "Separating columns - A Dictionary",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Separating columns - A Dictionary",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', 'Michael'], ",
+         "                          'Sex': ['F', 'M', 'M'],",
+         "                          'Age_City': [{'Age': 30, 'City': 'Austin'}, {'Age': 34, 'City': 'New York'},  {'Age': 44, 'City': 'New York'}]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.Age_City.apply(pd.Series)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,35 @@
+{
+   "display_name": "Loading JSON data into a Python Dictionary - JSON File",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Loading JSON data into a Python Dictionary - JSON File",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.json\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "{",
+         "   \"name\": \"Wes\",",
+         "   \"placed_lived\": [\"United States\", \"Spain\", \"Germany\"],",
+         "    \"sibilings\": [",
+         "        {\"age\": 30, \"name\": \"Scott\", \"pet\": \"Zeus\"},",
+         "        {\"age\": 38, \"name\": \"Katie\"}",
+         "    ]",
+         "}",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "import json",
+         "",
+         "with open('data.json') as file:",
+         "    dictionary = json.load(file)",
+         "",
+         "dictionary"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

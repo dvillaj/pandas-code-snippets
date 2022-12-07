@@ -6,77 +6,73 @@ Contains a collection of Pandas code snippets from data reading to data analysis
 
 Each Code Snippet contains a working example of a Pandas funcionality:
 
-- Base knowledge of pandas (`Base` tag) 
-    - Applying a lambda function to two columns in a Dataframe
-    - Checking Missing or Null Values in a Serie
-    - Columns of a Dataframe
+- Base knowledge of NumPy & Pandas (`Base` tag) 
+    - Accessing to NumPy Arrays
+    - Accessing to Series
+    - Column Selection on a Dataframe
+    - Creating NumPy Arrays
     - Creating a Dataframe
-    - Operations with two Series
-    - Selecting a cell from a Dataframe
-    - Selecting a single column of a Dataframe
+    - Creating a Serie
+    - Dataframe  Rows Selection
+    - Dataframe Rows Selection
+    - Empty or Null Values on a Serie
+    - Filtering NumPy Arrays
+    - Filtering Series
+    - Manipulating Strings on Series
+    - Multi Column Selection on a Dataframe
+    - Operating with Columns in a Dataframe
+    - Operating with Series
+    - Reshaping a NumPy Array
     - Shape of a Dataframe
-    - Statistical methods
-    - String Operations on Series
+    - Single Row Selection by position
+    - Statistical methods on NumPy Arrays
+    - Statistical methods on Series
+    - Transforming Dataframes
     - Transforming Series
-    - Transposing a Dataframe
+    - Values and Index of a Serie
+    - Values, Columns and Index of a Dataframe
 
 - Read and Writing data (`Read & Write` tag)
     - Generating Synthetic data
     - Loading JSON data into a Python Dictionary
     - Reading Financial data
+    - Reading JSON data from a Python Dictionary
+    - Reading and Writing data from a Database
+    - Reading and Writing data in a binary format
     - Reading and Writing data in a compatible format
     - Reading data from Excel
-    - Reading data from a Database
-    - Reading data from a JSON File
-    - Reading data from a Python Dictionary
+    - Reading data from JSON
     - Reading data from a String
     - Reading data from a Text File
     - Reading data from a Web Page / HTML
     - Reading data from a Web Service
-    - Reading data from a binary format
+    - Unix commands to explore directories
+    - Unix commands to explore files
+    - Unix commands to explore online data
     - Writing data to Excel
     - Writing data to a JSON File
-    - Writing data to a Relational Database
     - Writing data to a Text File
-    - Writing data to a binary format
-
-- Exploring a Dataframe (`Exploring Data` tag)
-    - Compute pairwise correlation of a Dataframe
-    - Configuring global behavior related to DataFrame display
-    - Counting unique values
-    - Exploring a Value from a Dataframe
-    - Exploring some rows of a Dataframe
-    - Generate descriptive statistics
-    - Getting information about a Dataframe
-    - Highlight a Dataframe
-    - Profiling Report
-
-- Exploring local Files in a Jupyter notebook (`Bash` tag)
-    - List files in a directory
-    - Locate files into a directory (and all the subdirectories)
-    - Search for a text inside a file
-    - Show the content of a file   
 
 - Data Analysis (`Data Analysis` tag)
     - Adding new columns
     - Concatenating Dataframes
     - Deleting columns
     - Deleting rows
+    - Distinct values
+    - Exploring a Dataframe
     - Filtering Rows
+    - Filtering columns
     - Grouping data
     - Joining data
+    - Ordering Rows
+    - Pandas Options
+    - Pandas styling
     - Pivot Tables
     - Renaming columns
-    - Replacing existing columns
-    - Rewiting SQL in Pandas
-    - Selecting columns
-    - Selecting distinct values
-    - Sorting columns
 
-- Data Cleaning (`Data Cleaning` tag)
+- Data Cleaning (`Data Cleaning` and `Regex` tags )
     - Converting Data Types
     - Data Format
-    - Do not allow duplicate column names
     - Dropping Duplicates
     - Filling Missing Values
     - Identifying Data Types
@@ -85,11 +81,12 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Identifying duplicates
     - Joining Columns
     - Narrowing down tables
+    - Pandas Flags
     - Removing columns name
     - Removing index name
     - Separating columns
-    - Set a Column as Index
-    - Special Case
+    - Special Cases
+    - Transforming Dataframes
     - Widening tables
 
 - Regex Snippets (`Regex` tag)

@@ -1,0 +1,31 @@
+{
+   "display_name": "Generating Synthetic data - Faker",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Generating Synthetic data - Faker",
+      "code": [
+         "import pandas as pd",
+         "from faker import Faker",
+         "",
+         "# Ramdom seed",
+         "Faker.seed(1)",
+         "",
+         "def create_rows(num=1):",
+         "    fake = Faker()",
+         "    output = [{\"name\":fake.name(),",
+         "               \"address\":fake.address(),",
+         "               \"email\":fake.free_email(),",
+         "               \"city\":fake.city(),",
+         "               \"state\":fake.state()",
+         "              } for x in range(num)]",
+         "    return output",
+         "",
+         "dataframe = pd.DataFrame(create_rows(10))",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

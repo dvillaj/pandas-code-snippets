@@ -1,0 +1,24 @@
+{
+   "display_name": "Remoming Missing Data - Rows with any missing value",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Remoming Missing Data - Rows with any missing value",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', np.nan, 'Barbara', np.nan],",
+         " 'Sex': ['F', 'M', np.nan, np.nan, np.nan],",
+         " 'City': ['Austin', 'New York', 'New York', 'New York', np.nan],",
+         " 'Age': [np.nan, 34.0, 44.0, 21.0, np.nan]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.dropna()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
