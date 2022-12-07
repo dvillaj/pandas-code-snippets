@@ -1,0 +1,41 @@
+{
+   "display_name": "Writing data to Excel - Manipulate Workbook",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Writing data to Excel - Manipulate Workbook",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+         "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
+         "                          'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+         "                          'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
+         "",
+         "def excel_header_color(xlsx, worksheet, df):",
+         "    header_format = xlsx.book.add_format({",
+         "        'bold': True,",
+         "        'text_wrap': True,",
+         "        'valign': 'top',",
+         "        'fg_color': '#FFE8A4',",
+         "        'border': 1})",
+         "",
+         "    for col_num, value in enumerate(df.columns.values):",
+         "        worksheet.write(0, col_num, value, header_format)",
+         "",
+         "def excel_autofilter(worksheet, df):",
+         "    worksheet.autofilter('A1:' + chr(ord('@')+len(df.columns.to_list()))",
+         "                         + str(df.shape[0] + 1))",
+         "",
+         "xlsx = pd.ExcelWriter('data.xlsx', engine='xlsxwriter')",
+         "dataframe.to_excel(xlsx, 'Data', index=False)",
+         "",
+         "worksheet = xlsx.book.get_worksheet_by_name('Data')",
+         "excel_header_color(xlsx, worksheet, dataframe)",
+         "excel_autofilter(worksheet, dataframe)",
+         "xlsx.close()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
