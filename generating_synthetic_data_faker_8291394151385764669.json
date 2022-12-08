@@ -6,11 +6,10 @@
       ],
       "display_name": "Generating Synthetic data - Faker",
       "code": [
+         "# Faker python package is required",
+         "",
          "import pandas as pd",
          "from faker import Faker",
-         "",
-         "# Note: Faker package is needed",
-         "# ! pip install Faker",
          "",
          "# Ramdom seed",
          "Faker.seed(1)",

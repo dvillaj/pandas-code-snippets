@@ -7,6 +7,8 @@
       ],
       "display_name": "Reading data from a Text File - Guest Encondig",
       "code": [
+         "# chardet python package is required",
+         "",
          "import pandas as pd",
          "from pathlib import Path",
          "import chardet",
