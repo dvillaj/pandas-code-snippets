@@ -18,8 +18,8 @@
          "",
          "dataframe.assign(",
          "    Cases_Round_2 = lambda dataset: dataset.Cases.round(2),",
-         "    Cases_Round_Up = lambda dataset: dataset.Cases.apply(np.ceil).astype('int'),",
-         "    Cases_Round_Down = lambda dataset: dataset.Cases.apply(np.floor).astype('int')",
+         "    Cases_Round_Up = lambda dataset: dataset.Cases.map(np.ceil).astype('int'),",
+         "    Cases_Round_Down = lambda dataset: dataset.Cases.map(np.floor).astype('int')",
          ")"
       ],
       "language": "Python"

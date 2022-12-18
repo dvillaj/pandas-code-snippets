@@ -8,7 +8,7 @@
       ],
       "display_name": "Pivot Tables - Visualization",
       "code": [
-         "# PivotTableJS python package is required",
+         "# pivottablejs python package is required",
          "",
          "import pandas as pd",
          "from pivottablejs import pivot_ui",

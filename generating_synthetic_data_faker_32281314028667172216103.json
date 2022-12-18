@@ -6,7 +6,7 @@
       ],
       "display_name": "Generating Synthetic data - Faker",
       "code": [
-         "# Faker python package is required",
+         "# faker python package is required",
          "",
          "import pandas as pd",
          "from faker import Faker",
