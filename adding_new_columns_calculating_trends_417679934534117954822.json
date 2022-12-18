@@ -17,7 +17,7 @@
          "",
          "dataframe.assign(",
          "    PreviousValue = lambda dataset : dataset.Value.shift(1),",
-         "    Increment = lambda dataset : dataset.Value - dataset.Value.shift(1),",
+         "    Increment = lambda dataset : dataset.Value - dataset.PreviousValue",
          ")"
       ],
       "language": "Python"
