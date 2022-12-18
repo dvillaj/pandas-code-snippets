@@ -114,7 +114,7 @@ jupyter --data-dir
 
 - Go to the location of Jupyter Data Directory and check if a subdirectory named `metadata` exists. 
 
-In my environment, I used the following command:
+In my environment, I used the following commands:
 
 ```
 cd C:\Users\Daniel\AppData\Roaming\jupyter
@@ -124,7 +124,7 @@ dir
 
 If not exists create it
 
-In my environment, I used the following command:
+In my environment, I used the following commands:
 
 ```
 cd C:\Users\Daniel\AppData\Roaming\jupyter
@@ -134,7 +134,7 @@ mkdir metadata
 
 - Clone this repo in a subdirectory named `code-snippets` under the location `metadata` subdirectory
 
-In my environment, I used the following command:
+In my environment, I used the following commands:
 
 ```
 
