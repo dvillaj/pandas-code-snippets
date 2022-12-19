@@ -1,10 +1,10 @@
 {
-   "display_name": "Exploring a Dataframe - Count different values in two Series",
+   "display_name": "Exploring a Dataframe - Frecuency of two Categorial Series",
    "metadata": {
       "tags": [
          "Data Analysis"
       ],
-      "display_name": "Exploring a Dataframe - Count different values in two Series",
+      "display_name": "Exploring a Dataframe - Frecuency of two Categorial Series",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
@@ -12,11 +12,13 @@
          "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
+         "# The pandas crosstab function builds a cross-tabulation table that can show the frequency with which certain groups of data appear",
+         "",
          "# Returns unique values",
-         "dataframe.Country.value_counts()",
+         "pd.crosstab(dataframe.Country, dataframe.Year, margins=True)",
          "",
          "# Returns percentages",
-         "dataframe.Country.value_counts(normalize=True)"
+         "pd.crosstab(dataframe.Country, dataframe.Year, normalize=True)"
       ],
       "language": "Python"
    },
