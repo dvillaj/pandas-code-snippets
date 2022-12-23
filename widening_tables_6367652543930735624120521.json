@@ -15,7 +15,7 @@
          "display(dataframe)",
          "",
          "(dataframe",
-         "    .pivot_table(index = [\"Country\", \"Year\"],",
+         "    .pivot(index = [\"Country\", \"Year\"],",
          "               columns = \"Type\", ",
          "               values=\"Count\")",
          "    .reset_index()",
