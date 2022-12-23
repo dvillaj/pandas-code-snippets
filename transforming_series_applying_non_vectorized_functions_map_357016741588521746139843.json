@@ -1,10 +1,10 @@
 {
-   "display_name": "Transforming Series - Applying a Non Vectorized Function",
+   "display_name": "Transforming Series - Applying Non Vectorized Functions - Map",
    "metadata": {
       "tags": [
          "Base"
       ],
-      "display_name": "Transforming Series - Applying a Non Vectorized Function",
+      "display_name": "Transforming Series - Applying Non Vectorized Functions - Map",
       "code": [
          "import pandas as pd",
          "import math",

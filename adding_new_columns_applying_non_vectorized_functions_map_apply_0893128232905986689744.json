@@ -1,10 +1,10 @@
 {
-   "display_name": "Adding new columns - Applying a Non Vectorized functions",
+   "display_name": "Adding new columns - Applying Non Vectorized functions - Map & Apply",
    "metadata": {
       "tags": [
          "Data Analysis"
       ],
-      "display_name": "Adding new columns - Applying a Non Vectorized functions",
+      "display_name": "Adding new columns - Applying Non Vectorized functions - Map & Apply",
       "code": [
          "import pandas as pd",
          "import math",

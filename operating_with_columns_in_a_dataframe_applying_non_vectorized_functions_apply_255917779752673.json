@@ -1,10 +1,10 @@
 {
-   "display_name": "Operating with Columns in a Dataframe - Applying a Non Vectorized Function",
+   "display_name": "Operating with Columns in a Dataframe - Applying Non Vectorized Functions - Apply",
    "metadata": {
       "tags": [
          "Base"
       ],
-      "display_name": "Operating with Columns in a Dataframe - Applying a Non Vectorized Function",
+      "display_name": "Operating with Columns in a Dataframe - Applying Non Vectorized Functions - Apply",
       "code": [
          "import pandas as pd",
          "import math",
