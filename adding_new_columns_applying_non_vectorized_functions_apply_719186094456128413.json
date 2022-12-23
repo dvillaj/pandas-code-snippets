@@ -1,10 +1,10 @@
 {
-   "display_name": "Adding new columns - Applying Non Vectorized functions - Map & Apply",
+   "display_name": "Adding new columns - Applying Non Vectorized functions - Apply",
    "metadata": {
       "tags": [
          "Data Analysis"
       ],
-      "display_name": "Adding new columns - Applying Non Vectorized functions - Map & Apply",
+      "display_name": "Adding new columns - Applying Non Vectorized functions - Apply",
       "code": [
          "import pandas as pd",
          "import math",
@@ -14,13 +14,6 @@
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
          "display(dataframe)",
-         "",
-         "# When only one column is involved we can use 'map' over the Serie ",
-         "dataframe.assign(",
-         "    IncidenceType = lambda dataset: dataset.Cases.map(",
-         "                            lambda value: \"Low\" if value < 60000 else \"High\"",
-         "                    )",
-         ")",
          "",
          "# When more than one column are involved we must use 'apply' over the Dataframe",
          "(dataframe",
