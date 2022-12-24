@@ -1,10 +1,10 @@
 {
-   "display_name": "Converting Data Types - User Python function",
+   "display_name": "Converting Data Types - User Python function - Map",
    "metadata": {
       "tags": [
          "Data Cleaning"
       ],
-      "display_name": "Converting Data Types - User Python function",
+      "display_name": "Converting Data Types - User Python function - Map",
       "code": [
          "import pandas as pd",
          "",
@@ -16,18 +16,13 @@
          "display(dataframe)",
          "",
          "def convert_function(val):",
-         "    \"\"\"",
-         "    Convert the string number value to a int",
-         "     - Remove commas",
-         "     - Convert to int type",
-         "    \"\"\"",
-         "    new_val = val.replace(',','')",
+         "    new_val = val.replace(',', '')",
          "    return int(new_val)",
          "",
-         "dataframe.assign(",
-         "    Cases = lambda dataset: dataset.Cases.map(lambda val : int(val)),",
-         "    Population = lambda dataset: dataset.Population.map(convert_function)",
-         ")"
+         "",
+         "(dataframe",
+         "    .assign(Population=lambda dataset: dataset.Population.map(convert_function))",
+         " )"
       ],
       "language": "Python"
    },
