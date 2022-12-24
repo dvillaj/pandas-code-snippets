@@ -56,6 +56,8 @@ Each Code Snippet contains a working example of a Pandas funcionality:
 - Data Analysis (`Data Analysis` tag)
     - Adding new columns
     - Concatenating Dataframes
+    - Dataframe Interactive View
+    - Dataframe Pretty Print
     - Deleting columns
     - Deleting rows
     - Distinct values
@@ -64,6 +66,7 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Filtering columns
     - Grouping data
     - Joining Dataframes
+    - Method Chaining
     - Ordering Rows
     - Pandas Options
     - Pandas styling
