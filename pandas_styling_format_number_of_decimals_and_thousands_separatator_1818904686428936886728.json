@@ -13,7 +13,7 @@
          "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
-         "dataframe.style.format(thousands=\",\", precision = 2)"
+         "dataframe.style.format(decimal = \",\", thousands=\".\", precision = 2)"
       ],
       "language": "Python"
    },

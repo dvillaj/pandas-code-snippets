@@ -1,0 +1,28 @@
+{
+   "display_name": "Separating columns - Separator / Split without Expanding",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Separating columns - Separator / Split without Expanding",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Age': [30, 34, 44],",
+         " 'Sex': ['F', 'M', 'M'],",
+         " 'City-Name': ['Austin-Sharon', 'New York-Kevin', 'New York-Michael']})",
+         "",
+         "display(dataframe)",
+         "",
+         "",
+         "dataframe.assign(",
+         "    City = lambda dataset: dataset[\"City-Name\"].str.split('-').str.get(0),",
+         "    Name = lambda dataset: dataset[\"City-Name\"].str.split('-').str.get(1)",
+         ")",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
