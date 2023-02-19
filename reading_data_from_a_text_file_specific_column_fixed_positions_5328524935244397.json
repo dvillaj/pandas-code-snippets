@@ -1,0 +1,30 @@
+{
+   "display_name": "Reading data from a Text File - Specific Column Fixed Positions ",
+   "metadata": {
+      "tags": [
+         "Read & Write",
+         "Extra"
+      ],
+      "display_name": "Reading data from a Text File - Specific Column Fixed Positions ",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"data.txt\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "a  b  c   d   message",
+         "1  2  3   4   hello",
+         "5  6  5   8   world",
+         "9  10 11  12  foo",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "# (From,To) tuples",
+         "positions = [(0, 2), (3, 5), (6, 9), (14, 21)]",
+         "dataframe = pd.read_fwf(\"input_data.txt\", colspecs=positions)",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

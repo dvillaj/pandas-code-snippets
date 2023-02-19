@@ -1,26 +1,26 @@
 {
-   "display_name": "Accessing to NumPy Arrays",
-   "metadata": {
-      "tags": [
-         "Base",
-         "NumPy"
-      ],
-      "display_name": "Accessing to NumPy Arrays",
-      "code": [
-         "import numpy as np",
-         "",
-         "array = np.array([\"Julio\", \"Jose\", \"Alberto\", \"Julio\", \"Nuria\"])",
-         "",
-         "print(\"First element\")",
-         "print(array[0])",
-         "",
-         "print(\"Last element\")",
-         "print(array[-1])",
-         "",
-         "print(\"Slide\")",
-         "print(array[1:3])"
-      ],
-      "language": "Python"
-   },
-   "schema_name": "code-snippet"
+  "display_name": "Accessing NumPy Arrays",
+  "metadata": {
+    "tags": [
+      "Base",
+      "NumPy"
+    ],
+    "display_name": "Accessing NumPy Arrays",
+    "code": [
+      "import numpy as np",
+      "",
+      "array = np.array([\"Julio\", \"Jose\", \"Alberto\", \"Julio\", \"Nuria\"])",
+      "",
+      "print(\"First element\")",
+      "print(array[0])",
+      "",
+      "print(\"Last element\")",
+      "print(array[-1])",
+      "",
+      "print(\"Slice\")",
+      "print(array[1:3])"
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
 }

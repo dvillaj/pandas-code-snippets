@@ -1,24 +1,24 @@
 {
-   "display_name": "Reading data from a Text File - Fixed-width Formatted File",
+   "display_name": "Reading data from a text file - Separator",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Reading data from a Text File - Fixed-width Formatted File",
+      "display_name": "Reading data from a text file - Separator",
       "code": [
          "import pandas as pd",
          "",
          "text_file = open(\"data.txt\", \"w\")",
          "text_file.write(",
          "\"\"\"",
-         "a  b  c   d   message",
-         "1  2  3   4   hello",
-         "5  6  5   8   world",
-         "9  10 11  12  foo",
+         "a\tb\tc\td\tmessage",
+         "1\t2\t3\t4\thello",
+         "5\t6\t7\t8\tworld",
+         "9\t10\t11\t12\tfoo",
          "\"\"\")",
          "text_file.close()",
          "",
-         "dataframe = pd.read_fwf(\"data.txt\")",
+         "dataframe = pd.read_csv(\"data.txt\", sep = \"\\t\")",
          "dataframe"
       ],
       "language": "Python"
