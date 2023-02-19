@@ -1,10 +1,10 @@
 {
-   "display_name": "Method Chaining",
+   "display_name": "Method Chaining - Dataframes",
    "metadata": {
       "tags": [
          "Data Analysis"
       ],
-      "display_name": "Method Chaining",
+      "display_name": "Method Chaining - Dataframes",
       "code": [
          "import pandas as pd",
          "",

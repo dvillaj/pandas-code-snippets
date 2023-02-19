@@ -7,30 +7,11 @@ Contains a collection of Pandas code snippets from data reading to data analysis
 Each Code Snippet contains a working example of a Pandas funcionality:
 
 - Base knowledge of NumPy & Pandas (`Base` tag) 
-    - Accessing to NumPy Arrays
-    - Accessing to Series
-    - Column Selection on a Dataframe
-    - Creating NumPy Arrays
+    - Column Selection
     - Creating a Dataframe
-    - Creating a Serie
-    - Dataframe  Rows Selection
-    - Dataframe Rows Selection
-    - Empty or Null Values on a Serie
-    - Filtering NumPy Arrays
-    - Filtering Series
-    - Manipulating Strings on Series
-    - Multi Column Selection on a Dataframe
-    - Operating with Columns in a Dataframe
     - Operating with Series
-    - Reshaping a NumPy Array
-    - Shape of a Dataframe
-    - Single Row Selection by position
-    - Statistical methods on NumPy Arrays
-    - Statistical methods on Series
-    - Transforming Dataframes
+    - Statistical Methods
     - Transforming Series
-    - Values and Index of a Serie
-    - Values, Columns and Index of a Dataframe
 
 - Read and Writing data (`Read & Write` tag)
     - Generating Synthetic data

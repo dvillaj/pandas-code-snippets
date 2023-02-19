@@ -1,0 +1,36 @@
+{
+  "display_name": "Statistical Methods",
+  "metadata": {
+    "tags": [
+      "Base"
+    ],
+    "display_name": "Statistical Methods",
+    "code": [
+      "import pandas as pd",
+      "import numpy as np",
+      "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+      "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
+      "                          'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+      "                          'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
+      "",
+      "",
+      "print(\"Serie:\", dataframe.Cases.to_list())",
+      "print(\"Size:\", dataframe.Cases.size)",
+      "print(\"Sum:\", dataframe.Cases.sum())",
+      "print(\"Mean:\", dataframe.Cases.mean())",
+      "print(\"Minimun Value:\", dataframe.Cases.min())",
+      "print(\"Maximun Value:\", dataframe.Cases.max())",
+      "print(\"Variance:\", dataframe.Cases.var())",
+      "print(\"Standard Deviation:\", dataframe.Cases.std())",
+      "print(\"Median:\", dataframe.Cases.median())",
+      "",
+      "# Using NumPy statistical methods",
+      "print(\"Percentile 10%:\", np.percentile(dataframe.Cases, 10))",
+      "print(\"Quantile 25%:\", np.quantile(dataframe.Cases, 0.25))",
+      "",
+      ""
+    ],
+    "language": "Python"
+  },
+  "schema_name": "code-snippet"
+}

@@ -1,11 +1,11 @@
 {
-   "display_name": "Transforming Dataframes - Convert to a Dictionary of Python Lists",
+   "display_name": "Exporting Dataframes - Dictionary of Python Lists",
    "metadata": {
       "tags": [
-         "Base",
-         "Extra"
+         "Extra",
+         "Read & Write"
       ],
-      "display_name": "Transforming Dataframes - Convert to a Dictionary of Python Lists",
+      "display_name": "Exporting Dataframes - Dictionary of Python Lists",
       "code": [
          "import pandas as pd",
          "",

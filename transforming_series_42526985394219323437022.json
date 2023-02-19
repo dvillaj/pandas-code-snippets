@@ -1,23 +1,28 @@
 {
-   "display_name": "Creating a Dataframe - From a Serie",
+   "display_name": "Transforming Series",
    "metadata": {
       "tags": [
-         "Extra",
          "Base"
       ],
-      "display_name": "Creating a Dataframe - From a Serie",
+      "display_name": "Transforming Series",
       "code": [
          "import pandas as pd",
-         "",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
          "                'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
          "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
-         "display(dataframe.Country)",
          "",
-         "dataframe.Country.to_frame()",
-         ""
+         "def transform_function(value):",
+         "    return \"Value \" + str(value)",
+         "",
+         "display(dataframe.Cases.apply(transform_function))",
+         "",
+         "# Simplified with Lamda Functions",
+         "display(dataframe.Cases.apply(lambda value: \"Value \" + str(value)))",
+         "",
+         "# Lamda Functions with an inline if sentence",
+         "dataframe.Cases.apply(lambda value: \"Low\" if value < 10000 else \"High\")"
       ],
       "language": "Python"
    },

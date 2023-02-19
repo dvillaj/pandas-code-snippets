@@ -1,0 +1,25 @@
+{
+   "display_name": "Creating a Dataframe",
+   "metadata": {
+      "tags": [
+         "Base"
+      ],
+      "display_name": "Creating a Dataframe",
+      "code": [
+         "import pandas as pd",
+         "",
+         "data = {",
+         "    'Country': ['Afghanistan','Afghanistan','Brazil','Brazil', 'China', 'China'],",
+         "    'Year': [1999, 2000, 1999, 2000, 1999, 2000],",
+         "    'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+         "    'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]",
+         "}",
+         "",
+         "dataframe = pd.DataFrame(data)",
+         "",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

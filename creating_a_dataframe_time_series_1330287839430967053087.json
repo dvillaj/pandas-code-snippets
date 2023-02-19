@@ -2,8 +2,9 @@
    "display_name": "Creating a Dataframe - Time Series",
    "metadata": {
       "tags": [
+         "Extra",
          "Base",
-         "Extra"
+         "Time Series"
       ],
       "display_name": "Creating a Dataframe - Time Series",
       "code": [
