@@ -1,10 +1,10 @@
 {
-   "display_name": "Reading JSON data from a Python Dictionary",
+   "display_name": "Reading JSON data - Dictionary",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Reading JSON data from a Python Dictionary",
+      "display_name": "Reading JSON data - Dictionary",
       "code": [
          "import pandas as pd",
          "",

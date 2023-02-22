@@ -1,11 +1,11 @@
 {
-   "display_name": "Exporting Dataframes - Dictionary of Python Lists",
+   "display_name": "Writing data to a Dictionary",
    "metadata": {
       "tags": [
-         "Extra",
-         "Read & Write"
+         "Read & Write",
+         "Extra"
       ],
-      "display_name": "Exporting Dataframes - Dictionary of Python Lists",
+      "display_name": "Writing data to a Dictionary",
       "code": [
          "import pandas as pd",
          "",

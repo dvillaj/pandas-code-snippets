@@ -5,12 +5,12 @@ from elyra_utils import *
 conf_logging()
 logger = logging.getLogger("app")
 
-included_tags = set(['Base'])
+included_tags = set(['Read & Write'])
 excluded_tags = set([])
 
 print(f"Snippet including {included_tags} and excluding {excluded_tags}:")
 
-tag = 'Pandas'
+tag = 'Done'
 for file in glob.glob("*.json"):
     snippet = read_file(file)
     if check_tags(snippet, included_tags, excluded_tags):

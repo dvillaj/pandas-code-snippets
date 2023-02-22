@@ -1,10 +1,11 @@
 {
-   "display_name": "Writing data to a JSON File",
+   "display_name": "Writing data to JSON",
    "metadata": {
       "tags": [
-         "Read & Write"
+         "Read & Write",
+         "Extra"
       ],
-      "display_name": "Writing data to a JSON File",
+      "display_name": "Writing data to JSON",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",

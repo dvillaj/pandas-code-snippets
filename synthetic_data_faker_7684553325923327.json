@@ -1,10 +1,10 @@
 {
-   "display_name": "Generating Synthetic data - Faker",
+   "display_name": "Synthetic data - Faker",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Generating Synthetic data - Faker",
+      "display_name": "Synthetic data - Faker",
       "code": [
          "# faker python package is required",
          "",

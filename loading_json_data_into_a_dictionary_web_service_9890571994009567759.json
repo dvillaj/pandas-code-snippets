@@ -1,10 +1,10 @@
 {
-   "display_name": "Loading JSON data into a Python Dictionary - Web Service",
+   "display_name": "Loading JSON data into a Dictionary - Web Service",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Loading JSON data into a Python Dictionary - Web Service",
+      "display_name": "Loading JSON data into a Dictionary - Web Service",
       "code": [
          "import requests",
          "",

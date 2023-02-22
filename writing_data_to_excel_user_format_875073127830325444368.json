@@ -1,10 +1,10 @@
 {
-   "display_name": "Writing data to Excel - Manipulate Workbook",
+   "display_name": "Writing data to Excel - User Format",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Writing data to Excel - Manipulate Workbook",
+      "display_name": "Writing data to Excel - User Format",
       "code": [
          "# xlsxwriter python package is required",
          "",

@@ -1,0 +1,28 @@
+{
+   "display_name": "Reading Text data - Specific Separator",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Reading Text data - Specific Separator",
+      "code": [
+         "import pandas as pd",
+         "",
+         "text_file = open(\"input_data.txt\", \"w\")",
+         "text_file.write(",
+         "\"\"\"",
+         "fruit\tweight\tcount",
+         "apples\t5\t20",
+         "bananas\t8\t30",
+         "cherries\t2\t120",
+         "pears\t4\t16",
+         "\"\"\")",
+         "text_file.close()",
+         "",
+         "dataframe = pd.read_csv(\"input_data.txt\", sep=\"\\t\")",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

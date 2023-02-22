@@ -1,10 +1,10 @@
 {
-   "display_name": "Loading JSON data into a Python Dictionary - JSON File",
+   "display_name": "Loading JSON data into a Dictionary - File",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Loading JSON data into a Python Dictionary - JSON File",
+      "display_name": "Loading JSON data into a Dictionary - File",
       "code": [
          "import pandas as pd",
          "",

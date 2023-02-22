@@ -1,10 +1,10 @@
 {
-   "display_name": "Generating Synthetic data - Random Numbers",
+   "display_name": "Synthetic data - Random Numbers",
    "metadata": {
       "tags": [
          "Read & Write"
       ],
-      "display_name": "Generating Synthetic data - Random Numbers",
+      "display_name": "Synthetic data - Random Numbers",
       "code": [
          "import pandas as pd",
          "import numpy as np",

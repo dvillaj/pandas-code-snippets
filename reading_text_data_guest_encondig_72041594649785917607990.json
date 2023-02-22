@@ -1,11 +1,11 @@
 {
-   "display_name": "Reading data from a Text File - Guest Encondig",
+   "display_name": "Reading Text data - Guest Encondig",
    "metadata": {
       "tags": [
-         "Extra",
-         "Read & Write"
+         "Read & Write",
+         "Extra"
       ],
-      "display_name": "Reading data from a Text File - Guest Encondig",
+      "display_name": "Reading Text data - Guest Encondig",
       "code": [
          "# chardet python package is required",
          "",

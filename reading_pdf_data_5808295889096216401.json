@@ -1,0 +1,21 @@
+{
+   "display_name": "Reading PDF data",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Reading PDF data",
+      "code": [
+         "# tabula-py package required",
+         "",
+         "import tabula",
+         "",
+         "pdf_path = \"https://github.com/chezou/tabula-py/raw/master/tests/resources/data.pdf\"",
+         "list_dataframes = tabula.read_pdf(pdf_path, pages=1, stream=True)",
+         "",
+         "list_dataframes[0]"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
