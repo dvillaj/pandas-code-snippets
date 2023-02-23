@@ -1,0 +1,6 @@
+
+fruit	weight	count
+apples	5	20
+bananas	8	30
+cherries	2	120
+pears	4	16

@@ -1,24 +1,23 @@
 {
-   "display_name": "Pandas Options - Changing default graphics library",
+   "display_name": "Exploring a DataFrame - Frequency of one Categorial Serie",
    "metadata": {
       "tags": [
          "Data Analysis",
-         "Extra"
+         "Done"
       ],
-      "display_name": "Pandas Options - Changing default graphics library",
+      "display_name": "Exploring a DataFrame - Frequency of one Categorial Serie",
       "code": [
-         "# plotly python package is required",
          "import pandas as pd",
-         "",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
          "                'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
          "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
-         "pd.options.plotting.backend = \"plotly\"",
+         "# Returns unique values",
+         "dataframe.Country.value_counts()",
          "",
-         "dataframe.Cases.plot(kind='hist', bins=30)",
-         "dataframe.plot(kind='scatter', x='Cases', y='Population')"
+         "# Returns percentages",
+         "dataframe.Country.value_counts(normalize=True)"
       ],
       "language": "Python"
    },
