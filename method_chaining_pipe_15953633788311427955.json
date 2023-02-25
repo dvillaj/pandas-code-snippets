@@ -1,10 +1,12 @@
 {
-   "display_name": "Method Chaining - Dataframes",
+   "display_name": "Method Chaining - Pipe",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Done"
       ],
-      "display_name": "Method Chaining - Dataframes",
+      "description": "New Operations with pipe()",
+      "display_name": "Method Chaining - Pipe",
       "code": [
          "import pandas as pd",
          "",
@@ -14,10 +16,14 @@
          "                           'Population' : [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]",
          "})",
          "",
+         "def first_rows(dataset, n):",
+         "    return dataset.head(n)",
+         "",
+         "",
          "(dataframe",
-         "    .filter(['Year', 'Population'])",
-         "    .query(\"Year == 2000\")",
-         "    .sort_values(\"Population\", ascending=False)",
+         "    .filter(['Year', 'Population'])  # Only 'Year' and 'Population' columns",
+         "    .query(\"Year == 2000\")           # Only year 2000 data",
+         "    .pipe(first_rows, 2)             # Only the first 3 rows",
          " )"
       ],
       "language": "Python"
