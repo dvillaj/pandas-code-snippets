@@ -1,10 +1,11 @@
 {
-   "display_name": "Filtering columns - Reorder",
+   "display_name": "Reordering Columns",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Done"
       ],
-      "display_name": "Filtering columns - Reorder",
+      "display_name": "Reordering Columns",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
