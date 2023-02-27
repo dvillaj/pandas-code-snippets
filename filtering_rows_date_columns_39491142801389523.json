@@ -1,0 +1,26 @@
+{
+   "display_name": "Filtering Rows - Date columns",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Done"
+      ],
+      "display_name": "Filtering Rows - Date columns",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Date': [pd.Timestamp('2023-01-01 00:00:00'), pd.Timestamp('2023-01-15 00:00:00'), pd.Timestamp('2023-02-03 00:00:00'), pd.Timestamp('2023-02-04 00:00:00'), pd.Timestamp('2023-03-05 00:00:00')], ",
+         "                          'Value': [25, 95, 50, 56, 23]})",
+         "",
+         "# Important: The column must be a Date",
+         "",
+         "# Format \u2018YYYY-MM-DD\u2019 or \u2018YYYY-MM-DD HH:MM:DD\u2019",
+         "dataframe.query(\"Date >= '2023-02-01'\")",
+         "",
+         "## ft accesor",
+         "dataframe.query(\"Date.dt.month == 2\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

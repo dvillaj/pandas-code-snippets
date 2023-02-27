@@ -1,10 +1,11 @@
 {
-   "display_name": "Filtering Rows - String columns",
+   "display_name": "Filtering Rows - Like",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Done"
       ],
-      "display_name": "Filtering Rows - String columns",
+      "display_name": "Filtering Rows - Like",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
@@ -13,7 +14,7 @@
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
          "# Important: The column must be a String",
-         "dataframe.query(\"Country.str.upper() == 'CHINA'\", engine=\"python\")"
+         "dataframe.query(\"Country.str.contains('^C')\", engine=\"python\")"
       ],
       "language": "Python"
    },
