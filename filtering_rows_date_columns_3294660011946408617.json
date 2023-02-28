@@ -14,7 +14,7 @@
          "",
          "# Important: The column must be a Date",
          "",
-         "# Format \u2018YYYY-MM-DD\u2019 or \u2018YYYY-MM-DD HH:MM:DD\u2019",
+         "# Format 'YYYY-MM-DD' or 'YYYY-MM-DD HH:MM:DD'",
          "dataframe.query(\"Date >= '2023-02-01'\")",
          "",
          "# dt accesor",
