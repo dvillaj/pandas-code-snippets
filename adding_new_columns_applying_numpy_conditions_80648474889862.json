@@ -1,13 +1,15 @@
 {
-   "display_name": "Adding new columns - Applying Non Vectorized functions - Apply",
+   "display_name": "Adding new columns - Applying Numpy Conditions",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Extra",
+         "Done"
       ],
-      "display_name": "Adding new columns - Applying Non Vectorized functions - Apply",
+      "display_name": "Adding new columns - Applying Numpy Conditions",
       "code": [
          "import pandas as pd",
-         "import math",
+         "import numpy as np",
          "",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
          "                'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
@@ -16,10 +18,9 @@
          "",
          "display(dataframe)",
          "",
-         "# When more than one column are involved we must use 'apply' over the Dataframe",
-         "(dataframe",
-         "    .assign(IncidenceByPopulationSqrt = lambda dataset: dataset.apply(lambda row: math.sqrt(row.Cases / row.Population), axis = 'columns'))",
-         " )"
+         "dataframe.assign(",
+         "    IncidenceType = lambda dataset: np.where(dataset.Cases < 60000, 'Low', 'High')",
+         ")"
       ],
       "language": "Python"
    },

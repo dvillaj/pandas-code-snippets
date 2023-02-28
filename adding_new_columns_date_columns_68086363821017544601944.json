@@ -1,11 +1,12 @@
 {
-   "display_name": "Adding new columns - Calculating Trends",
+   "display_name": "Adding new columns - Date columns",
    "metadata": {
       "tags": [
          "Data Analysis",
-         "Time Series"
+         "Time Series",
+         "Done"
       ],
-      "display_name": "Adding new columns - Calculating Trends",
+      "display_name": "Adding new columns - Date columns",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -15,9 +16,14 @@
          "",
          "display(dataframe)",
          "",
+         "# Column must to be a Date",
          "dataframe.assign(",
-         "    PreviousValue = lambda dataset : dataset.Value.shift(1),",
-         "    Increment = lambda dataset : dataset.Value - dataset.PreviousValue",
+         "    Year = lambda dataset: dataset.Date.dt.year,",
+         "    Month = lambda dataset: dataset.Date.dt.month,",
+         "    Day = lambda dataset: dataset.Date.dt.day,",
+         "    Week = lambda dataset: dataset.Date.dt.isocalendar().week,",
+         "    DayOfWeek = lambda dataset: dataset.Date.dt.dayofweek,",
+         "    IsLeapYear = lambda dataset: dataset.Date.dt.is_leap_year",
          ")"
       ],
       "language": "Python"

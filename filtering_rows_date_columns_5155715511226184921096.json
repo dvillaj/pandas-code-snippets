@@ -17,7 +17,7 @@
          "# Format \u2018YYYY-MM-DD\u2019 or \u2018YYYY-MM-DD HH:MM:DD\u2019",
          "dataframe.query(\"Date >= '2023-02-01'\")",
          "",
-         "## ft accesor",
+         "# dt accesor",
          "dataframe.query(\"Date.dt.month == 2\")"
       ],
       "language": "Python"

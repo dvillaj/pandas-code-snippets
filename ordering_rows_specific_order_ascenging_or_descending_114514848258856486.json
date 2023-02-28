@@ -2,7 +2,8 @@
    "display_name": "Ordering Rows - Specific Order (Ascenging or Descending)",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Done"
       ],
       "display_name": "Ordering Rows - Specific Order (Ascenging or Descending)",
       "code": [
@@ -13,10 +14,10 @@
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
          "# One Column",
-         "dataframe.sort_values(\"Population\", ascending = True)",
+         "dataframe.sort_values(\"Year\", ascending=[False])",
          "",
          "# Muliple columns",
-         "dataframe.sort_values([\"Country\", \"Year\"], ascending = [True, False])"
+         "dataframe.sort_values([\"Year\",\"Population\"], ascending=[False, False])"
       ],
       "language": "Python"
    },

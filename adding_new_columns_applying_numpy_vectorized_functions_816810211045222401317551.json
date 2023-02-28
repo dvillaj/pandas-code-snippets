@@ -1,14 +1,15 @@
 {
-   "display_name": "Adding new columns - Applying Numpy Multiple Conditions",
+   "display_name": "Adding new columns - Applying Numpy Vectorized functions",
    "metadata": {
       "tags": [
          "Data Analysis",
-         "Extra"
+         "Done"
       ],
-      "display_name": "Adding new columns - Applying Numpy Multiple Conditions",
+      "display_name": "Adding new columns - Applying Numpy Vectorized functions",
       "code": [
          "import pandas as pd",
          "import numpy as np",
+         "import math",
          "",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
          "                'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
@@ -17,8 +18,11 @@
          "",
          "display(dataframe)",
          "",
+         "sqrt_vectorize = np.vectorize(lambda value: math.sqrt(value))",
+         "",
          "dataframe.assign(",
-         "    IncidenceType = lambda dataset: np.select([dataset.Cases < 1000, dataset.Cases < 60000], ['Very Low', 'Low'], 'High')",
+         "    SqrtCases = lambda dataset: sqrt_vectorize(dataset.Cases),",
+         "    SqrtCases2 = lambda dataset: np.vectorize(lambda value: math.sqrt(value))(dataset.Cases)",
          ")"
       ],
       "language": "Python"

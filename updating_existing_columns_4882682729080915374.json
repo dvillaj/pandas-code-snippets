@@ -1,10 +1,11 @@
 {
-   "display_name": "Ordering Rows",
+   "display_name": "Updating existing Columns",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Done"
       ],
-      "display_name": "Ordering Rows",
+      "display_name": "Updating existing Columns",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
@@ -12,11 +13,9 @@
          "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
-         "# One Column",
-         "dataframe.sort_values(\"Population\")",
-         "",
-         "# Muliple columns",
-         "dataframe.sort_values([\"Country\", \"Year\"])"
+         "dataframe.assign(",
+         "    Year = lambda dataset: dataset.Year + 10000",
+         ")"
       ],
       "language": "Python"
    },
