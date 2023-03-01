@@ -1,0 +1,33 @@
+{
+   "display_name": "Grouping data -  Top values",
+   "metadata": {
+      "tags": [
+         "Data Analysis",
+         "Extra",
+         "Done"
+      ],
+      "display_name": "Grouping data -  Top values",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame(",
+         "    {'Country': ['Afghanistan', 'Brazil', 'Brazil', 'Brazil', 'Brazil', 'China', 'China'],",
+         "     'City': ['Kabul', 'Rio de Janeiro', 'Rio de Janeiro', 'Sao Paulo', 'Sao Paulo', 'Beijing', 'Beijing'],",
+         "     'Year': [2000, 1999, 1999, 2000, 2000, 1999, 2000],",
+         "     'Cases': [3021, 745, 801, 250, 318, 212258, 213766],",
+         "     'Population': [20595360, 19942323, 19987071, 153544321, 174504898, 1272815272, 1280428583]}",
+         " )",
+         "",
+         "def top_n(group, field, n=3):",
+         "    return group.sort_values(by=field, ascending=False).head(n)",
+         "",
+         "(dataframe",
+         "     .groupby(\"Country\")",
+         "     .apply(top_n, field = 'Cases', n = 1)",
+         "     .reset_index(drop = True)",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

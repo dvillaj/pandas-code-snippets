@@ -1,26 +1,29 @@
 {
-   "display_name": "Grouping data -  Top values",
+   "display_name": "Adding new columns - Case When with multiple columns",
    "metadata": {
       "tags": [
          "Data Analysis",
+         "Done",
          "Extra"
       ],
-      "display_name": "Grouping data -  Top values",
+      "display_name": "Adding new columns - Case When with multiple columns",
       "code": [
          "import pandas as pd",
+         "",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
          "                'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
          "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
-         "def top_n(group, field, n=3):",
-         "    return group.sort_values(by=field, ascending=False).head(n)",
+         "display(dataframe)",
          "",
-         "(dataframe",
-         "     .groupby(\"Country\")",
-         "     .apply(top_n, field = 'Cases', n = 1)",
-         "     .reset_index(drop = True)",
-         " )"
+         "# When only one column is involved we can use 'map' over the Serie ",
+         "dataframe.assign(",
+         "    IncidenceType=lambda dataset: dataset.apply(",
+         "                            lambda row: \"Low\" if row.Cases < 60000 and row.Population > 500000 else \"High\",",
+         "                            axis='columns'",
+         "                    )",
+         ")"
       ],
       "language": "Python"
    },
