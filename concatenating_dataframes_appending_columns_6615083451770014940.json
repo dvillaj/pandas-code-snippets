@@ -1,10 +1,11 @@
 {
-   "display_name": "Concatenating Dataframes - Appening Columns",
+   "display_name": "Concatenating Dataframes - Appending Columns",
    "metadata": {
       "tags": [
-         "Data Analysis"
+         "Data Analysis",
+         "Done"
       ],
-      "display_name": "Concatenating Dataframes - Appening Columns",
+      "display_name": "Concatenating Dataframes - Appending Columns",
       "code": [
          "import pandas as pd",
          "",

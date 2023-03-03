@@ -1,0 +1,15 @@
+{
+   "display_name": "Install a package",
+   "metadata": {
+      "tags": [
+         "Extra",
+         "Magic Commands"
+      ],
+      "display_name": "Install a package",
+      "code": [
+         "%pip install duckdb duckdb_engine --quiet"
+      ],
+      "language": "Jupyter"
+   },
+   "schema_name": "code-snippet"
+}

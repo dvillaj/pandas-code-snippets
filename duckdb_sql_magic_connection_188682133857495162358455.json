@@ -6,8 +6,16 @@
       ],
       "display_name": "DuckDb - Sql Magic Connection",
       "code": [
+         "%pip install jupysql duckdb duckdb-engine --quiet",
          "%load_ext sql",
-         "%sql duckdb:///dataframes.duckdb"
+         "",
+         "# Memory",
+         "%sql duckdb://",
+         "",
+         "# Database",
+         "%sql duckdb:///db.duckdb",
+         "",
+         "# https://jupysql.ploomber.io/en/latest/quick-start.html"
       ],
       "language": "Python"
    },
