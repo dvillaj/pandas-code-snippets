@@ -1,0 +1,26 @@
+{
+   "display_name": "Adding new columns - Calculating Trends",
+   "metadata": {
+      "tags": [
+         "Time Series",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Calculating Trends",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Date': [pd.Timestamp('2020-01-01 00:00:00'), pd.Timestamp('2020-01-02 00:00:00'), pd.Timestamp('2020-01-03 00:00:00'), pd.Timestamp('2020-01-04 00:00:00'), pd.Timestamp('2020-01-05 00:00:00')], ",
+         "                          'Value': [25, 95, 50, 56, 23]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign(",
+         "    PreviousValue = lambda dataset : dataset.Value.shift(1),",
+         "    Increment = lambda dataset : dataset.Value - dataset.PreviousValue",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

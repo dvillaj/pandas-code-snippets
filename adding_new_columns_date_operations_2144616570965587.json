@@ -1,0 +1,28 @@
+{
+   "display_name": "Adding new columns - Date operations",
+   "metadata": {
+      "tags": [
+         "Time Series",
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Adding new columns - Date operations",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Date': [pd.Timestamp('2020-01-01 00:00:00'), pd.Timestamp('2020-01-02 00:00:00'), pd.Timestamp('2020-01-03 00:00:00'), pd.Timestamp('2020-01-04 00:00:00'), pd.Timestamp('2020-01-05 00:00:00')], ",
+         "                          'Value': [25, 95, 50, 56, 23]})",
+         "",
+         "display(dataframe)",
+         "",
+         "# Column must to be a Date",
+         "dataframe.assign(",
+         "    datePlus1Day = lambda dataset: dataset.Date + pd.DateOffset(days=1), # Substracting a Day to a Date",
+         "    daysToNow = lambda dataset: (pd.Timestamp.now() - dataset.Date).dt.days # Substracting Dates",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
