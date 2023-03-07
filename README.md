@@ -42,7 +42,6 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Exploring a Dataframe
     - Filtering Rows
     - Filtering columns
-    - Grouping Data
     - Grouping data
     - Joining Dataframes
     - Method Chaining

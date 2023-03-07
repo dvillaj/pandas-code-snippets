@@ -1,10 +1,11 @@
 {
-   "display_name": "Narrowing down tables",
+   "display_name": "Reshaping a Dataframe - Unpivoting Tables",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Done"
       ],
-      "display_name": "Narrowing down tables",
+      "display_name": "Reshaping a Dataframe - Unpivoting Tables",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Brazil', 'China'],",

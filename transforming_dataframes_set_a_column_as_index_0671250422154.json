@@ -2,7 +2,9 @@
    "display_name": "Transforming Dataframes - Set a Column as Index",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Extra",
+         "Done"
       ],
       "display_name": "Transforming Dataframes - Set a Column as Index",
       "code": [

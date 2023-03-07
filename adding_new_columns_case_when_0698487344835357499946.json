@@ -15,7 +15,7 @@
          "",
          "display(dataframe)",
          "",
-         "# When only one column is involved we can use 'map' over the Serie ",
+         "# When only one column is involved we can use 'apply' over the Serie ",
          "dataframe.assign(",
          "    IncidenceType = lambda dataset: dataset.Cases.apply(",
          "                            lambda value: \"Low\" if value < 60000 else \"High\"",

@@ -2,7 +2,9 @@
    "display_name": "Dropping Duplicates",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Extra",
+         "Done"
       ],
       "display_name": "Dropping Duplicates",
       "code": [
