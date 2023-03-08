@@ -1,0 +1,26 @@
+{
+   "display_name": "Reshaping Dataframes - Unpivot",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Done"
+      ],
+      "display_name": "Reshaping Dataframes - Unpivot",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'City': ['Lisbon', 'New York', 'London'],",
+         "                             'Country': ['Portugal', 'Usa', 'UK'],",
+         "                             'January': [152, 123, 45],",
+         "                             'February': [125, 234, 121],",
+         "                             'March': [31, 154, 231]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.melt(id_vars=[\"City\", \"Country\"],",
+         "                 var_name = 'Month',",
+         "                 value_name = 'Sales')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
