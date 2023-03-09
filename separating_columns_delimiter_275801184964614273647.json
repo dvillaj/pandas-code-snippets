@@ -1,0 +1,24 @@
+{
+   "display_name": "Separating Columns - Delimiter",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Done"
+      ],
+      "display_name": "Separating Columns - Delimiter",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Name': ['Anthony Berg', 'Kathy Chapman', 'Todd Manning'],",
+         "                          'Currency-Amount': ['EUR - 590', 'USD - 680', 'EUR - 10000,9']",
+         "                         })",
+         "display(dataframe)",
+         "",
+         "display(dataframe['Currency-Amount'].str.split(\" - \", expand=True))",
+         "",
+         "dataframe[['Currency', 'Amount']] = dataframe['Currency-Amount'].str.split(\" - \", expand=True)",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
