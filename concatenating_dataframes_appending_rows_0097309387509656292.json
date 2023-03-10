@@ -18,9 +18,7 @@
          " 'Cases': [2666, 80488, 213766],",
          " 'Population': [20595360, 174504898, 1280428583]})",
          "",
-         "pd.concat([dataframe_1999, dataframe_2000], ignore_index = True)",
-         "",
-         ""
+         "dataframe_1999.append(dataframe_2000, ignore_index=True)"
       ],
       "language": "Python"
    },

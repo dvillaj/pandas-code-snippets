@@ -14,10 +14,8 @@
          "dataset_population = pd.DataFrame({'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
          "                                   'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
          "",
-         "display(dataset_year)",
-         "display(dataset_population)",
-         "",
-         "pd.concat([dataset_year, dataset_population], axis = 'columns')"
+         "# Note that concat concatenate a list of dataframes",
+         "pd.concat([dataset_year, dataset_population], axis='columns')"
       ],
       "language": "Python"
    },
