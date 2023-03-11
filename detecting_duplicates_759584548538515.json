@@ -1,10 +1,12 @@
 {
-   "display_name": "Identifying Duplicates",
+   "display_name": "Detecting Duplicates",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Extra",
+         "Done"
       ],
-      "display_name": "Identifying Duplicates",
+      "display_name": "Detecting Duplicates",
       "code": [
          "import pandas as pd",
          "",

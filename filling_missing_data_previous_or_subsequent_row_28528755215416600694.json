@@ -1,10 +1,11 @@
 {
-   "display_name": "Filling Missing Data - Previous row",
+   "display_name": "Filling Missing Data - Previous or Subsequent Row",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Done"
       ],
-      "display_name": "Filling Missing Data - Previous row",
+      "display_name": "Filling Missing Data - Previous or Subsequent Row",
       "code": [
          "import pandas as pd",
          "import numpy as np",

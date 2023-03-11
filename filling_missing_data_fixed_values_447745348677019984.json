@@ -1,11 +1,11 @@
 {
-   "display_name": "Filling Missing Data - Statistical Function - Interpolation",
+   "display_name": "Filling Missing Data - Fixed Values",
    "metadata": {
       "tags": [
          "Data Cleaning",
-         "Extra"
+         "Done"
       ],
-      "display_name": "Filling Missing Data - Statistical Function - Interpolation",
+      "display_name": "Filling Missing Data - Fixed Values",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -17,10 +17,12 @@
          "",
          "display(dataframe)",
          "",
+         "# A group of Columns",
+         "display(dataframe.fillna({'Name' : 'John', 'Age' : 17}))",
+         "",
+         "# A particular Column",
          "dataframe.assign(",
-         "    Age = lambda dataset : dataset.Age.fillna(",
-         "        dataset.Age.interpolate(method = 'linear',limit_direction = 'backward')",
-         "    )",
+         "    Name = lambda dataset : dataset.Name.fillna('John')",
          ")"
       ],
       "language": "Python"

@@ -1,10 +1,12 @@
 {
-   "display_name": "Filling Missing Data - Statistical Function",
+   "display_name": "Filling Missing Data - Interpolation",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Extra",
+         "Done"
       ],
-      "display_name": "Filling Missing Data - Statistical Function",
+      "display_name": "Filling Missing Data - Interpolation",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -17,7 +19,9 @@
          "display(dataframe)",
          "",
          "dataframe.assign(",
-         "    Age = lambda dataset : dataset.Age.fillna(dataset.Age.mean())",
+         "    Age = lambda dataset : dataset.Age.fillna(",
+         "        dataset.Age.interpolate(method = 'linear',limit_direction = 'backward')",
+         "    )",
          ")"
       ],
       "language": "Python"

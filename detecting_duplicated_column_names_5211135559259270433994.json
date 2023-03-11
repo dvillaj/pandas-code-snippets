@@ -1,11 +1,12 @@
 {
-   "display_name": "Identifying duplicated column names",
+   "display_name": "Detecting duplicated column names",
    "metadata": {
       "tags": [
          "Data Cleaning",
-         "Extra"
+         "Extra",
+         "Done"
       ],
-      "display_name": "Identifying duplicated column names",
+      "display_name": "Detecting duplicated column names",
       "code": [
          "import pandas as pd",
          "",

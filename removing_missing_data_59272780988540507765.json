@@ -1,10 +1,11 @@
 {
-   "display_name": "Removing Missing Data - Rows with a subset of columns with missing values",
+   "display_name": "Removing Missing Data",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Done"
       ],
-      "display_name": "Removing Missing Data - Rows with a subset of columns with missing values",
+      "display_name": "Removing Missing Data",
       "code": [
          "import pandas as pd",
          "import numpy as np",
@@ -16,7 +17,15 @@
          "",
          "display(dataframe)",
          "",
-         "dataframe.dropna(subset = ['Name', 'Sex'], how = 'all')"
+         "# Rows with all columns with missing values",
+         "dataframe.dropna(how = 'all')",
+         "",
+         "# Rows with a subset of columns with missing values",
+         "dataframe.dropna(subset = ['Name', 'Sex'], how = 'all')",
+         "",
+         "# Rows with any missing value",
+         "dataframe.dropna()",
+         ""
       ],
       "language": "Python"
    },

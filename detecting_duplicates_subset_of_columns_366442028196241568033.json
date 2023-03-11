@@ -1,10 +1,12 @@
 {
-   "display_name": "Identifying Duplicates - Subset of Columns",
+   "display_name": "Detecting Duplicates - Subset of Columns",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Extra",
+         "Done"
       ],
-      "display_name": "Identifying Duplicates - Subset of Columns",
+      "display_name": "Detecting Duplicates - Subset of Columns",
       "code": [
          "import pandas as pd",
          "",
