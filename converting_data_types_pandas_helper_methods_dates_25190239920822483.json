@@ -1,11 +1,12 @@
 {
-   "display_name": "Converting Data Types - Helper Methods - Dates",
+   "display_name": "Converting Data Types - Pandas Helper Methods - Dates",
    "metadata": {
       "tags": [
          "Data Cleaning",
-         "Time Series"
+         "Time Series",
+         "Done"
       ],
-      "display_name": "Converting Data Types - Helper Methods - Dates",
+      "display_name": "Converting Data Types - Pandas Helper Methods - Dates",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",

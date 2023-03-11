@@ -1,10 +1,11 @@
 {
-   "display_name": "Converting Data Types - User Python function - Map",
+   "display_name": "Converting Data Types - Pandas Helper Methods - Numerical data",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Done"
       ],
-      "display_name": "Converting Data Types - User Python function - Map",
+      "display_name": "Converting Data Types - Pandas Helper Methods - Numerical data",
       "code": [
          "import pandas as pd",
          "",
@@ -15,13 +16,11 @@
          "",
          "display(dataframe)",
          "",
-         "def convert_function(val):",
-         "    new_val = val.replace(',', '')",
-         "    return int(new_val)",
-         "",
+         "dataframe.info()",
          "",
          "(dataframe",
-         "    .assign(Population=lambda dataset: dataset.Population.map(convert_function))",
+         "    .assign(Cases = lambda dataset: pd.to_numeric(dataset.Cases, errors = \"coerce\").fillna(0))",
+         "    .info()",
          " )"
       ],
       "language": "Python"
