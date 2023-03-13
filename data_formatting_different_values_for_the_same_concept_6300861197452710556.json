@@ -1,0 +1,33 @@
+{
+   "display_name": "Data Formatting - Different values for the same concept",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Done"
+      ],
+      "display_name": "Data Formatting - Different values for the same concept",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame(",
+         "    {'Name': ['Ashley Foster',  'Pamela Walker', 'Timothy Poole', 'Alicia Dunn', 'Corey Collins', 'Richard Serrano'],",
+         "     'Job': ['Designer, fashion/clothing', 'Software engineer', 'Gaffer', 'Horticultural consultant', 'Microbiologist', 'Garment/textile technologist'],",
+         "     'Genre': ['Female', 'F', 'Male', 'Female', 'Male', 'Male']}",
+         " )",
+         "",
+         "display(dataframe)",
+         "",
+         "# Detecting wrong values",
+         "dataframe.groupby(\"Genre\", as_index = False).size()",
+         "",
+         "# Replacing Wrong Values",
+         "dataframe.assign(",
+         "    Genre= lambda dataset: dataset.Genre.replace({",
+         "        'F': 'Female'",
+         "    })",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
