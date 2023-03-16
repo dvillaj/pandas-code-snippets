@@ -1,0 +1,23 @@
+{
+   "display_name": "Separating Columns - Fixed Positions",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Separating Columns - Fixed Positions",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Name': ['Anthony Berg', 'Kathy Chapman', 'Todd Manning'],",
+         "                          'Currency-Amount': ['EUR590', 'USD680', 'EUR10000,9']",
+         "                         })",
+         "display(dataframe)",
+         "",
+         "dataframe.assign(",
+         "    Currency = lambda dataset: dataset[\"Currency-Amount\"].str[:3],",
+         "    Amount = lambda dataset: dataset[\"Currency-Amount\"].str[3:]",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

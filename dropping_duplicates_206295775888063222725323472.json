@@ -1,0 +1,24 @@
+{
+   "display_name": "Dropping Duplicates",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Dropping Duplicates",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', 'Michael', 'George', 'George'],",
+         " 'Sex': ['F', 'M', 'M', 'M', 'M'],",
+         " 'City': ['Austin', 'New York', 'New York', 'New York', 'New York'],",
+         " 'Age': [30, 34, 44, 32, 32]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.drop_duplicates()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

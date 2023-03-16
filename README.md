@@ -21,11 +21,12 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Reading JSON data
     - Reading PDF data
     - Reading Text data
-    - Reading and Writing data from a Database
     - Reading and Writing data in a binary format
     - Reading and Writing data in a compatible format
+    - Reading data from a Database
     - Reading data from a String
     - Synthetic data
+    - Writing data to  Database
     - Writing data to CSV
     - Writing data to Excel
     - Writing data to JSON
@@ -56,22 +57,31 @@ Each Code Snippet contains a working example of a Pandas funcionality:
 - Data Cleaning (`Data Cleaning` tag)
     - Converting Data Types
     - Data Formatting
+    - Detecting Duplicates
+    - Detecting Missing Data
+    - Detecting duplicated column names
     - Dropping Duplicates
     - Filling Missing Data
     - Identifying Data Types
-    - Identifying Duplicates
-    - Identifying Missing Data
-    - Identifying duplicated column names
     - Joining Columns
     - Pandas Flags
     - Removing Missing Data
     - Removing columns name
     - Removing index name
     - Reshaping Dataframes
-    - Separating columns
+    - Separating Columns
     - Special Cases
-    - Transforming Dataframes
 
+- Regex (`Regex` tag)
+    - Extracting Information with Python
+    - Find a List of Occurrences with Python
+    - Match Patterns with Python
+    - Replacing Text with Python
+
+- DuckDB (`DuckDB` tag)
+    - Create a DuckDB Table from a Dataframe
+    - Populate a DuckDB table from Dataframe
+    - Sql Magic Connection for DuckDB
 
 ## How to use
 

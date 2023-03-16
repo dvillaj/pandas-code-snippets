@@ -1,0 +1,31 @@
+{
+   "display_name": "Filling Missing Data - Statistical Function",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Filling Missing Data - Statistical Function",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Eva', 'Kevin', 'Joe', np.nan, 'Barbara'],",
+         " 'Sex': ['F', 'F', 'M', 'M', np.nan, np.nan],",
+         " 'City': ['Austin', 'Texas', 'New York', 'Boston', 'New York', np.nan],",
+         " 'Age': [np.nan, 23.0, 34.0, 14.0, 44.0, 21.0]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign(",
+         "    Age = lambda dataset : dataset.Age.fillna(dataset.Age.mean())",
+         ")",
+         "",
+         "# Statistical Function over a Categorical Serie",
+         "dataframe.assign(",
+         "    City = lambda dataset : dataset.City.fillna(dataset.City.mode()[0])",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,23 @@
+{
+   "display_name": "Separating Columns - A List of elements",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "description": "In this case a column contains a list of elements. We could apply str.split(), but it makes more sense to use str.get_dummies()",
+      "display_name": "Separating Columns - A List of elements",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Name': ['Anthony Berg', 'Kathy Chapman', 'Todd Manning'],",
+         "                          'Age':[32, 34, 36],",
+         "                          'Cities': [\"New York, Texas\", \"Boston\", \"Texas, Austin\"]",
+         "                         })",
+         "display(dataframe)",
+         "",
+         "dataframe.Cities.str.get_dummies(sep=', ')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

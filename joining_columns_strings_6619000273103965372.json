@@ -1,0 +1,24 @@
+{
+   "display_name": "Joining Columns - Strings",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Joining Columns - Strings",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'FisrtName': ['Anthony', 'Kathy', 'Todd'],",
+         "                          'LastName': ['Berg', 'Chapman', 'Manning'],",
+         "                          'Amount': [590, 680, 10000.9]",
+         "                         })",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign (",
+         "    FullName = lambda dataset: dataset.FisrtName + \" \" + dataset.LastName",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

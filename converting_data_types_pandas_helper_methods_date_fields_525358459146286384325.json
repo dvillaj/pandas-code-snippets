@@ -1,0 +1,25 @@
+{
+   "display_name": "Converting Data Types - Pandas Helper Methods - Date Fields",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Time Series"
+      ],
+      "display_name": "Converting Data Types - Pandas Helper Methods - Date Fields",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Year': [2015, 2016],",
+         "                       'Month': [2, 3],",
+         "                       'Day': [4, 5],",
+         "                       'Value': [41, 43]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.assign(",
+         "    Date = lambda dataset : pd.to_datetime(dataset.filter([\"Year\", \"Month\", \"Day\"]))",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

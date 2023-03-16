@@ -1,0 +1,23 @@
+{
+   "display_name": "Joining Columns - F Strings",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Joining Columns - F Strings",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'FisrtName': ['Anthony', 'Kathy', 'Todd'],",
+         "                          'LastName': ['Berg', 'Chapman', 'Manning'],",
+         "                          'Amount': [590, 680, 10000.9]",
+         "                         })",
+         "",
+         "dataframe.assign(",
+         "    NameAmount=lambda dataset: dataset.apply(lambda row: f\"{row.FisrtName} - {row.Amount}\", axis=\"columns\")",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

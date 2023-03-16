@@ -1,0 +1,32 @@
+{
+   "display_name": "Removing Missing Data",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Removing Missing Data",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'Name': ['Sharon', 'Kevin', np.nan, 'Barbara', np.nan],",
+         " 'Sex': ['F', 'M', np.nan, np.nan, np.nan],",
+         " 'City': ['Austin', 'New York', 'New York', 'New York', np.nan],",
+         " 'Age': [np.nan, 34.0, 44.0, 21.0, np.nan]})",
+         "",
+         "display(dataframe)",
+         "",
+         "# Rows with all columns with missing values",
+         "dataframe.dropna(how = 'all')",
+         "",
+         "# Rows with a subset of columns with missing values",
+         "dataframe.dropna(subset = ['Name', 'Sex'], how = 'all')",
+         "",
+         "# Rows with any missing value",
+         "dataframe.dropna()",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

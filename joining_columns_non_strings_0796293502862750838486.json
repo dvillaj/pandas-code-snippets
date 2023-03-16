@@ -1,0 +1,22 @@
+{
+   "display_name": "Joining Columns - Non Strings",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Joining Columns - Non Strings",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'FisrtName': ['Anthony', 'Kathy', 'Todd'],",
+         "                          'LastName': ['Berg', 'Chapman', 'Manning'],",
+         "                          'Amount': [590, 680, 10000.9]",
+         "                         })",
+         "",
+         "dataframe.assign(",
+         "    NameAmount=lambda dataset: dataset.FisrtName + \" \" + dataset.Amount.astype(str)",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,27 @@
+{
+   "display_name": "Reshaping Dataframes - Pivot",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Reshaping Dataframes - Pivot",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'team': ['A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D'],",
+         " 'variable': ['points', 'points', 'points', 'points', 'assists', 'assists', 'assists', 'assists', 'rebounds', 'rebounds', 'rebounds', 'rebounds'],",
+         " 'value': [88, 91, 99, 94, 12, 17, 24, 28, 22, 28, 30, 31]})",
+         "",
+         "display(dataframe)",
+         "",
+         "(dataframe",
+         "     .pivot(index = 'team', ",
+         "            columns = 'variable',",
+         "            values = 'value')",
+         "     .reset_index()",
+         "     .rename_axis(columns = None)",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

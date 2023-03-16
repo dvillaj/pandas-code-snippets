@@ -5,7 +5,7 @@ from elyra_utils import *
 conf_logging()
 logger = logging.getLogger("app")
 
-included_tags = set(['Data Analysis'])
+included_tags = set(['Regex'])
 excluded_tags = set([])
 
 print(f"Snippet including {included_tags} and excluding {excluded_tags}:")

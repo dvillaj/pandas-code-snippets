@@ -1,0 +1,27 @@
+{
+   "display_name": "Filling Missing Data - Previous or Subsequent Row",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Filling Missing Data - Previous or Subsequent Row",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "dataframe = pd.DataFrame({'City': ['Austin', 'New York', np.nan, np.nan],",
+         " 'Name': [' Sharon', 'Kevin', 'John', 'Barbara'],",
+         " 'Sex': ['F', 'M', 'M', 'F'],",
+         " 'Age': [17, 34, 44, 21]})",
+         "",
+         "display(dataframe)",
+         "",
+         "# Fill forward null values (From a Previos Row)",
+         "dataframe.assign(",
+         "    City = lambda dataset : dataset.City.fillna(method = 'ffill')",
+         ")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

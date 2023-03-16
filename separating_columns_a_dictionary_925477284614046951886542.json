@@ -1,0 +1,20 @@
+{
+   "display_name": "Separating Columns - A Dictionary",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Separating Columns - A Dictionary",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Name': ['Anthony Berg', 'Kathy Chapman', 'Todd Manning'],",
+         "                          'Currency-Amount': [{'Currency': \"EUR\", 'Amount': 590}, {'Currency': \"USD\", 'Amount': 680}, {'Currency': \"EUR\", 'Amount': 10000.9}]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe[\"Currency-Amount\"].apply(pd.Series)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

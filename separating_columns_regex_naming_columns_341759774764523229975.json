@@ -1,0 +1,29 @@
+{
+   "display_name": "Separating Columns - Regex - Naming Columns",
+   "metadata": {
+      "tags": [
+         "Data Cleaning",
+         "Extra"
+      ],
+      "display_name": "Separating Columns - Regex - Naming Columns",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'film': ['Toy Story (1995)',",
+         "  'GoldenEye (1996)',",
+         "  'Four Rooms (1995)',",
+         "  'Get Shorty (1995)',",
+         "  'Copycat (1998)']})",
+         "",
+         "display(dataframe)",
+         "",
+         "regex = r'([\\w ]*) \\((\\d{4})\\)'",
+         "# Adding ?P<name-column> to name a group",
+         "regex_with_names = r'(?P<title>[\\w ]*) \\((?P<year>\\d{4})\\)'",
+         "",
+         "dataframe.film.str.extract(regex)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

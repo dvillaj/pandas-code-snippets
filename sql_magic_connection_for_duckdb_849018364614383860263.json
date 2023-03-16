@@ -1,0 +1,23 @@
+{
+   "display_name": "Sql Magic Connection for DuckDB",
+   "metadata": {
+      "tags": [
+         "DuckDB"
+      ],
+      "display_name": "Sql Magic Connection for DuckDB",
+      "code": [
+         "%pip install jupysql duckdb duckdb-engine --quiet",
+         "%load_ext sql",
+         "",
+         "# Memory",
+         "%sql duckdb://",
+         "",
+         "# Database",
+         "%sql duckdb:///db.duckdb",
+         "",
+         "# https://jupysql.ploomber.io/en/latest/quick-start.html"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

@@ -1,0 +1,18 @@
+{
+   "display_name": "Find a List of Occurrences with Python",
+   "metadata": {
+      "tags": [
+         "Regex"
+      ],
+      "display_name": "Find a List of Occurrences with Python",
+      "code": [
+         "import re",
+         "",
+         "regex = r'[fd]'",
+         "text = \"Finland\"",
+         "re.findall(regex, text, re.IGNORECASE)"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

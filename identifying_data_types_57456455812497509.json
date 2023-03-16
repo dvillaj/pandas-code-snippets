@@ -1,0 +1,23 @@
+{
+   "display_name": "Identifying Data Types",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Identifying Data Types",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan ', 'Afghanistan ', 'Brazil ', 'Brazil ', 'China ', 'China '],",
+         "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000],",
+         "                          'Cases': [745.0, 2666.0, 37737.0, 80488.0, 212258.0, 213766.0],",
+         "                          'Population': ['19,987,071', '20,595,360', '172,006,362', '174,504,898', '1,272,915,272', '1,280,428,583']})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.info()"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
