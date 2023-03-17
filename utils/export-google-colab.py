@@ -6,17 +6,17 @@ notebooks = {
     'Base': ["Base"],
     'Read & Write' : ["Read & Write"], 
     'Data Analysis': ["Data Analysis"],
-    'Data Cleaning': ['Data Cleaning', 'Regex']
+    'Data Cleaning': ['Data Cleaning']
 }
 
 notebooks = {
-    'Pandas': ["Base", "Read & Write", 'Data Analysis', 'Data Cleaning', 'Regex']
+    'Pandas': ["Base", "Read & Write", 'Data Analysis', 'Data Cleaning']
 }
 
 conf_logging()
 logger = logging.getLogger("app")
 
-path = "C:/Develop/Projects/Practicas-Pandas/notebooks/Snippets/"
+path = "C:/Develop/Projects/Practicas-Pandas/Snippets/"
 logger.info(f"Exporting Snippets to Google Colab [{path}] ...")
 for item in notebooks.keys():
     file = f"{item} Snippets Notebook.ipynb"

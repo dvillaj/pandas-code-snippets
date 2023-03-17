@@ -178,11 +178,13 @@ def generate_id() -> str:
 def get_cells(snippets: list) -> list:
     cells = []
     for snippet in snippets:
+        str_tag = f"{snippet['tag']}: " if  'tag' in snippet else ""
+
         title = {
             "cell_type": "markdown",
             "id": generate_id(),
             "metadata": {},
-            "source": [f"## {snippet['tag']}: {get_title(snippet)}"]
+            "source": [f"## {str_tag}{get_title(snippet)}"]
             }
 
         lines = []
@@ -263,5 +265,16 @@ def export_tag_to_google_colab(tags: list, fileName: str):
         for snippet in get_snippets_by_tag(tag, set(['Extra'])):
             logger.info(f" - {snippet['tag']}: {get_title(snippet)}")
             snippets.append(snippet)
+
+    # Extra Snippet
+    snippets.append({
+        'tag': 'Google Colab',
+        'display_name': "Code Snippets",
+        'metadata': {
+            'code': [
+                "print(\"Hello Pandas ;-)\")"
+              ]
+        }
+    })
 
     write_to_notebook(snippets, fileName)
