@@ -1,0 +1,27 @@
+{
+   "display_name": "Synthetic Data - Random Numbers",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Synthetic Data - Random Numbers",
+      "code": [
+         "import pandas as pd",
+         "import numpy as np",
+         "",
+         "np.random.seed(1)",
+         "",
+         "number_of_rows = 50000",
+         "dataframe = pd.DataFrame(",
+         "    data = np.random.normal(loc=10,",
+         "                            scale=201,",
+         "                            size=(number_of_rows, 1)),",
+         "    columns= [\"Number\"]",
+         " )",
+         "",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

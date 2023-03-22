@@ -1,0 +1,26 @@
+{
+   "display_name": "Reading and Writing data in a compatible format - Feather data format",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Reading and Writing data in a compatible format - Feather data format",
+      "code": [
+         "# feather-format python package is required",
+         "# %pip install feather-format",
+         "",
+         "import pandas as pd",
+         "import feather",
+         "",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+         "                          'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
+         "                          'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+         "                          'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
+         "",
+         "feather.write_dataframe(dataframe, 'data.feather')",
+         "feather.read_dataframe(\"data.feather\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

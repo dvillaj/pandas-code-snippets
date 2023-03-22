@@ -1,0 +1,24 @@
+{
+   "display_name": "Reading JSON Data - Dictionary Section",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Reading JSON Data - Dictionary Section",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dictionary = {'name': 'Wes',",
+         " 'placed_lived': ['United States', 'Spain', 'Germany'],",
+         " 'sibilings': [{'age': 30, 'name': 'Scott', 'pet': 'Zeus'},",
+         "  {'age': 38, 'name': 'Katie'}]}",
+         "",
+         "dictionary",
+         "",
+         "dataframe = pd.json_normalize(dictionary['sibilings'])",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

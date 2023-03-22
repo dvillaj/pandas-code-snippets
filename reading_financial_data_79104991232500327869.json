@@ -1,0 +1,20 @@
+{
+   "display_name": "Reading Financial Data",
+   "metadata": {
+      "tags": [
+         "Read & Write"
+      ],
+      "display_name": "Reading Financial Data",
+      "code": [
+         "# pandas_datareader python package is required",
+         "# %pip install pandas_datareader",
+         "",
+         "import pandas_datareader.data as web",
+         "",
+         "dataframe = web.DataReader('005930', 'naver', start='2019-09-10', end='2019-10-09')",
+         "dataframe"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

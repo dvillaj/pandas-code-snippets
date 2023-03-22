@@ -1,0 +1,27 @@
+{
+   "display_name": "Pandas Styling - Highlight specific Rows",
+   "metadata": {
+      "tags": [
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Pandas Styling - Highlight specific Rows",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Afghanistan', 'Brazil', 'Brazil', 'China', 'China'],",
+         "                'Year': [1999, 2000, 1999, 2000, 1999, 2000 ],",
+         "                'Cases': [745, 2666, 37737, 80488, 212258, 213766],",
+         "                'Population': [19987071, 20595360, 172006362, 174504898, 1272815272, 1280428583]})",
+         "",
+         "def highlight_rows(df, column_name, column_value):",
+         "    if str(df[column_name]).startswith(column_value) :",
+         "        return ['font-weight: bold' for v in df]",
+         "    else:",
+         "        return ['background-color: white' for v in df]",
+         "",
+         "dataframe.style.apply(highlight_rows, axis = 1, column_name = \"Country\", column_value = \"Brazil\")"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

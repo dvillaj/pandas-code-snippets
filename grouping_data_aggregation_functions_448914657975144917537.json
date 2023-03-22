@@ -1,0 +1,36 @@
+{
+   "display_name": "Grouping Data - Aggregation Functions",
+   "metadata": {
+      "tags": [
+         "Data Analysis"
+      ],
+      "display_name": "Grouping Data - Aggregation Functions",
+      "code": [
+         "import pandas as pd",
+         "",
+         "dataframe = pd.DataFrame(",
+         "    {'Country': ['Afghanistan', 'Brazil', 'Brazil', 'Brazil', 'Brazil', 'China', 'China'],",
+         "     'City': ['Kabul', 'Rio de Janeiro', 'Rio de Janeiro', 'Sao Paulo', 'Sao Paulo', 'Beijing', 'Beijing'],",
+         "     'Year': [2000, 1999, 1999, 2000, 2000, 1999, 2000],",
+         "     'Cases': [3021, 745, 801, 250, 318, 212258, 213766],",
+         "     'Population': [20595360, 19942323, 19987071, 153544321, 174504898, 1272815272, 1280428583]}",
+         " )",
+         "",
+         "dataframe.groupby(\"Country\").count() # Count all non null values",
+         "dataframe.groupby(\"Country\").size()  # Count all values - Similar to count(*) sql expression",
+         "dataframe.groupby(\"Country\").sum()   # Sum",
+         "dataframe.groupby(\"Country\").mean()  # Mean",
+         "dataframe.groupby(\"Country\").max()   # Max",
+         "dataframe.groupby(\"Country\").min()   # Min",
+         "",
+         "dataframe.groupby(\"Country\").first() # First Value",
+         "dataframe.groupby(\"Country\").last()  # Last Value",
+         "dataframe.groupby(\"Country\").nth(2)  # 2nd value ",
+         "dataframe.groupby(\"Country\").Cases.quantile(0.10) # Cases Quantile 10%",
+         "dataframe.groupby(\"Country\").nunique() # Non unique values",
+         ""
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

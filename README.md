@@ -15,21 +15,21 @@ Each Code Snippet contains a working example of a Pandas funcionality:
 
 - Read and Writing data (`Read & Write` tag)
     - Loading JSON data into a Dictionary
-    - Reading Excel data
-    - Reading Financial data
-    - Reading HTML data
-    - Reading JSON data
-    - Reading PDF data
-    - Reading Text data
+    - Reading Excel Data
+    - Reading Financial Data
+    - Reading HTML Data
+    - Reading JSON Data
+    - Reading PDF Data
+    - Reading Text Data
     - Reading and Writing data in a binary format
     - Reading and Writing data in a compatible format
     - Reading data from a Database
     - Reading data from a String
-    - Synthetic data
-    - Writing data to  Database
+    - Synthetic Data
     - Writing data to CSV
     - Writing data to Excel
     - Writing data to JSON
+    - Writing data to a Database
     - Writing data to a Dictionary
 
 - Data Analysis (`Data Analysis` tag)
@@ -37,22 +37,22 @@ Each Code Snippet contains a working example of a Pandas funcionality:
     - Concatenating Dataframes
     - Dataframe Interactive View
     - Dataframe Pretty Print
-    - Deleting columns
-    - Deleting rows
+    - Deleting Columns
+    - Deleting Rows
     - Distinct values
     - Exploring a Dataframe
+    - Filtering Columns
     - Filtering Rows
-    - Filtering columns
-    - Grouping data
+    - Grouping Data
     - Joining Dataframes
     - Method Chaining
     - Ordering Rows
     - Pandas Options
-    - Pandas styling
+    - Pandas Styling
     - Pivot Tables
-    - Renaming columns
+    - Renaming Columns
     - Reordering Columns
-    - Updating existing Columns
+    - Updating existing columns
 
 - Data Cleaning (`Data Cleaning` tag)
     - Converting Data Types

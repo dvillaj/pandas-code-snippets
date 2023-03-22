@@ -1,0 +1,27 @@
+{
+   "display_name": "Special Cases - A List as Value",
+   "metadata": {
+      "tags": [
+         "Data Cleaning"
+      ],
+      "display_name": "Special Cases - A List as Value",
+      "code": [
+         "import pandas as pd",
+         "import json",
+         "",
+         "dataframe = pd.DataFrame({'Country': ['Afghanistan', 'Brazil', 'China'],",
+         "                          'Data': [[{'Year': 1999, 'Cases': 745, 'Population': 19987071},",
+         "                                    {'Year': 2000, 'Cases': 2666, 'Population': 20595360}], ",
+         "                                   [{'Year': 1999, 'Cases': 37737, 'Population': 172006362},",
+         "                                    {'Year': 2000, 'Cases': 80488, 'Population': 174504898}], ",
+         "                                   [{'Year': 1999, 'Cases': 212258, 'Population': 1272915272},",
+         "                                    {'Year': 2000, 'Cases': 213766, 'Population': 1280428583}]]})",
+         "",
+         "display(dataframe)",
+         "",
+         "dataframe.explode('Data')"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}

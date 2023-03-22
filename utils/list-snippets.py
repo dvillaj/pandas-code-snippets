@@ -2,7 +2,7 @@ import logging
 import glob
 from elyra_utils import *
 
-included_tags = set(["DuckDB"]) #, "Read & Write", "Data Analysis", "Data Cleaning", "Regex"])
+included_tags = set(["Read & Write"]) #, "Base", "Read & Write", "Data Analysis", "Data Cleaning", "Regex"])
 #included_tags = set(["Data Cleaning"])
 #excluded_tags = set(["Base", "Read & Write", "Data Analysis", "Data Cleaning", "Regex"])
 #excluded_tags = set(['Done'])

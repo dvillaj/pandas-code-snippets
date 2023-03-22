@@ -130,6 +130,18 @@ def remove_tag(snippet: dict, tag: str) -> None:
 
     return False   
 
+def remove_comment_on_pip(code: list) -> list:
+    lines = []
+    for line in code:
+        if "# %pip" in line:
+            line = line[2:]
+
+        lines.append(line)
+
+    return lines
+
+
+
 def get_code(snippet: dict) -> list:
     return snippet['metadata']['code']
 
@@ -188,7 +200,7 @@ def get_cells(snippets: list) -> list:
             }
 
         lines = []
-        for line in get_code(snippet):
+        for line in remove_comment_on_pip(get_code(snippet)):
             lines.append(f"{line}\n")
 
         code = {

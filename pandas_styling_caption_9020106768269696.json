@@ -1,0 +1,23 @@
+{
+   "display_name": "Pandas Styling - Caption",
+   "metadata": {
+      "tags": [
+         "Extra",
+         "Data Analysis"
+      ],
+      "display_name": "Pandas Styling - Caption",
+      "code": [
+         "import pandas as pd",
+         "dataframe = pd.DataFrame({'model': ['mazda', 'subaru', 'audi', 'jaguar', 'honda', 'nissan'],",
+         " 'engine-size': [80.0, 108.0, 136.0, 258.0, 92.0, 97.0],",
+         " 'horsepower': [135.0, 94.0, 110.0, 176.0, 76.0, 69.0],",
+         " 'price': [15645.0, 9960.0, 17710.0, 35550.0, 7295.0, 7349.0]})",
+         "",
+         "(dataframe.style",
+         "     .set_caption('Autos Dataset')",
+         " )"
+      ],
+      "language": "Python"
+   },
+   "schema_name": "code-snippet"
+}
