@@ -1,10 +1,10 @@
 {
-   "display_name": "Grouping Data - Transforming Rows",
+   "display_name": "Grouping Data - Transforming rows",
    "metadata": {
       "tags": [
          "Data Analysis"
       ],
-      "display_name": "Grouping Data - Transforming Rows",
+      "display_name": "Grouping Data - Transforming rows",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame(",

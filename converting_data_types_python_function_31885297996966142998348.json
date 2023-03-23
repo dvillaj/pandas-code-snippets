@@ -21,7 +21,7 @@
          "",
          "",
          "(dataframe",
-         "    .assign(Population=lambda dataset: dataset.Population.map(convert_function))",
+         "    .assign(Population=lambda dataset: dataset.Population.apply(convert_function))",
          " )"
       ],
       "language": "Python"

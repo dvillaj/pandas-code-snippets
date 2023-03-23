@@ -1,11 +1,11 @@
 {
-   "display_name": "Converting Data Types - Pandas Helper Methods - Date Fields",
+   "display_name": "Converting Data Types - Pandas Helper Methods - Date fields",
    "metadata": {
       "tags": [
          "Data Cleaning",
          "Time Series"
       ],
-      "display_name": "Converting Data Types - Pandas Helper Methods - Date Fields",
+      "display_name": "Converting Data Types - Pandas Helper Methods - Date fields",
       "code": [
          "import pandas as pd",
          "dataframe = pd.DataFrame({'Year': [2015, 2016],",

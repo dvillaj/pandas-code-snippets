@@ -2,7 +2,8 @@
    "display_name": "Removing index name",
    "metadata": {
       "tags": [
-         "Data Cleaning"
+         "Data Cleaning",
+         "Extra"
       ],
       "display_name": "Removing index name",
       "code": [
