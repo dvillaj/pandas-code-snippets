@@ -6,6 +6,9 @@
       ],
       "display_name": "Reading data from a Database",
       "code": [
+         "# Pandas is not yet compatible with sqlalchemy version 2",
+         "# %pip install sqlalchemy==1.4.47",
+         "",
          "import gdown",
          "gdown.download(id=\"16ftp972e8jPufwxob-0JbTAMCOBgLcey\", quiet=True)",
          "",

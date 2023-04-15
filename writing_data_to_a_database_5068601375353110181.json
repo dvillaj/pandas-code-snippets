@@ -6,6 +6,9 @@
       ],
       "display_name": "Writing data to a Database",
       "code": [
+         "# Pandas is not yet compatible with sqlalchemy version 2",
+         "# %pip install sqlalchemy==1.4.47",
+         "",
          "import pandas as pd",
          "from sqlalchemy import create_engine",
          "",
