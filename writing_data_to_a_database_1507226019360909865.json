@@ -19,6 +19,7 @@
          "",
          "engine = create_engine('sqlite:///database.db', echo=False)",
          "",
+         "# This function returns the rows written to the database",
          "dataframe.to_sql('table', engine, if_exists='append', index=False)"
       ],
       "language": "Python"
